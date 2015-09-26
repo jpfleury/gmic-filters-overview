@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>G'MIC filters overview for the image {{{SOURCE_IMAGE_NAME}}}</title>
+	<link rel="stylesheet" href="style/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="shortcut icon" type="images/x-icon" href="style/logo.png" />
+</head>
+<body>
+	<div id="page">
+		<!--[if lte IE 9]>
+			<p id="ie"><span class="fa fa-exclamation-circle"></span> You need Internet Explorer 10 or more recent to use all features on this page.</p>
+		<![endif]-->
+		
+		<h1><span><img src="style/logo.png" width="32" height="32" alt="" /> gmic-filters-overview</span></h1>
+		
+		<p>This page contains {{{NUMBER_OF_FILTERS}}} overviews of default or custom G'MIC filters applied to the source image <code>{{{SOURCE_IMAGE_NAME}}}</code>.</p>
+		
+		<h2 id="about-title">About <span class="toggle fa {{{CLASS_ABOUT_TITLE}}}" title="Toggle About section display"></span></h2>
+		
+		<div id="about" class="{{{CLASS_ABOUT}}}">
+			<p><a href="http://gmic.eu">G'MIC</a> is a free framework for image processing. It comes with hundreds of filters. It's easy to get lost and just not know what filters to start it. There are so many possibilities.</p>
+			
+			<p>Here comes <a href="https://github.com/jpfleury/gmic-filters-overview">gmic-filters-overview</a>. It allows to overview all non-interactive G'MIC filters at once for a specific image. Default filter arguments are used (unless the filter name is followed by the character <code>*</code>, which means custom arguments). Note that most of the filters have a lot of options to play with.</p>
+			
+			<h3>Image toolbar</h3>
+			
+			<ul>
+				<li><span class="anchor fa fa-anchor" title="Link to this image"></span>: direct link (anchor) to the image</li>
+				<li><span class="new-tab fa fa-external-link" title="Open in a new tab"></span>: open the image in a new tab</li>
+				<li><span class="reorder fa fa-arrows" title="Reorder the image using drag and drop"></span>: reorder the image using drag and drop</li>
+				<li><span class="large fa fa-expand" title="Toggle default/large display"></span>: display the image full page width | <span class="display-style fa fa-compress" title="Toggle default/large display"></span>: revert to default display</li>
+				<li><span class="info fa fa-chevron-circle-down" title="Toggle info display"></span>: display info | <span class="info fa fa-chevron-circle-up" title="Toggle info display"></span>: hide info</li>
+				<li><span class="compare fa fa-eye" title="Toggle source image comparison"></span>: compare with the source image | <span class="compare fa fa-eye-slash" title="Toggle source image comparison"></span>: cancel source image comparison</li>
+				<li><span class="select fa fa-square-o" title="Toggle selection"></span>: add the image to the selection | <span class="select fa fa-check-square-o" title="Toggle selection"></span>: remove the image from the selection</li>
+			</ul>
+			
+			<p>A gray icon means that the option is disabled (for example, <span class="compare fa fa-eye disabled" title="Toggle source image comparison (disabled)"></span> means that the source image comparison is unavailable).</p>
+			
+			<p>When an image is animated, a <em>Play</em> icon (<span class="fa fa-play" title="Play"></span>) appears under the image. Just click it to start the animation, and click <span class="fa fa-pause" title="Pause"></span> to stop it. Clicking the image works the same.</p>
+			
+			<h3>Keyboard shortcuts</h3>
+			
+			<p>Using <em>Left arrow</em> / <em>Right arrow</em>, you can scroll to previous/next image.</p>
+			
+			<h3>More</h3>
+			
+			<p>You can drag and snap images over other images, so two images can be overlayed to see what two specific filters look like when they are merged with transparency.</p>
+			
+			<p>By default, filters from all categories are displayed. Clicking a category button displays/hides all filters from this category.</p>
+			
+			<p>The fixed menu on the right side (icon <span class="fa fa-bars" title="Menu"></span>) offers a few more functions.</p>
+		</div>
+		
+		<h2 id="all-filters-title">All filters <span class="toggle fa fa-minus-square-o" title="Toggle all filters display"></span></h2>
+		
+		<div id="all-filters">
+			<div id="categories">
+				{{{CATEGORIES}}}
+			</div>
+			
+			<ul class="images">
+				{{{ALL_FILTERS}}}
+			</ul>
+		</div>
+		
+		<h2 id="selected-filters-title">Selected filters <span class="toggle fa fa-minus-square-o" title="Toggle selected filters display"></span></h2>
+		
+		<div id="selected-filters">
+			<ul class="images">
+				{{{SELECTED_FILTERS}}}
+			</ul>
+		</div>
+		
+		<div id="footer">
+			<a class="top" href="#page"><span class="fa fa-arrow-up" title="Top"></span></a> | Generated with <a href="https://github.com/jpfleury/gmic-filters-overview">gmic-filters-overview</a>
+		</div>
+	</div>
+	
+	<ul id="menu">
+		<li>
+			<span class="fa fa-bars" title="Menu"></span>
+			<ul>
+				<li><a href="#selected-filters-title">Go to selected filters</a></li>
+				<li id="expand">Expand images display</li>
+				<li id="reduce">Reduce images display</li>
+				<li id="toggle-categories">Toggle categories</li>
+				<li id="list-selected-filters">List selected filters</li>
+			</ul>
+		</li>
+	</ul>
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/isInViewport.min.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+</body>
+</html>

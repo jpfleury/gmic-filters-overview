@@ -1,0 +1,17 @@
+#@gimp _<b>Testing</b>
+
+#@gimp <i>Jean-Philippe Fleury</i>
+
+#@gimp Layer indice: jpf_layer_indice, jpf_layer_indice_preview
+#@gimp : note = note("Add indice on each layer")
+#@gimp : sep = separator(), note = note("<small>Author: <i>Jean-Philippe Fleury</i>.      Latest update: <i>2015/08/08</i>.</small>")
+jpf_layer_indice:
+	-repeat $! -l[$>]
+		0 -t[-1] "Layer "$>,0,0,25,1,255
+		-to_rgba[0] -expand_xy[-1] 8,0 --dilate[-1] 8 -to_colormode[1] {0,s} -j[0] [1],20,20,0,0,1,[2],255
+		-k[0]
+	-endl -done
+
+jpf_layer_indice_preview:
+	-jpf_layer_indice
+	-gimp_preview
