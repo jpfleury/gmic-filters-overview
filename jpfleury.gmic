@@ -2,8 +2,8 @@
 
 #@gimp <i>Jean-Philippe Fleury</i>
 
-#@gimp Layer indice: jpf_layer_indice, jpf_layer_indice_preview
-#@gimp : note = note("Add indice on each layer")
+#@gimp Layer indices: jpf_layer_indice, jpf_layer_indice_preview
+#@gimp : note = note("Add indices on each layer")
 #@gimp : sep = separator(), note = note("<small>Author: <i>Jean-Philippe Fleury</i>.      Latest update: <i>2015/08/08</i>.</small>")
 jpf_layer_indice:
 	-repeat $! -l[$>]

@@ -1,2 +1,5 @@
-_HTML_
-TODO
+/archives/
+
+/user/**
+!/user/**/
+!/user/**/.gitkeep
