@@ -4,34 +4,30 @@ div#page {
 	margin-right: auto;
 }
 
-#ie {
-	font-weight: bold;
-	background-color: #f2f2f2;
-	padding: 5px;
-}
-
-h1 img, h2 span {
+h1 img,
+h2 span {
 	vertical-align: middle;
 }
 
-h2 span.fa {
+h2 span.fa-regular,
+h2 span.fa-solid {
 	font-size: 0.5em;
 	font-weight: normal;
 }
 
 #about {
+	padding: 15px;
 	background-color: #fcfcfc;
 	border: 1px solid #e0e0e0;
 	border-radius: 2px;
-	padding: 15px;
 }
 
 #about p:first-child {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 #about p:last-child {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 #categories {
@@ -41,12 +37,12 @@ h2 span.fa {
 }
 
 #categories button {
-	font-weight: bold;
-	border: 1px solid #e0e0e0;
-	border-radius: 2px;
-	padding: 5px;
 	margin-right: 5px;
 	margin-bottom: 5px;
+	padding: 5px;
+	border: 1px solid #e0e0e0;
+	border-radius: 2px;
+	font-weight: bold;
 }
 
 #categories button.active {
@@ -66,14 +62,12 @@ h2 span.fa {
 	border: 0;
 }
 
-ul.images, ul.images li {
+ul.images,
+ul.images li {
 	list-style-type: none;
 }
 
 ul.images {
-	display: -webkit-flex;
-	-webkit-justify-content: space-between;
-	-webkit-flex-wrap: wrap;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -81,8 +75,9 @@ ul.images {
 }
 
 ul.images > li {
-	padding-top: 10px; /* anchor */
-	width: 48%; margin: 10px 0;
+	width: 48%;
+	margin: 10px 0;
+	padding-top: 10px;
 }
 
 ul.images li.large {
@@ -103,11 +98,11 @@ figure.selected {
 }
 
 figcaption {
+	position: relative;
 	margin-top: 5px;
-	padding: 0px;
+	padding: 0;
 	background-color: #f5f5f5;
 	border: 1px dotted #e0e0e0;
-	position: relative;
 }
 
 figcaption span.controls {
@@ -125,7 +120,8 @@ p.filter-name {
 	font-weight: bold;
 }
 
-p.filter-name, p.image {
+p.filter-name,
+p.image {
 	text-align: center;
 }
 
@@ -135,14 +131,14 @@ p.image > span {
 
 p.image img {
 	width: auto;
-	height: auto;
 	max-width: 100%;
+	height: auto;
 }
 
 p.more-info {
+	padding: 2px;
 	background-color: #ededed;
 	border-top: 1px dotted #e0e0e0;
-	padding: 2px;
 }
 
 p.more-info code {
@@ -156,8 +152,6 @@ p.more-info code.custom {
 ul.menu-image {
 	margin: 0;
 	padding: 0;
-	display: -webkit-flex;
-	-webkit-justify-content: flex-end;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -170,6 +164,8 @@ ul.menu-image li.sep {
 	margin-right: auto;
 }
 
+span.fa-regular,
+span.fa-solid,
 #categories button,
 #menu span,
 #menu li,
@@ -209,7 +205,8 @@ span.disabled {
 	text-decoration: none;
 }
 
-#menu ul, #menu li {
+#menu ul,
+#menu li {
 	list-style-type: none;
 }
 
@@ -219,10 +216,10 @@ span.disabled {
 
 #menu > li ul {
 	display: none;
+	padding: 10px;
 	background-color: #fcfcfc;
 	border: 1px solid #e0e0e0;
 	border-radius: 2px;
-	padding: 10px;
 	text-align: left;
 }
 
@@ -231,9 +228,9 @@ span.disabled {
 }
 
 #footer {
+	padding-top: 16px;
 	border-top: 1px solid #e0e0e0;
 	text-align: center;
-	padding-top: 16px;
 }
 
 #footer .top {
@@ -249,19 +246,19 @@ span.disabled {
 }
 
 .ui-dialog button {
-	border-radius: 0px;
+	border-radius: 0;
 }
 
 .ui-dialog-titlebar {
+	background: #fe9308;
+	border-radius: 0;
 	font-size: 1.1em;
 	font-weight: bold;
-	background: #fe9308;
-	border-radius: 0px;
 }
 
 .ui-widget-content {
-	font-size: 1em;
 	width: auto !important;
-	min-height: 0px !important;
+	min-height: 0 !important;
 	background: #fcfcfc;
+	font-size: 1em;
 }
