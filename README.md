@@ -6,6 +6,8 @@
 
 This is where [gmic-filters-overview](https://github.com/jpfleury/gmic-filters-overview) becomes useful. It lets you preview all non-interactive G'MIC filters at once on a single image. Just run the script and enjoy all filters applied automatically to your image. Then, view the results in a convenient HTML file offering a few JavaScript functions like source image comparison.
 
+![Demo of gmic-filters-overview](data/demo.gif)
+
 ## Requirements
 
 To generate images from the command line:
