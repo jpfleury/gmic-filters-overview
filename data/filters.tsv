@@ -1,1471 +1,1109 @@
-# FILTER NAME	FILTER COMMAND	ARGUMENTS	CUSTOMIZED	MORE OPTIONS	LAYERS
-
-# Note: values are tab separated. Filters can be disabled by commenting lines.
-
-# FILTER NAME: name of the filter, including category. Ex.: Black & white / Pencil
-# FILTER COMMAND: command of the filter. Ex.: -gimp_pencilbw
-# ARGUMENTS: arguments of the filter command. Ex.: 0.3,60,0,0,0
-# CUSTOMIZED: DEFAULT for default arguments; CUSTOM for customized arguments.
-# MORE OPTIONS: additional options to apply. Ex.: -resize 50%,50%
-# LAYERS: how to handle layers (only one image saved as output in all cases):
-#         ANIMATED, APPEND (layers one below the other), MERGE,
-#         STATIC (the filter doesn't create new layers, so no need to handle any).
-
-########################################################################
-##
-## Arrays & tiles
-##
-########################################################################
-
-Arrays & tiles / Annular steiner chain round tiles	-Annular_Steiner_Chain_Round_Tile_en	800,1,0,0,100,0,100,12,0,1,0,0,0,255,0,255,255,0,127,0,0,255,127,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Array [faded]	-gimp_array_fade	2,2,0,0,80,90,0,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Array [mirrored]	-gimp_array_mirror	1,0,0,2,0,0,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Array [random colors]	-gimp_array_color	5,5,0.5	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Array [random]	-array_random	5,5,7,7	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Array [regular]	-gimp_array	2,2,0,0,0,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Ascii art	-gimp_asciiart	5," .oO0",16,15,16,2,0,0.2,0,0,"/tmp/gmic","gmic_asciiart.txt"	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Chessboard	-gimp_chessboard	64,64,0,0,0,0.5,0,0,0,255,255,255,255,255,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Concentric circles	-Cercles_Concentriques_A_en	800,1,6,0,0,90,1,1,50,1,1,0,0,0,255,0,0,0,0,5,0,0,0,255,255,255,255,0,255,255,0,0,255,0,255,255,255,255,0,255,255,0,1,0,5,0,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Dices	-gimp_dices	2,24,1	DEFAULT	NULL	STATIC
-Arrays & tiles / Dices	-gimp_dices	2,24,3	CUSTOM	NULL	STATIC
-
-Arrays & tiles / Extract objects	-gimp_extract_objects	0,0,0,20,50,0.3,0,0,1	DEFAULT	NULL	APPEND
-Arrays & tiles / Grid [cartesian]	-gimp_imagegrid	10,10	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Grid [hexagonal]	-gimp_imagegrid_hexagonal	32,0.1,1	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Grid [triangular]	-gimp_imagegrid_triangular	10,18,0,255,255,255,128	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Make seamless	-gimp_make_seamless	0,0,3,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Ministeck	-gimp_ministeck	8,64,8,2,100,0.3,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Montage	-gimp_montage	1,"V(H(0,1),H(2,V(3,4)))",1,0.5,0,0,0,0,0,255,0,0,0,0,0	CUSTOM	NULL	STATIC
-
-Arrays & tiles / Puzzle	-gimp_puzzle	5,5,0.5,0,0,0.3,100,0.2,255,100,0,0,0,0,0,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Taquin	-gimp_taquin	7,7,0,50,5,0,0,0,0,255,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Tileable rotation	-gimp_rotate_tileable	45,8,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Tiled isolation	-gimp_isolate_tiles	10,10,5,5,1,1	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Tiled normalization	-gimp_normalize_tiles	25,25,0,255,11	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Tiled parameterization	-gimp_parameterize_tiles	10,10,0	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Tiled random shifts	-gimp_shift_tiles	10,10,10,1	DEFAULT	NULL	STATIC
-
-Arrays & tiles / Tiled rotation	-gimp_rotate_tiles	5,5,15,3,3,1.8	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Artistic
-##
-########################################################################
-
-Artistic / Anguish	-samj_Angoisse_en	1,5,0,5,100,2,4,1,250	DEFAULT	NULL	STATIC
-
-Artistic / Aurora	-gcd_aurora	6,1,0	DEFAULT	NULL	STATIC
-Artistic / Aurora	-gcd_aurora	6,1,1	CUSTOM	NULL	STATIC
-
-Artistic / Black crayon graffiti	-gimp_crayongraffiti2	300,50,1,0.4,12,1,2,2,0	DEFAULT	NULL	STATIC
-
-Artistic / Blockism	-gimp_blockism	3,1.6,0.5,50,0.5,64,0,1,0	DEFAULT	NULL	STATIC
-
-Artistic / Bokeh	-gimp_bokeh	3,8,0,30,8,4,0.3,0.2,210,210,80,160,0.7,30,20,20,1,2,170,130,20,110,0.15,0	DEFAULT	NULL	MERGE
-Artistic / Bokeh	-gimp_bokeh	3,0,0,30,8,4,0.3,0.2,210,210,80,160,0.7,30,20,20,1,2,170,130,20,110,0.15,0	CUSTOM	NULL	MERGE
-Artistic / Bokeh	-gimp_bokeh	3,1,0,30,8,4,0.3,0.2,210,210,80,160,0.7,30,20,20,1,2,170,130,20,110,0.15,0	CUSTOM	NULL	MERGE
-Artistic / Bokeh	-gimp_bokeh	3,2,0,30,8,4,0.3,0.2,210,210,80,160,0.7,30,20,20,1,2,170,130,20,110,0.15,0	CUSTOM	NULL	MERGE
-Artistic / Bokeh	-gimp_bokeh	3,3,0,30,8,4,0.3,0.2,210,210,80,160,0.7,30,20,20,1,2,170,130,20,110,0.15,0	CUSTOM	NULL	MERGE
-Artistic / Bokeh	-gimp_bokeh	3,4,0,30,8,4,0.3,0.2,210,210,80,160,0.7,30,20,20,1,2,170,130,20,110,0.15,0	CUSTOM	NULL	MERGE
-Artistic / Bokeh	-gimp_bokeh	3,5,0,30,8,4,0.3,0.2,210,210,80,160,0.7,30,20,20,1,2,170,130,20,110,0.15,0	CUSTOM	NULL	MERGE
-Artistic / Bokeh	-gimp_bokeh	3,6,0,30,8,4,0.3,0.2,210,210,80,160,0.7,30,20,20,1,2,170,130,20,110,0.15,0	CUSTOM	NULL	MERGE
-Artistic / Bokeh	-gimp_bokeh	3,7,0,30,8,4,0.3,0.2,210,210,80,160,0.7,30,20,20,1,2,170,130,20,110,0.15,0	CUSTOM	NULL	MERGE
-
-Artistic / Cartoon	-cartoon	3,200,20,0.25,1.5,8,0	DEFAULT	NULL	STATIC
-
-Artistic / Chalk it up	-samj_en_chalkitup	5,2.5,1.5,50,1,5,5,0,0,7,0.8,1.9,7,0	DEFAULT	NULL	STATIC
-Artistic / Chalk it up	-samj_en_chalkitup	5,2.5,1.5,50,1,5,5,1,0,7,0.8,1.9,7,0	CUSTOM	NULL	STATIC
-Artistic / Chalk it up	-samj_en_chalkitup	5,2.5,1.5,50,1,0,5,0,0,7,0.8,1.9,7,0	CUSTOM	NULL	STATIC
-Artistic / Chalk it up	-samj_en_chalkitup	5,2.5,1.5,50,1,0,5,1,0,7,0.8,1.9,7,0	CUSTOM	NULL	STATIC
-
-Artistic / Circle abstraction	-gimp_circle_abstraction	8,5,0.8,0,1,1,1,0	DEFAULT	NULL	STATIC
-
-Artistic / Color abstraction paint	-gimp_ColorAbstractionPaint	5,10,1,0,1,0,1,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
-
-Artistic / Colored pencils	-gimp_cpencil	1.3,50,20,2,2,1,0	DEFAULT	NULL	STATIC
-Artistic / Colored pencils	-gimp_cpencil	1.3,50,20,2,1,1,0	CUSTOM	NULL	STATIC
-Artistic / Colored pencils	-gimp_cpencil	1.3,50,20,2,4,1,0	CUSTOM	NULL	STATIC
-
-Artistic / Cubism	-gimp_cubism	2,50,10,90,0.7,0,0	DEFAULT	NULL	STATIC
-
-Artistic / Cutout	-gimp_cutout	4,0.5,4,1,0	DEFAULT	NULL	STATIC
-
-Artistic / Dream smoothing	-gimp_dreamsmooth	3,1,1,0.8,0,0.8,1,24,0	DEFAULT	NULL	STATIC
-
-Artistic / Ellipsionism	-gimp_ellipsionism	20,10,0.5,0.7,3,0.5,0	DEFAULT	NULL	STATIC
-
-Artistic / Felt pen	-gimp_feltpen	300,50,1,0.1,20,5,0	DEFAULT	NULL	STATIC
-
-Artistic / Finger paint	-gtutor_fpaint	0.5,0.5,0,0,45,0.5,0.5,0.5,0	DEFAULT	NULL	STATIC
-
-Artistic / Fractalize	-fractalize	0.8	DEFAULT	NULL	STATIC
-
-Artistic / Graphic boost	-gimp_graphic_boost4	1.25,2,0,0.15,14,0,1,0.5,0.45,2,0,1,0,1,1,1,0.5,0.45,1	DEFAULT	NULL	STATIC
-
-Artistic / Graphic novel	-gimp_graphic_novelfxl	0,2,6,5,20,0,0.62,14,0,1,0.5,0.78,1.92,0,0,0,1,1,1,0.5,0.8,1.28	DEFAULT	NULL	STATIC
-
-Artistic / Hope poster	-gimp_poster_hope	0,3,0	DEFAULT	NULL	STATIC
-
-Artistic / Kuwahara	-gimp_kuwahara	2,5,0,0,0	DEFAULT	NULL	STATIC
-
-Artistic / Lylejk's painting	-gimp_lylejk_painting	10,2,4,10,0	DEFAULT	NULL	STATIC
-
-Artistic / Make squiggly	-gimp_Squiggly	2,12,0.8,0,0.5,1,0,0,3,0.2,0.4,0,1,1,0	DEFAULT	NULL	STATIC
-
-Artistic / Morphology painting	-gimp_MorphoPaint	1,18,2,25,100,230,8,3,4,0.5,2,0.5,200,1,1,1,1,1,1,1,1,0	DEFAULT	NULL	STATIC
-
-Artistic / Paint daub	-samj_Barbouillage_Paint_Daub_en	2,2,100,0.2,1,4,1,0,8	DEFAULT	NULL	STATIC
-
-Artistic / Painting	-gimp_painting	5,2.5,1.5,50,1,0	DEFAULT	NULL	STATIC
-
-Artistic / Pen drawing	-gimp_pen_drawing	10,0	DEFAULT	NULL	STATIC
-
-Artistic / Photoillustration	-gimp_tk_photoillustration	0,0.25,0,0.3,0.5,0.5,1,0,5,0,1,0,0,1,0,0,1.2,98.5,5,0.5,0,0,0,0,0,1,0	DEFAULT	NULL	STATIC
-
-Artistic / Polygonize [delaunay]	-gimp_delaunay	5,75,1,3,0,0,0,128,1,1,0	DEFAULT	NULL	STATIC
-Artistic / Polygonize [delaunay]	-gimp_delaunay	5,75,1,2,0,0,0,128,1,1,0	CUSTOM	NULL	STATIC
-Artistic / Polygonize [delaunay]	-gimp_delaunay	5,75,1,4,0,0,0,128,1,1,0	CUSTOM	NULL	STATIC
-
-Artistic / Polygonize [energy]	-gimp_polygonize	300,10,10,10,10,0,0,0,255,0	DEFAULT	NULL	STATIC
-
-Artistic / Poster edges	-gimp_poster_edges	20,60,5,0,10,0,0,0	DEFAULT	NULL	STATIC
-
-Artistic / Posterized dithering	-gimp_pdithered	1,1,0,0,20,1,0,1,0	DEFAULT	NULL	STATIC
-
-Artistic / Rodilius	-gimp_rodilius	10,10,300,5,30,0,1,0,0,0	DEFAULT	NULL	STATIC
-
-Artistic / Shapeism	-gimp_shapeism	2,7,0.38,0,1,5,32,8,3,1,5,0.5,1,0,0,0,255	DEFAULT	NULL	STATIC
-Artistic / Shapeism	-gimp_shapeism	0,7,0.38,0,1,5,32,8,3,1,5,0.5,1,0,0,0,255	CUSTOM	NULL	STATIC
-Artistic / Shapeism	-gimp_shapeism	1,7,0.38,0,1,5,32,8,3,1,5,0.5,1,0,0,0,255	CUSTOM	NULL	STATIC
-Artistic / Shapeism	-gimp_shapeism	3,7,0.38,0,1,5,32,8,3,1,5,0.5,1,0,0,0,255	CUSTOM	NULL	STATIC
-Artistic / Shapeism	-gimp_shapeism	4,7,0.38,0,1,5,32,8,3,1,5,0.5,1,0,0,0,255	CUSTOM	NULL	STATIC
-Artistic / Shapeism	-gimp_shapeism	5,7,0.38,0,1,5,32,8,3,1,5,0.5,1,0,0,0,255	CUSTOM	NULL	STATIC
-Artistic / Shapeism	-gimp_shapeism	6,7,0.38,0,1,5,32,8,3,1,5,0.5,1,0,0,0,255	CUSTOM	NULL	STATIC
-Artistic / Shapeism	-gimp_shapeism	7,7,0.38,0,1,5,32,8,3,1,5,0.5,1,0,0,0,255	CUSTOM	NULL	STATIC
-
-Artistic / Vector painting	-gimp_vector_painting	9,0	DEFAULT	NULL	STATIC
-
-Artistic / Warhol	-warhol	3,3,2,40	DEFAULT	NULL	STATIC
-
-Artistic / Watercolor	-gimp_watercolor	1.8,0.1,1,80,0,0.5,0,0,0,2,0,2,4,2,0,3,3,2,0,4,2,0,0,0,0,0	DEFAULT	NULL	STATIC
-Artistic / Watercolor	-gimp_watercolor	1.8,0.1,1,80,0,0.5,1,0,0,2,0,2,4,2,0,3,3,2,0,4,2,0,0,0,0,0	CUSTOM	NULL	STATIC
-Artistic / Watercolor	-gimp_watercolor	1.8,0.1,1,80,0,0.5,2,0,0,2,0,2,4,2,0,3,3,2,0,4,2,0,0,0,0,0	CUSTOM	NULL	STATIC
-
-Artistic / Whirl drawing	-draw_whirl	20,0	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Black & white
-##
-########################################################################
-
-Black & white / B&W stencil	-gimp_stencilbw	10,10,0,0,0	DEFAULT	NULL	STATIC
-
-Black & white / Black & white	-gimp_blackandwhite	0.299,0,0.587,0,0.114,0,0,1,0,0,0,0,0,0,2,0,0,0,16,4,0,0,0	DEFAULT	NULL	STATIC
-
-Black & white / Charcoal	-gimp_charcoal	65,70,170,0,1,0,50,70,255,255,255,0,0,0,0,0	DEFAULT	NULL	STATIC
-Black & white / Charcoal	-gimp_charcoal	65,70,170,1,1,0,50,70,255,255,255,0,0,0,0,0	CUSTOM	NULL	STATIC
-
-Black & white / Colorize [with colormap]	-gimp_bwrecolorize	0,1,0,0,0,1,0,5,0,0,0,255,43,25,55,255,158,137,189,255,224,191,228,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,0	DEFAULT	NULL	STATIC
-Black & white / Colorize [with colormap]	-gimp_bwrecolorize	0,1,0,0,1,1,0,5,0,0,0,255,43,25,55,255,158,137,189,255,224,191,228,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,0	CUSTOM	NULL	STATIC
-Black & white / Colorize [with colormap]	-gimp_bwrecolorize	0,1,0,0,2,1,0,5,0,0,0,255,43,25,55,255,158,137,189,255,224,191,228,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,0	CUSTOM	NULL	STATIC
-Black & white / Colorize [with colormap]	-gimp_bwrecolorize	0,1,0,0,3,1,0,5,0,0,0,255,43,25,55,255,158,137,189,255,224,191,228,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,0	CUSTOM	NULL	STATIC
-Black & white / Colorize [with colormap]	-gimp_bwrecolorize	0,1,0,0,4,1,0,5,0,0,0,255,43,25,55,255,158,137,189,255,224,191,228,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,0	CUSTOM	NULL	STATIC
-
-Black & white / Dithering	-gimp_ditheredbw	0,1,0,0,0,0,0	DEFAULT	NULL	STATIC
-
-Black & white / Engrave	-gimp_engrave	0.5,50,0,8,40,0,0,0,10,1,0,0,0,1,0	DEFAULT	NULL	STATIC
-
-Black & white / Hard sketch	-gimp_hardsketchbw	300,50,1,0.1,20,0,0,0	DEFAULT	NULL	STATIC
-
-Black & white / Hough sketch	-gimp_houghsketchbw	1.25,10,5,80,0.1,0,0	DEFAULT	NULL	STATIC
-
-Black & white / Ink wash	-gimp_ink_wash	0.14,23,0,0.5,0.54,2.25,0,2,6,5,20	DEFAULT	NULL	STATIC
-Black & white / Ink wash	-gimp_ink_wash	0.14,23,0,0.5,0.54,2.25,1,2,6,5,20	CUSTOM	NULL	STATIC
-Black & white / Ink wash	-gimp_ink_wash	0.14,23,0,0.5,0.54,2.25,2,2,6,5,20	CUSTOM	NULL	STATIC
-Black & white / Ink wash	-gimp_ink_wash	0.14,23,0,0.5,0.54,2.25,3,2,6,5,20	CUSTOM	NULL	STATIC
-
-Black & white / Multi-layer etch	-gimp_gcd_layeretch	11,4,12,0.12,100,8.5,5,0,0,3,1,1,0	DEFAULT	NULL	STATIC
-
-Black & white / Pencil	-gimp_pencilbw	0.3,60,0,0,0	DEFAULT	NULL	STATIC
-
-Black & white / Pencil portrait	-gimp_pencil_portraitbw	30,120,1,0.5,144,79,21,0	DEFAULT	NULL	STATIC
-
-Black & white / Sketch	-gimp_sketchbw	2,45,180,30,1,0.03,0,0.6,0.1,0.6,0.25,1,0,1,0,0	DEFAULT	NULL	STATIC
-
-Black & white / Stamp	-gimp_stamp	1,50,0,0,0,0,1,0	DEFAULT	NULL	STATIC
-
-Black & white / Threshold etch	-gimp_gcd_etch	125,153,171,185,0.1,50,80,50,10,15,12,20,0,1,0.3,1,0,0	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Colors
-##
-########################################################################
-
-Colors / Abstraction	-gimp_color_abstraction	1,10,0.2,0	DEFAULT	NULL	STATIC
-
-Colors / Boost chromaticity	-gimp_boost_chroma	0.5,0,0	DEFAULT	NULL	STATIC
-
-Colors / Boost-fade	-gimp_boost_fade	5,0	DEFAULT	NULL	STATIC
-
-Colors / Channel processing	-gimp_channel_processing	0,1,0,0,0,0,100,256,1,0,0,2,0,0	CUSTOM	NULL	STATIC
-
-Colors / Channels to layers	-gimp_channels2layers	0	DEFAULT	NULL	APPEND
-Colors / Channels to layers	-gimp_channels2layers	1	CUSTOM	NULL	APPEND
-Colors / Channels to layers	-gimp_channels2layers	2	CUSTOM	NULL	APPEND
-
-Colors / CMYK tone	-iain_cmyk_tone_p	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,255,255,0,0	DEFAULT	NULL	STATIC
-
-Colors / Color balance	-gimp_balance_gamma	128,128,128,1,0	DEFAULT	NULL	STATIC
-
-Colors / Color grading	-jl_colorgrading	0.75,0,1,1,0,0,0,0,0,0,1,0,0,0,70,0,0,0,0,0,70,180,0,1,0,0,0	CUSTOM	NULL	STATIC
-Colors / Color grading	-jl_colorgrading	0.75,50,1,1,0,0,0,0,0,0,1,0,0,0,70,0,0,0,0,0,70,180,0,1,0,0,0	CUSTOM	NULL	STATIC
-Colors / Color grading	-jl_colorgrading	0.75,-50,1,1,0,0,0,0,0,0,1,0,0,0,70,0,0,0,0,0,70,180,0,1,0,0,0	CUSTOM	NULL	STATIC
-
-Colors / Color temperature	-gimp_tk_colortemp	20,0,0	CUSTOM	NULL	STATIC
-Colors / Color temperature	-gimp_tk_colortemp	-20,0,0	CUSTOM	NULL	STATIC
-
-Colors / Colormap	-gimp_colormap	1,1,32,8,0,0,0,255,255,255,255,0,0,0,255,0,0,0,255,255,255,0,255,0,255,0,255,255,0	DEFAULT	NULL	STATIC
-
-Colors / Decompose channels	-gimp_decompose_channels	7,0,1,1	CUSTOM	NULL	APPEND
-
-Colors / Detect skin	-gimp_detect_skin	1,0.5,0.5,1,1,50,50,5,1,0	DEFAULT	NULL	STATIC
-
-Colors / HSL adjustment	-gcd_hsl	1,0,0,180,0.2,0,1,1,0	DEFAULT	NULL	STATIC
-
-Colors / HSV select	-gcd_hsv_select	0,0.5,1,180,0.5,0.5,2,2,18,0,0,0	DEFAULT	NULL	STATIC
-
-Colors / Metallic look	-gimp_tk_metallic	1,0,0,0	DEFAULT	NULL	STATIC
-
-Colors / Sepia	-gimp_sepia	0,1,0,0	DEFAULT	NULL	STATIC
-
-Colors / Tone presets	-iain_tone_presets_p	0,100,0,0	DEFAULT	NULL	STATIC
-Colors / Tone presets	-iain_tone_presets_p	1,100,0,0	CUSTOM	NULL	STATIC
-Colors / Tone presets	-iain_tone_presets_p	2,100,0,0	CUSTOM	NULL	STATIC
-Colors / Tone presets	-iain_tone_presets_p	3,100,0,0	CUSTOM	NULL	STATIC
-Colors / Tone presets	-iain_tone_presets_p	4,100,0,0	CUSTOM	NULL	STATIC
-Colors / Tone presets	-iain_tone_presets_p	5,100,0,0	CUSTOM	NULL	STATIC
-Colors / Tone presets	-iain_tone_presets_p	6,100,0,0	CUSTOM	NULL	STATIC
-Colors / Tone presets	-iain_tone_presets_p	7,100,0,0	CUSTOM	NULL	STATIC
-
-Colors / User-defined	-gimp_custom_transform	"i","i + 90*(x/w)*cos(i/10)","i","i","i","i",0	DEFAULT	NULL	STATIC
-
-Colors / Vintage style	-gimp_tk_vintage	2,0.85,0.7,80,200,5,147,26,161,0.3,235,220,176,0.4,190,181,108,0.2,0,0,100,0,0.3,25,0,0	DEFAULT	NULL	STATIC
-Colors / Vintage style	-gimp_tk_vintage	2,0.85,0.7,80,200,5,147,26,161,0.3,235,220,176,0.4,190,181,108,0.2,0,0,100,1,0.3,25,0,0	CUSTOM	NULL	STATIC
-Colors / Vintage style	-gimp_tk_vintage	2,0.85,0.7,80,200,5,147,26,161,0.3,235,220,176,0.4,190,181,108,0.2,0,0,100,2,0.3,25,0,0	CUSTOM	NULL	STATIC
-Colors / Vintage style	-gimp_tk_vintage	2,0.85,0.7,80,200,5,147,26,161,0.3,235,220,176,0.4,190,181,108,0.2,0,0,100,3,0.3,25,0,0	CUSTOM	NULL	STATIC
-Colors / Vintage style	-gimp_tk_vintage	2,0.85,0.7,80,200,5,147,26,161,0.3,235,220,176,0.4,190,181,108,0.2,0,0,100,4,0.3,25,0,0	CUSTOM	NULL	STATIC
-
-########################################################################
-##
-## Contours
-##
-########################################################################
-
-Contours / Convolve	-gimp_convolve	0,1,"0,1,0;1,-4,1;0,1,0",1,1,0,0	DEFAULT	NULL	STATIC
-
-Contours / Curvature	-gimp_curvature	2,0,100,0,0,0	DEFAULT	NULL	STATIC
-
-Contours / Difference of gaussians	-gimp_dog	1.4,1.5,0,0,0	DEFAULT	NULL	STATIC
-
-Contours / Distance transform	-gimp_distance	128,2,2,32,0	DEFAULT	NULL	STATIC
-Contours / Distance transform	-gimp_distance	128,2,1,32,0	CUSTOM	NULL	STATIC
-Contours / Distance transform	-gimp_distance	128,0,2,32,0	CUSTOM	NULL	STATIC
-Contours / Distance transform	-gimp_distance	128,0,1,32,0	CUSTOM	NULL	STATIC
-Contours / Distance transform	-gimp_distance	128,1,2,32,0	CUSTOM	NULL	STATIC
-Contours / Distance transform	-gimp_distance	128,3,2,32,0	CUSTOM	NULL	STATIC
-Contours / Distance transform	-gimp_distance	128,3,0,32,0	CUSTOM	NULL	STATIC
-
-Contours / Edges	-gimp_edges	0,15,0,0	DEFAULT	NULL	STATIC
-
-Contours / Edges offsets	-gimp_edge_offsets	0,15,4,1,0,0	DEFAULT	NULL	STATIC
-
-Contours / Gradient norm	-gimp_gradient_norm	0,0.5,0,100,0,0	DEFAULT	NULL	STATIC
-
-Contours / Gradient RGB	-gimp_gradient2rgb	0,0,100,0,0,0	DEFAULT	NULL	STATIC
-Contours / Gradient RGB	-gimp_gradient2rgb	0,0,100,1,0,0	CUSTOM	NULL	STATIC
-
-Contours / Isophotes	-gimp_isophotes	8,0,1,0	DEFAULT	NULL	STATIC
-
-Contours / Laplacian	-gimp_laplacian	0,0,100,0,0,0	DEFAULT	NULL	STATIC
-
-Contours / Local orientation	-gimp_local_orientation	0,0,100,0,0,0	DEFAULT	NULL	STATIC
-
-Contours / Morphological filter	-gimp_morpho	0,5,0,0,0,0,0	DEFAULT	NULL	STATIC
-
-Contours / Segmentation	-gimp_segment_watershed	2,1,0,0,0	DEFAULT	NULL	STATIC
-
-Contours / Skeleton	-gimp_skeleton	0,0,0,1,0	DEFAULT	NULL	STATIC
-
-Contours / Thin edges	-gimp_thin_edges	0,15,0,0	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Deformations
-##
-########################################################################
-
-Deformations / Cartesian transform	-gimp_custom_deformation	"(w+h)/20*cos(y*20/h)","(w+h)/20*sin(x*20/w)",1,1,1	DEFAULT	NULL	STATIC
-
-Deformations / Circle transform	-gimp_circle_transform	50,50,-2,-2,0.2,0,1,1,1	DEFAULT	NULL	STATIC
-Deformations / Circle transform	-gimp_circle_transform	50,50,-2,-2,0.2,1,1,1,1	CUSTOM	NULL	STATIC
-Deformations / Circle transform	-gimp_circle_transform	50,50,-2,-2,0.2,2,1,1,1	CUSTOM	NULL	STATIC
-
-Deformations / Drop water	-gimp_drop_water	0,20,2,80,0,3,35,10,1,0.5,0.25,0.5,0.75,0.05,0.15,1	DEFAULT	NULL	MERGE
-
-Deformations / Euclidean - polar	-gimp_euclidean2polar	50,50,1,1,0	DEFAULT	NULL	STATIC
-Deformations / Euclidean - polar	-gimp_euclidean2polar	50,50,1,1,1	CUSTOM	NULL	STATIC
-
-Deformations / Fish-eye	-fisheye	50,50,70,1	DEFAULT	NULL	STATIC
-
-Deformations / Flower	-gimp_flower	30,6,0,0,50,50,1	DEFAULT	NULL	STATIC
-
-Deformations / Kaleidoscope [blended]	-gimp_rotoidoscope	50,50,10,0.5,2	DEFAULT	NULL	STATIC
-Deformations / Kaleidoscope [blended]	-gimp_rotoidoscope	50,50,10,0.5,0	CUSTOM	NULL	STATIC
-Deformations / Kaleidoscope [blended]	-gimp_rotoidoscope	50,50,10,0.5,1	CUSTOM	NULL	STATIC
-
-Deformations / Kaleidoscope [polar]	-gimp_kaleidoscope	50,50,0,0,100,10,2	DEFAULT	NULL	STATIC
-
-Deformations / Kaleidoscope [symmetry]	-gimp_symmetrizoscope	4,0,1,0	DEFAULT	NULL	STATIC
-Deformations / Kaleidoscope [symmetry]	-gimp_symmetrizoscope	4,0,1,1	CUSTOM	NULL	STATIC
-Deformations / Kaleidoscope [symmetry]	-gimp_symmetrizoscope	4,0,1,2	CUSTOM	NULL	STATIC
-
-Deformations / Perspective	-gimp_warp_perspective	1.73,0,1,50,50,0,0,2	DEFAULT	NULL	STATIC
-Deformations / Perspective	-gimp_warp_perspective	1.73,0,1,50,50,0,0,1	CUSTOM	NULL	STATIC
-
-Deformations / Polar transform	-gimp_transform_polar	0,50,50,"r + R/10*cos(a*5)","a",1	DEFAULT	NULL	STATIC
-
-Deformations / Raindrops	-raindrops	80,0.1,1,0	DEFAULT	NULL	STATIC
-
-Deformations / Random	-deform	10	DEFAULT	NULL	STATIC
-
-Deformations / Reflection	-gimp_reflect	50,1,110,160,190,64,0,1.5,0,-3.3,7,1.5	DEFAULT	NULL	STATIC
-
-Deformations / Ripple	-ripple	10,20,2,0,0	DEFAULT	NULL	STATIC
-Deformations / Ripple	-ripple	10,20,0,0,0	CUSTOM	NULL	STATIC
-Deformations / Ripple	-ripple	10,20,1,0,0	CUSTOM	NULL	STATIC
-Deformations / Ripple	-ripple	10,20,3,0,0	CUSTOM	NULL	STATIC
-Deformations / Ripple	-ripple	10,20,4,0,0	CUSTOM	NULL	STATIC
-
-Deformations / Seamcarve	-gimp_seamcarve	85,100,15,0,1	DEFAULT	NULL	STATIC
-
-Deformations / Sphere	-gimp_map_sphere	512,512,90,0.5,0,0,20,0,0,0,0.5	DEFAULT	NULL	STATIC
-
-Deformations / Symmetrize	-gimp_symmetrize	50,50,90,1,0,0	DEFAULT	NULL	STATIC
-
-Deformations / Textured glass	-gimp_textured_glass	40,40,1,1,0,2,0,0	DEFAULT	NULL	STATIC
-
-Deformations / Twirl	-gimp_twirl	1,50,50,1	DEFAULT	NULL	STATIC
-
-Deformations / Water	-water	30,1.5	DEFAULT	NULL	STATIC
-
-Deformations / Wave	-wave	10,0.4,50,50	DEFAULT	NULL	STATIC
-
-Deformations / Wind	-gimp_wind	20,0,0.7,20,1,0,0,0	DEFAULT	NULL	STATIC
-Deformations / Wind	-gimp_wind	20,0,0.7,20,0,0,0,0	CUSTOM	NULL	STATIC
-
-Deformations / Zoom	-gimp_zoom	2,50,50,0	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Degradations
-##
-########################################################################
-
-Degradations / Blur [angular]	-gimp_blur_angular	2,50,50,0,1,7,0	DEFAULT	NULL	STATIC
-
-Degradations / Blur [depth-of-field]	-gimp_blur_dof	3,16,0,0,50,50,30,30,0,1,1,0	DEFAULT	NULL	STATIC
-
-Degradations / Blur [gaussian]	-gimp_gaussian_blur	3,0,0,1,0,0,0	DEFAULT	NULL	STATIC
-
-Degradations / Blur [glow]	-gimp_glow	6,7,0,0	DEFAULT	NULL	STATIC
-
-Degradations / Blur [linear]	-gimp_blur_linear	10,0.5,0,0,1,7,0,0	DEFAULT	NULL	STATIC
-
-Degradations / Blur [radial]	-gimp_blur_radial	3,50,50,0,1,7,0	DEFAULT	NULL	STATIC
-
-Degradations / Chromatic aberrations	-gimp_chromatic_aberrations	255,0,0,2,2,0,255,0,0,0,0	DEFAULT	NULL	STATIC
-
-Degradations / CRT sub-pixels	-gimp_gcd_crt	1.8,1.8,0,0	DEFAULT	NULL	STATIC
-Degradations / CRT sub-pixels	-gimp_gcd_crt	1.8,1.8,0,1	CUSTOM	NULL	STATIC
-
-Degradations / Dirty	-gimp_dirty	30,1,0,0,0	DEFAULT	NULL	STATIC
-Degradations / Dirty	-gimp_dirty	30,0,0,0,0	CUSTOM	NULL	STATIC
-
-Degradations / Lomo	-gimp_lomo	20,0	DEFAULT	NULL	STATIC
-
-Degradations / Noise [additive]	-gimp_noise	10,0,0,1,0	DEFAULT	NULL	STATIC
-
-Degradations / Noise [spread]	-gimp_spread	4,4,0,0,0	DEFAULT	NULL	STATIC
-
-Degradations / Old-movie stripes	-gimp_stripes_y	10,0,0,0	DEFAULT	NULL	STATIC
-
-Degradations / Oldschool 8bits	-gimp_8bits	25,800,16,0	DEFAULT	NULL	STATIC
-
-Degradations / Rain & snow	-gimp_rain	65,10,50,0.1,1,1,0	DEFAULT	NULL	MERGE
-
-Degradations / Random shade stripes	-gimp_shade_stripes	30,1,0.8,1.3,0,0,0	DEFAULT	NULL	STATIC
-
-Degradations / Scanlines	-gimp_scanlines	60,2,0,0,0,0,0,0	DEFAULT	NULL	STATIC
-Degradations / Scanlines	-gimp_scanlines	60,2,1,0,0,0,0,0	CUSTOM	NULL	STATIC
-Degradations / Scanlines	-gimp_scanlines	60,2,2,0,0,0,0,0	CUSTOM	NULL	STATIC
-Degradations / Scanlines	-gimp_scanlines	60,2,3,0,0,0,0,0	CUSTOM	NULL	STATIC
-Degradations / Scanlines	-gimp_scanlines	60,2,4,0,0,0,0,0	CUSTOM	NULL	STATIC
-
-Degradations / Visible watermark	-gimp_watermark_visible	"\251 G'MIC",0.4,50,25,0.5,1	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Details
-##
-########################################################################
-
-Details / Dynamic range increase	-gimp_tk_dri	0,0,0,1,0.5,1,1,0	DEFAULT	NULL	STATIC
-
-Details / Freaky details	-gimp_freaky_details	2,10,1,11,0,32,0	DEFAULT	NULL	STATIC
-
-Details / High pass	-gimp_highpass	5,2,0,0,0	DEFAULT	NULL	STATIC
-
-Details / Local contrast enhancement	-gimp_LCE	80,0.5,1,1,3,0	DEFAULT	NULL	STATIC
-
-Details / Local normalization	-gimp_normalize_local	2,6,5,20,1,11,0	DEFAULT	NULL	STATIC
-
-Details / Local variance normalization	-jeje_normalize_local_variance	50,5,5,1,3,0	DEFAULT	NULL	STATIC
-
-Details / Make up	-make_up	15,4,0,0,0	DEFAULT	NULL	STATIC
-Details / Make up	-make_up	15,4,1,0,0	CUSTOM	NULL	STATIC
-
-Details / Mask creator	-gimp_tk_mask	0,0,0,255,0,1,0,0,1,0	DEFAULT	NULL	STATIC
-Details / Mask creator	-gimp_tk_mask	1,0,0,255,0,1,0,0,1,0	CUSTOM	NULL	STATIC
-Details / Mask creator	-gimp_tk_mask	2,0,0,255,0,1,0,0,1,0	CUSTOM	NULL	STATIC
-Details / Mask creator	-gimp_tk_mask	3,0,0,255,0,1,0,0,1,0	CUSTOM	NULL	STATIC
-
-Details / Mighty details	-gimp_mighty_details	25,1,25,1,11,0	DEFAULT	NULL	STATIC
-
-Details / Portrait retouching	-gimp_tk_portrait	0,100,1,5,20,3,20,10,0,0,1,2,25,2,250,180,150,255,0,0,1,1.5,10,1,0,0,1,1,0,0	DEFAULT	NULL	STATIC
-Details / Portrait retouching	-gimp_tk_portrait	1,100,1,5,20,3,20,10,0,0,1,2,25,2,250,180,150,255,0,0,1,1.5,10,1,0,0,1,1,0,0	CUSTOM	NULL	STATIC
-Details / Portrait retouching	-gimp_tk_portrait	2,100,1,5,20,3,20,10,0,0,1,2,25,2,250,180,150,255,0,0,1,1.5,10,1,0,0,1,1,0,0	CUSTOM	NULL	STATIC
-Details / Portrait retouching	-gimp_tk_portrait	3,100,1,5,20,3,20,10,0,0,1,2,25,2,250,180,150,255,0,0,1,1.5,10,1,0,0,1,1,0,0	CUSTOM	NULL	STATIC
-Details / Portrait retouching	-gimp_tk_portrait	4,100,1,5,20,3,20,10,0,0,1,2,25,2,250,180,150,255,0,0,1,1.5,10,1,0,0,1,1,0,0	CUSTOM	NULL	STATIC
-
-Details / Sharpen [deblur]	-gimp_deblur	2,10,20,0.1,1,11,0,24,0	DEFAULT	NULL	STATIC
-
-Details / Sharpen [gold-meinel]	-gimp_unsharp_goldmeinel	1,5,1,1,1,11,0,24,0	DEFAULT	NULL	STATIC
-
-Details / Sharpen [inverse diffusion]	-gimp_sharpen_inversediff	50,2,11,0,24,0	DEFAULT	NULL	STATIC
-
-Details / Sharpen [octave sharpening]	-gimp_unsharp_octave	4,5,3,0,0,0,24,0	DEFAULT	NULL	STATIC
-
-Details / Sharpen [richardson-lucy]	-gimp_unsharp_richardsonlucy	1,10,1,1,0	DEFAULT	NULL	STATIC
-
-Details / Sharpen [shock filters]	-gimp_sharpen_shock	150,0.1,0.8,1.1,1,0,0,24,0	DEFAULT	NULL	STATIC
-
-Details / Sharpen [unsharp mask]	-gimp_unsharp	0,1.25,30,3,0,1,1,1,0,0,0	DEFAULT	NULL	STATIC
-
-Details / Sharpen [whiten]	-jeje_whiten_frequency	50,0,0	DEFAULT	NULL	STATIC
-
-Details / Simple local contrast	-simplelocalcontrast_p	16,2,0,1,1,1,1,1,1,1,1,0	DEFAULT	NULL	STATIC
-
-Details / Split details [alpha]	-gimp_split_details_alpha	6,10,1,5,0	DEFAULT	-resize 50%,50%	APPEND
-
-Details / Split details [layers]	-gimp_split_details_layers	6,10,1,0	DEFAULT	-resize 50%,50%	APPEND
-
-Details / Spotify	-jeje_spotify	1,1,1,1,3,0	DEFAULT	NULL	STATIC
-
-Details / Texture enhance	-iain_texture_enhance_p	2,2,30,0,7,0,0	DEFAULT	NULL	STATIC
-
-Details / Tone mapping	-gimp_map_tones	0.5,0.7,0.1,30,0,0	DEFAULT	NULL	STATIC
-
-Details / Tone mapping [fast]	-gimp_map_tones_fast	3,0.5,11,0	DEFAULT	NULL	STATIC
-
-Details / Yag effect	-gimp_yag_soften	0,0,0	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Film emulation
-##
-########################################################################
-
-Film emulation / [collages] / B&W films - collage	-gimp_emulate_film_collage_bw	512,4,16,0	DEFAULT	NULL	STATIC
-
-Film emulation / [collages] / Instant - collage [consumer]	-gimp_emulate_film_collage_instant_consumer	512,4,16,0	DEFAULT	NULL	STATIC
-
-Film emulation / [collages] / Instant - collage [pro]	-gimp_emulate_film_collage_instant_pro	512,4,16,0	DEFAULT	NULL	STATIC
-
-Film emulation / [collages] / Negative - collage [color]	-gimp_emulate_film_collage_negative_color	512,4,16,0	DEFAULT	NULL	STATIC
-
-Film emulation / [collages] / Negative - collage [new]	-gimp_emulate_film_collage_negative_new	512,4,16,0	DEFAULT	NULL	STATIC
-
-Film emulation / [collages] / Negative - collage [old]	-gimp_emulate_film_collage_negative_old	512,4,16,0	DEFAULT	NULL	STATIC
-
-Film emulation / [collages] / Print films - collage	-gimp_emulate_film_collage_print	512,4,16,0	DEFAULT	NULL	STATIC
-
-Film emulation / [collages] / Slide - collage [color]	-gimp_emulate_film_collage_colorslide	512,4,16,0	DEFAULT	NULL	STATIC
-
-Film emulation / [collages] / Various - collage	-gimp_emulate_film_collage_various	512,4,16,0	DEFAULT	NULL	STATIC
-
-Film emulation / Add grain	-gimp_emulate_grain	0,1,0.2,100,0,0,1,0,0,0,0,0	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Frames
-##
-########################################################################
-
-Frames / Droste	-gimp_droste	20,20,80,20,80,80,20,80,1,0,0,0,1,0,1,0,0	DEFAULT	NULL	STATIC
-
-Frames / Frame [blur]	-gimp_frame_blur	30,30,0,5,0,0,128,128,128,0,5,255,255,255,2,2,1,0,0.5,0.5,0	DEFAULT	NULL	STATIC
-
-Frames / Frame [cube]	-frame_cube	3,0,0,0,0,0,0	DEFAULT	NULL	STATIC
-
-Frames / Frame [fuzzy]	-gimp_frame_fuzzy	5,5,10,1,255,255,255,255	DEFAULT	NULL	STATIC
-
-Frames / Frame [painting]	-gimp_frame_painting	10,0.4,6,225,200,120,2,400,50,10,1,0.5,123456,0	DEFAULT	NULL	STATIC
-
-Frames / Frame [pattern]	-gimp_frame_pattern	10,1,1,1	DEFAULT	NULL	STATIC
-
-Frames / Frame [regular]	-gimp_frame	0,100,0,100,10,10,0,0,0,255,1,255,255,255,255	DEFAULT	NULL	STATIC
-
-Frames / Frame [round]	-gimp_frame_round	6,20,0.1,0,255,255,255,255,0,0.1,3	DEFAULT	NULL	STATIC
-
-Frames / Old photograph	-gimp_old_photo	200,50,85	DEFAULT	NULL	STATIC
-
-Frames / Polaroid	-gimp_polaroid	10,20,0,0,3,20,50,70,95	DEFAULT	NULL	STATIC
-
-Frames / Tunnel	-gimp_tunnel	4,80,0.5,0.5,0.2,0	DEFAULT	NULL	STATIC
-
-Frames / Vignette	-gimp_vignette	70,70,95,0,0,0,255	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Frequencies
-##
-########################################################################
-
-Fequencies / Bandpass	-gimp_bandpass	0.1,100,0,2,0	CUSTOM	NULL	STATIC
-Fequencies / Bandpass	-gimp_bandpass	1,100,0,2,0	CUSTOM	NULL	STATIC
-
-Fequencies / Fourier analysis	-gimp_display_fft	NULL	DEFAULT	NULL	APPEND
-
-Fequencies / Fourier transform	-gimp_fourier	0,1	DEFAULT	NULL	STATIC
-
-Fequencies / Fourier watermark	-gimp_watermark_fourier	"(c) G'MIC",53	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Layers
-##
-########################################################################
-
-Layers / Stroke	-gimp_stroke	3,50,0,2,1,100,0,0,255,255,255,255,255,255,255,255,0,0,0,0,0,0,0,0,1,0	DEFAULT	NULL	MERGE
-
-Layers / Tiles to layers	-split_tiles	3,3,0	DEFAULT	NULL	MERGE
-
-Layers / Tones to layers	-gimp_tones2layers	3,85,170,0.5,0	DEFAULT	NULL	MERGE
-
-########################################################################
-##
-## Lights & shadows
-##
-########################################################################
-
-Lights & shadows / Burn	-gimp_burn	0.5,30,1,0,0,0	DEFAULT	NULL	STATIC
-
-Lights & shadows / Contrast swiss mask	-gimp_contrast_swm	2,0,1	DEFAULT	NULL	STATIC
-
-Lights & shadows / Dodge and burn	-gimp_dodgeburn	15,1.5,25,10,40,1.5,25,10,0,0,10,0	DEFAULT	NULL	STATIC
-
-Lights & shadows / Drop shadow	-gimp_drop_shadow	3,3,1.8,0,0,0	DEFAULT	NULL	STATIC
-
-Lights & shadows / Drop shadow 3d	-gimp_drop_shadow3d	0,0,0,0,1,1,2,0.5,0,0,0,200,0	DEFAULT	NULL	MERGE
-
-Lights & shadows / Equalize shadow	-gimp_equalize_shadow	1,0	DEFAULT	NULL	STATIC
-
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,8,0.8,0,0	DEFAULT	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,0,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,1,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,2,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,3,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,4,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,5,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,6,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,7,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,9,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,10,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,11,0.8,0,0	CUSTOM	NULL	STATIC
-Lights & shadows / Light glow	-gimp_lightglow	30,0.5,12,0.8,0,0	CUSTOM	NULL	STATIC
-
-Lights & shadows / Light leaks	-gimp_light_leaks	0,0,1,1,0,0.85,2,1,0	DEFAULT	NULL	MERGE
-Lights & shadows / Light leaks	-gimp_light_leaks	0,0,1,1,0,0.85,3,1,0	CUSTOM	NULL	MERGE
-Lights & shadows / Light leaks	-gimp_light_leaks	0,0,1,1,0,0.85,5,1,0	CUSTOM	NULL	MERGE
-Lights & shadows / Light leaks	-gimp_light_leaks	0,0,1,1,0,0.85,7,1,0	CUSTOM	NULL	MERGE
-Lights & shadows / Light leaks	-gimp_light_leaks	0,0,1,1,0,0.85,15,1,0	CUSTOM	NULL	MERGE
-Lights & shadows / Light leaks	-gimp_light_leaks	0,0,1,1,0,0.85,16,1,0	CUSTOM	NULL	MERGE
-Lights & shadows / Light leaks	-gimp_light_leaks	0,0,1,1,0,0.85,17,1,0	CUSTOM	NULL	MERGE
-Lights & shadows / Light leaks	-gimp_light_leaks	0,0,1,1,0,0.85,18,1,0	CUSTOM	NULL	MERGE
-
-Lights & shadows / Light patch	-gimp_light_patch	5,0.7,2.5,0	DEFAULT	NULL	STATIC
-
-Lights & shadows / Light rays	-gimp_lightrays	80,50,50,1,0.5,0	DEFAULT	NULL	STATIC
-
-Lights & shadows / Relief light	-gimp_light_relief	0.3,0.2,0.2,0,1,0.5,0.5,5,0.5,0,0	DEFAULT	NULL	STATIC
-Lights & shadows / Relief light	-gimp_light_relief	0.3,0.2,0.2,0,1,0.5,0.5,5,0.5,1,0	CUSTOM	NULL	STATIC
-
-Lights & shadows / Shadow patch	-gimp_shadow_patch	0.7,0	DEFAULT	NULL	STATIC
-
-Lights & shadows / Slice luminosity	-gimp_slice_luminosity	1,1,2,1,0,64,0,0,1,64,128,0,0,0,128,192,0,0,0,192,255,0,0	DEFAULT	NULL	MERGE
-
-########################################################################
-##
-## Patterns
-##
-########################################################################
-
-Patterns / Bayer filter	-rgb2bayer	0,1	DEFAULT	NULL	STATIC
-
-Patterns / Box fitting	-gimp_boxfitting	3,0,0.1,0	DEFAULT	NULL	STATIC
-
-Patterns / Canvas	-gimp_canvas	70,45,400,1,70,135,400,0	DEFAULT	NULL	STATIC
-Patterns / Canvas	-gimp_canvas	70,45,400,0,70,135,400,0	CUSTOM	NULL	STATIC
-
-Patterns / Canvas texture	-texturize_canvas	20,3,0.6	DEFAULT	NULL	STATIC
-
-Patterns / Clouds	-jeje_clouds	50,0.5	DEFAULT	NULL	STATIC
-
-Patterns / Cracks	-gimp_cracks	1,-80,1,0,0	DEFAULT	NULL	STATIC
-Patterns / Cracks	-gimp_cracks	1,-80,0,0,0	CUSTOM	NULL	STATIC
-
-Patterns / Crystal	-gimp_crystal	50,0.2,20,0	DEFAULT	NULL	STATIC
-
-Patterns / Denim	-Denim_samj_en	5,2,0,40,40,25,50,0,43,108,126,255	DEFAULT	NULL	STATIC
-
-Patterns / Fibers	-jeje_fibers	10,50,10,0	DEFAULT	NULL	STATIC
-
-Patterns / Halftone	-gimp_halftone	0,1,0,0,5,8,8,5,0.1,0	DEFAULT	NULL	STATIC
-
-Patterns / Halftone shapes	-iain_halftone_shapes	100,0,0,0,0,0	DEFAULT	NULL	STATIC
-Patterns / Halftone shapes	-iain_halftone_shapes	100,0,1,0,0,0	CUSTOM	NULL	STATIC
-Patterns / Halftone shapes	-iain_halftone_shapes	100,0,2,0,0,0	CUSTOM	NULL	STATIC
-Patterns / Halftone shapes	-iain_halftone_shapes	100,0,3,0,0,0	CUSTOM	NULL	STATIC
-
-Patterns / Hearts	-gimp_hearts	10,0,0	DEFAULT	NULL	STATIC
-
-Patterns / Lava	-gimp_lava	8,5,3,0,0	DEFAULT	NULL	STATIC
-
-Patterns / Marble	-gimp_marble	0.5,1,0,0,0.4,0.6,0.6,1.1,0,100	DEFAULT	NULL	STATIC
-
-Patterns / Maze	-gimp_maze	24,1,0,1,0	DEFAULT	NULL	STATIC
-
-Patterns / Mineral mosaic	-gimp_mineral_mosaic	1,2,1,100,0	DEFAULT	NULL	STATIC
-
-Patterns / Mosaic	-gimp_mosaic	1,1,0,0	DEFAULT	NULL	STATIC
-Patterns / Mosaic	-gimp_mosaic	1,0,0,0	CUSTOM	NULL	STATIC
-
-Patterns / Op art	-gimp_shapes	1,16,10,2,5,90,0,0,1,1,0	DEFAULT	NULL	STATIC
-Patterns / Op art	-gimp_shapes	2,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	3,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	4,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	5,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	6,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	7,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	8,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	9,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	10,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	11,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	12,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	13,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	14,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	15,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	16,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	17,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-Patterns / Op art	-gimp_shapes	18,16,10,2,5,90,0,0,1,1,0	CUSTOM	NULL	STATIC
-
-Patterns / Pack sprites	-gimp_pack_sprites	5,25,3,1,7,0,512,512	DEFAULT	NULL	STATIC
-
-Patterns / Paper texture	-gimp_paper	0,0	DEFAULT	NULL	STATIC
-
-Patterns / Periodic dots	-jeje_periodic_dots	15,4,0,1,0	CUSTOM	NULL	STATIC
-Patterns / Periodic dots	-jeje_periodic_dots	15,4,0,1,1	CUSTOM	NULL	STATIC
-Patterns / Periodic dots	-jeje_periodic_dots	15,4,0,1,2	CUSTOM	NULL	STATIC
-Patterns / Periodic dots	-jeje_periodic_dots	15,4,0,1,3	CUSTOM	NULL	STATIC
-Patterns / Periodic dots	-jeje_periodic_dots	15,4,0,1,4	CUSTOM	NULL	STATIC
-Patterns / Periodic dots	-jeje_periodic_dots	15,4,0,1,5	CUSTOM	NULL	STATIC
-Patterns / Periodic dots	-jeje_periodic_dots	15,4,0,1,6	CUSTOM	NULL	STATIC
-Patterns / Periodic dots	-jeje_periodic_dots	15,4,0,1,7	CUSTOM	NULL	STATIC
-Patterns / Periodic dots	-jeje_periodic_dots	15,4,0,1,8	CUSTOM	NULL	STATIC
-
-Patterns / Plaid	-gimp_plaid_texture	50,2,0,90,1,300	DEFAULT	NULL	STATIC
-
-Patterns / Plasma	-gimp_plasma	0.5,0,8,0,0,128,128,128	DEFAULT	NULL	STATIC
-
-Patterns / Polka dots	-gimp_polka_dots	80,20,50,50,0,0.5,0.1,1,255,0,0,255	DEFAULT	NULL	STATIC
-
-Patterns / Random color ellipses	-gimp_color_ellipses	400,8,0.1	DEFAULT	NULL	STATIC
-
-Patterns / Rays	-jeje_rays	50,50,10,0,0.5,255,0,0,255,255,0,0	DEFAULT	NULL	STATIC
-
-Patterns / Resynthetize texture	-syntexturize	1024,1024,0	DEFAULT	NULL	STATIC
-
-Patterns / Rorschach	-gimp_rorschach	3,1,2	DEFAULT	NULL	STATIC
-
-Patterns / Seamless deco	-gimp_mad_rorscharchp	3,0,50,1,300,0,0,0,0	DEFAULT	NULL	STATIC
-
-Patterns / Seamless turbulence	-gimp_seamless_turbulence	15,20,0,1,3,0	DEFAULT	NULL	STATIC
-
-Patterns / Shock waves	-gimp_shockwaves	10,10,20,0,0	DEFAULT	NULL	STATIC
-
-Patterns / Simple noise canvas	-gimp_SimpleNoiseCanvas	0,3,2,5,5,0,255,0,2,0,0,0,1,0,255,255,255,255,0	DEFAULT	NULL	STATIC
-
-Patterns / Sponge	-gimp_sponge	13,0,0	DEFAULT	NULL	STATIC
-
-Patterns / Stained glass	-gimp_stained_glass	20,0.1,1,1,1,0,1,0,0	DEFAULT	NULL	STATIC
-
-Patterns / Stars	-gimp_stars	10,0,32,5,0.38,0,255,255,100,200	DEFAULT	NULL	STATIC
-
-Patterns / Stencil	-gimp_stencil	3,0,8,0,2,0,0	DEFAULT	NULL	STATIC
-
-Patterns / Strip	-jeje_strip	45,50,0,1,0	DEFAULT	NULL	STATIC
-
-Patterns / Tetris	-gimp_tetris	10	DEFAULT	NULL	STATIC
-
-Patterns / Truchet	-gimp_truchet	32,5,1,1,0	DEFAULT	NULL	STATIC
-Patterns / Truchet	-gimp_truchet	32,5,1,0,0	CUSTOM	NULL	STATIC
-
-Patterns / Turbulence	-gimp_turbulence	128,6,4,0,0	DEFAULT	NULL	STATIC
-Patterns / Turbulence	-gimp_turbulence	128,6,4,0,1	CUSTOM	NULL	STATIC
-Patterns / Turbulence	-gimp_turbulence	128,6,4,0,2	CUSTOM	NULL	STATIC
-Patterns / Turbulence	-gimp_turbulence	128,6,4,0,3	CUSTOM	NULL	STATIC
-Patterns / Turbulence	-gimp_turbulence	128,6,4,0,4	CUSTOM	NULL	STATIC
-Patterns / Turbulence	-gimp_turbulence	128,6,4,0,5	CUSTOM	NULL	STATIC
-
-#Patterns / Turing	-jeje_turing_pattern	1,2000,0.1,0.899,-0.91,2,0.1,0.25	DEFAULT	NULL	STATIC
-
-Patterns / Weave	-weave	6,65,0,0.5,0,0,0,0,0	DEFAULT	NULL	STATIC
-
-Patterns / Whirls	-gimp_whirls	7,2,0.2,1.8,11,0	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Rendering
-##
-########################################################################
-
-Rendering / 3d blocks	-gimp_blocks3d	32,0,4,1.5,30,60,45,50,50,0,-50,-100,0.5,0.7,1,1,0,0,0,128	DEFAULT	NULL	STATIC
-
-Rendering / 3d colored object	-gimp_coloredobject3d	1,128,128,128,255,0.5,0.5,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	DEFAULT	NULL	STATIC
-Rendering / 3d colored object	-gimp_coloredobject3d	0,128,128,128,255,0.5,0.5,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d colored object	-gimp_coloredobject3d	2,128,128,128,255,0.5,0.5,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d colored object	-gimp_coloredobject3d	3,128,128,128,255,0.5,0.5,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d colored object	-gimp_coloredobject3d	4,128,128,128,255,0.5,0.5,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d colored object	-gimp_coloredobject3d	5,128,128,128,255,0.5,0.5,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d colored object	-gimp_coloredobject3d	6,128,128,128,255,0.5,0.5,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d colored object	-gimp_coloredobject3d	7,128,128,128,255,0.5,0.5,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-
-Rendering / 3d elevation	-gimp_elevation3d	100,1,1024,1024,0.8,25,0,21,45,0,0,-100,0.5,0.7,2,1	DEFAULT	NULL	STATIC
-
-Rendering / 3d extrusion	-gimp_extrude3d	10,512,0.6,1024,1024,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	DEFAULT	NULL	STATIC
-
-Rendering / 3d image object	-gimp_imageobject3d	1,1024,1024,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	DEFAULT	NULL	STATIC
-Rendering / 3d image object	-gimp_imageobject3d	0,1024,1024,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d image object	-gimp_imageobject3d	2,1024,1024,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d image object	-gimp_imageobject3d	3,1024,1024,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d image object	-gimp_imageobject3d	4,1024,1024,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d image object	-gimp_imageobject3d	5,1024,1024,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d image object	-gimp_imageobject3d	6,1024,1024,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d image object	-gimp_imageobject3d	7,1024,1024,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-Rendering / 3d image object	-gimp_imageobject3d	8,1024,1024,0.5,57,41,21,45,0,0,-100,0.5,0.7,4,1	CUSTOM	NULL	STATIC
-
-Rendering / 3d lathing	-gimp_lathing3d	76,2,361,1024,1024,0.5,0,0,0,45,0,0,-100,0.5,0.7,4,1	DEFAULT	NULL	STATIC
-
-Rendering / 3d random objects	-gimp_random3d	0,50,3,100,45,0,0,-100,0.5,0.7,3,1	DEFAULT	NULL	STATIC
-Rendering / 3d random objects	-gimp_random3d	1,50,3,100,45,0,0,-100,0.5,0.7,3,1	CUSTOM	NULL	STATIC
-Rendering / 3d random objects	-gimp_random3d	2,50,3,100,45,0,0,-100,0.5,0.7,3,1	CUSTOM	NULL	STATIC
-Rendering / 3d random objects	-gimp_random3d	3,50,3,100,45,0,0,-100,0.5,0.7,3,1	CUSTOM	NULL	STATIC
-Rendering / 3d random objects	-gimp_random3d	4,50,3,100,45,0,0,-100,0.5,0.7,3,1	CUSTOM	NULL	STATIC
-
-Rendering / Adjacent annular steiner chains	-samj_Adjacent_Annular_Steiner_Chains_en	50,50,0,0,6,56,20,50,0,255,0,221,127,72,0,255,127,0,145,255,127,0,255,144,127,72,255,0,127,255,217,0,127,255,0,0,127,5,0,0,2,0,0,0,255,0,0,0	DEFAULT	NULL	STATIC
-
-Rendering / Annular steiner chains	-samj_en_Annular_Steiner_Chains	50,50,50,6,0,0,0,0,255,1,255,255,0,127,64,192,128,127,0,255,0,127,0,0,255,127,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Rendering / Ball	-gimp_ball	128,0.8,1,1.5,255,0,255	DEFAULT	NULL	MERGE
-
-Rendering / Circle art	-gimp_circle_art	1,15,0.5,8,1,1,15,0,0,0.5,1,1,1,1	DEFAULT	NULL	STATIC
-Rendering / Circle art	-gimp_circle_art	0,15,0.5,8,1,1,15,0,0,0.5,1,1,1,1	CUSTOM	NULL	STATIC
-
-Rendering / Cupid	-gimp_cupid	0,255,0,0,255	DEFAULT	NULL	STATIC
-
-Rendering / Equation plot [parametric]	-gimp_equation_parametric	"sin(t)*(exp(cos(t))-2*cos(4*t)-sin(t/12)^5)","cos(t)*(exp(cos(t))-2*cos(4*t)-sin(t/12)^5)",0,100,4096,1,0,64,0,0,128,0,0,1,1,1	DEFAULT	NULL	STATIC
-
-Rendering / Equation plot [y=f(x)]	-gimp_equation_plot	"X*c+10*cos(X+c+?)",-10,10,100,3,2,0	DEFAULT	NULL	STATIC
-
-Rendering / Gradient [corners]	-gimp_corner_gradient	255,255,255,128,255,0,0,255,0,255,0,255,0,0,255,255,1	DEFAULT	NULL	STATIC
-
-Rendering / Gradient [custom shape]	-gimp_custom_gradient	0,0,0,1,4,1,0,128,100,100,2,0,1,0,"",1,0,0,0,0,255,255,0,0,255,255,255,0,255,255,255,255,255,0,255,255,255,0,255,0,255,0,0,255,255,128,128,128,255,255,0,255,255,0,0,0,0	DEFAULT	NULL	STATIC
-Rendering / Gradient [custom shape]	-gimp_custom_gradient	0,0,0,1,4,1,0,128,100,100,0,0,1,0,"",1,0,0,0,0,255,255,0,0,255,255,255,0,255,255,255,255,255,0,255,255,255,0,255,0,255,0,0,255,255,128,128,128,255,255,0,255,255,0,0,0,0	CUSTOM	NULL	STATIC
-Rendering / Gradient [custom shape]	-gimp_custom_gradient	0,0,0,1,4,1,0,128,100,100,1,0,1,0,"",1,0,0,0,0,255,255,0,0,255,255,255,0,255,255,255,255,255,0,255,255,255,0,255,0,255,0,0,255,255,128,128,128,255,255,0,255,255,0,0,0,0	CUSTOM	NULL	STATIC
-
-Rendering / Gradient [from line]	-gimp_line_gradient	0,0,100,100,100,0,0,0,1,""	DEFAULT	NULL	STATIC
-
-Rendering / Gradient [linear]	-gimp_linear_gradient	0,0,0,255,255,255,255,255,0,45,0,100,0	DEFAULT	NULL	STATIC
-
-Rendering / Gradient [radial]	-gimp_radial_gradient	0,0,0,255,255,255,255,255,0,0,100,50,50,0	DEFAULT	NULL	STATIC
-
-Rendering / Gradient cie Lab [linear]	-samj_en_Linear_Gradient_CIE_Lab	0,0,240,40,160,255,240,240,40,255	DEFAULT	NULL	STATIC
-
-Rendering / Gradient cie Lab [shape]	-samj_en_Shape_Linear_Gradient_CIE_Lab	10,10,90,90,2,0,240,40,160,255,240,240,40,255,0,0,0,0,255,0	DEFAULT	NULL	STATIC
-
-Rendering / Hair locks	-gtutor_hairlock	0.5,0.5,0.5,255,255,0,255,0.5,45,0.5,0.5,0	DEFAULT	NULL	STATIC
-
-Rendering / Harmonograph	-Harmonograph_samj_en	50,50,192,128,64,255,0,0,1000,0,400,150,200,200,100,4,6,2,2,15,270,75,60,0.04,0.04,0.05,0.06,0,0,0,1,1	DEFAULT	NULL	STATIC
-
-Rendering / Heart	-gimp_heart	75,0,255,0,0,255	DEFAULT	NULL	MERGE
-
-Rendering / Lightning	-gimp_lightning	20,90,256,3,1.5,0.75,255,255,255,255,0,50,5,0,6,0.2,25,60,95,100,30,40,-0.25,-0.1,-0.2	DEFAULT	NULL	MERGE
-Rendering / Lissajous	-gimp_lissajous	4096,0.9,0.9,3,8,7,0,0,0,0,0,0,0,0,255,255,255,255	DEFAULT	NULL	STATIC
-
-Rendering / Mandelbrot-julia sets	-gimp_mandelbrot	0,0,0,128,0,"0.317","0.03",0,0,255,0,255,0,255,0,0,255,0,255	DEFAULT	NULL	STATIC
-Rendering / Mandelbrot-julia sets	-gimp_mandelbrot	0,0,0,128,1,"0.317","0.03",0,0,255,0,255,0,255,0,0,255,0,255	CUSTOM	NULL	STATIC
-
-Rendering / Neon lightning	-gimp_neon_lightning	50,50,0,50,50,100,50,0.7,3,130,80,50,0.25,0	DEFAULT	NULL	STATIC
-
-Rendering / Quick copyright	-gimp_quick_copyright	"\251 G'MIC",27,255,255,255,128,1,3,5,1	DEFAULT	NULL	STATIC
-
-Rendering / Rainbow	-gimp_rainbow	80,80,175,175,3,80	DEFAULT	NULL	STATIC
-
-Rendering / Rotating circles	-samj_en_Cercles_Qui_Tournent	800,255,255,255,255,0,1,0.5,0.33,7,17,1,0.5,0.33,7,17,1,10,0,0,0,255,0,0,0,0,0,0,0,0.5,0.5,1.8,0	DEFAULT	NULL	STATIC
-Rendering / Rotating circles	-samj_en_Cercles_Qui_Tournent	800,255,255,255,255,1,1,0.5,0.33,7,17,1,0.5,0.33,7,17,1,10,0,0,0,255,0,0,0,0,0,0,0,0.5,0.5,1.8,0	CUSTOM	NULL	STATIC
-Rendering / Rotating circles	-samj_en_Cercles_Qui_Tournent	800,255,255,255,255,2,1,0.5,0.33,7,17,1,0.5,0.33,7,17,1,10,0,0,0,255,0,0,0,0,0,0,0,0.5,0.5,1.8,0	CUSTOM	NULL	STATIC
-Rendering / Rotating circles	-samj_en_Cercles_Qui_Tournent	800,255,255,255,255,3,1,0.5,0.33,7,17,1,0.5,0.33,7,17,1,10,0,0,0,255,0,0,0,0,0,0,0,0.5,0.5,1.8,0	CUSTOM	NULL	STATIC
-Rendering / Rotating circles	-samj_en_Cercles_Qui_Tournent	800,255,255,255,255,4,1,0.5,0.33,7,17,1,0.5,0.33,7,17,1,10,0,0,0,255,0,0,0,0,0,0,0,0.5,0.5,1.8,0	CUSTOM	NULL	STATIC
-Rendering / Rotating circles	-samj_en_Cercles_Qui_Tournent	800,255,255,255,255,5,1,0.5,0.33,7,17,1,0.5,0.33,7,17,1,10,0,0,0,255,0,0,0,0,0,0,0,0.5,0.5,1.8,0	CUSTOM	NULL	STATIC
-Rendering / Rotating circles	-samj_en_Cercles_Qui_Tournent	800,255,255,255,255,6,1,0.5,0.33,7,17,1,0.5,0.33,7,17,1,10,0,0,0,255,0,0,0,0,0,0,0,0.5,0.5,1.8,0	CUSTOM	NULL	STATIC
-
-Rendering / Shade bobs	-gimp_shadebobs	50,5,200,1,-1,2,1,0.8,0,8	DEFAULT	NULL	STATIC
-Rendering / Shade bobs	-gimp_shadebobs	50,5,200,1,-1,2,1,0.8,0,0	CUSTOM	NULL	STATIC
-Rendering / Shade bobs	-gimp_shadebobs	50,5,200,1,-1,2,1,0.8,0,1	CUSTOM	NULL	STATIC
-Rendering / Shade bobs	-gimp_shadebobs	50,5,200,1,-1,2,1,0.8,0,2	CUSTOM	NULL	STATIC
-Rendering / Shade bobs	-gimp_shadebobs	50,5,200,1,-1,2,1,0.8,0,3	CUSTOM	NULL	STATIC
-Rendering / Shade bobs	-gimp_shadebobs	50,5,200,1,-1,2,1,0.8,0,4	CUSTOM	NULL	STATIC
-Rendering / Shade bobs	-gimp_shadebobs	50,5,200,1,-1,2,1,0.8,0,5	CUSTOM	NULL	STATIC
-Rendering / Shade bobs	-gimp_shadebobs	50,5,200,1,-1,2,1,0.8,0,6	CUSTOM	NULL	STATIC
-Rendering / Shade bobs	-gimp_shadebobs	50,5,200,1,-1,2,1,0.8,0,7	CUSTOM	NULL	STATIC
-
-Rendering / Sierpinski triangle	-gimp_sierpinski	6,50,0,0,100,100,100,128,128,128,1	DEFAULT	NULL	STATIC
-
-Rendering / Simple geometric shapes	-samj_en_Formes_Geometriques_Simples	50,50,127,127,127,127,255,255,0,255,0,0,255,255,5,40,40,4,0,0,1	DEFAULT	NULL	STATIC
-Rendering / Simple geometric shapes	-samj_en_Formes_Geometriques_Simples	50,50,127,127,127,127,255,255,0,255,0,0,255,255,0,40,40,4,0,0,1	CUSTOM	NULL	STATIC
-Rendering / Simple geometric shapes	-samj_en_Formes_Geometriques_Simples	50,50,127,127,127,127,255,255,0,255,0,0,255,255,1,40,40,4,0,0,1	CUSTOM	NULL	STATIC
-Rendering / Simple geometric shapes	-samj_en_Formes_Geometriques_Simples	50,50,127,127,127,127,255,255,0,255,0,0,255,255,2,40,40,4,0,0,1	CUSTOM	NULL	STATIC
-Rendering / Simple geometric shapes	-samj_en_Formes_Geometriques_Simples	50,50,127,127,127,127,255,255,0,255,0,0,255,255,3,40,40,4,0,0,1	CUSTOM	NULL	STATIC
-Rendering / Simple geometric shapes	-samj_en_Formes_Geometriques_Simples	50,50,127,127,127,127,255,255,0,255,0,0,255,255,4,40,40,4,0,0,1	CUSTOM	NULL	STATIC
-Rendering / Simple geometric shapes	-samj_en_Formes_Geometriques_Simples	50,50,127,127,127,127,255,255,0,255,0,0,255,255,6,40,40,4,0,0,1	CUSTOM	NULL	STATIC
-
-Rendering / Snowflake	-gimp_snowflake	3,20,70,80,70,50,10,1,128,128,128	DEFAULT	NULL	STATIC
-
-Rendering / Snowflake 2	-samj_en_Flocon_De_Neige	50,50,6,50,40,0,3,192,192,192,1,0,3,255,255,255,0.7,0,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Rendering / Spirograph	-Spirographe_samj_en	50,50,200,50,150,192,128,64,255,0,0,3,0,1,0,0,0,255,0,0,255,0,255,255,0,255,0,0,0,1,1	DEFAULT	NULL	STATIC
-
-Rendering / Superformula	-gimp_superformula	4096,0.9,0.9,8,1,5,8,0,0,0,3,128,255,128,255	DEFAULT	NULL	STATIC
-
-Rendering / Twisted rays	-Twisted_Rays_en	800,1,0.2,2,5,21,0,0,0,0,255,255,0,255,255,255,0,255,0,255,255,255,0,255,255,0,0,255,255,0,255,255,255,255,255,255,0,0,0,0,255,0,2,2,200,0,5,0,0	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Repair
-##
-########################################################################
-
-Repair / Banding denoise	-banding_denoise	5,5,5,10,0	DEFAULT	NULL	STATIC
-
-Repair / Bayer reconstruction	-bayer2rgb	6,6,4	DEFAULT	NULL	STATIC
-
-Repair / Deinterlace	-gimp_deinterlace	0,0	DEFAULT	NULL	STATIC
-
-Repair / Despeckle	-gcd_despeckle	20,10	DEFAULT	NULL	STATIC
-
-Repair / Iain's fast denoise	-iain_fast_denoise_p	0,0,1,0,0,0,1	DEFAULT	NULL	STATIC
-
-Repair / Iain's noise reduction	-iain_iains_nr	3,3,1,0,0,0,1,0,0,0,1.35,0,0	DEFAULT	NULL	STATIC
-
-Repair / Inpaint [holes]	-gimp_inpaint_holes	4,20,1	DEFAULT	NULL	STATIC
-
-Repair / Local similarity mask	-local_similarity_mask	50,50,50,128,4,1	DEFAULT	NULL	STATIC
-
-Repair / Pixel denoise	-iain_pixel_denoise_p	2,1,7,0,1	DEFAULT	NULL	STATIC
-
-Repair / Recursive median	-iain_recursive_median_p	3,1,0,0,1	DEFAULT	NULL	STATIC
-
-Repair / Red-eye attenuation	-red_eye	75,3.5,0.1	DEFAULT	NULL	STATIC
-
-Repair / Remove hot pixels	-gimp_remove_hotpixels	3,10,0	DEFAULT	NULL	STATIC
-
-Repair / Repair scanned document	-jeje_scandoc	3,10,90,5,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [anisotropic]	-gimp_anisotropic_smoothing	60,0.7,0.3,0.6,1.1,0.8,30,2,0,1,1,0,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [bilateral]	-gimp_bilateral	10,7,2,0,0,24,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [block pca]	-jeje_denoise_patch_dict	1,8,1.1,1.1,0,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [diffusion]	-gimp_diffusion_smoothing	0.7,0.3,0.6,1.1,15,8,0,0,24,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [guided]	-gimp_blur_guided	5,30,1,0,0,24,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [iuwt]	-jeje_denoise_iuwt	3,4,2,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [mean-curvature]	-gimp_meancurvature_smoothing	30,4,0,0,0,24,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [median]	-gimp_median	3,255,0,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [nlmeans]	-gimp_nlmeans	4,4,10,3,0,0,24,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [patch-based]	-gimp_patch_smoothing	10,10,3,5,0,1,1,0,0,24,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [perona-malik]	-gimp_peronamalik_smoothing	20,5,5,0,0,0,24,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [selective gaussian]	-gimp_selective_smoothing	5,0.5,5,1,0,0,24,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [skin]	-gimp_smooth_skin	2,0.5,1,1,1,50,50,5,2,0.2,3,1,0.05,5,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [thin brush]	-gimp_anisotropic_smoothing	60,0.9,0.64,3.1,1.1,0.8,30,2,0,1,1,0,0,24	DEFAULT	NULL	STATIC
-
-Repair / Smooth [total variation]	-gimp_tv_smoothing	30,10,0,0,0,24,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [wavelets]	-gimp_haar_smoothing	1,10,10,0,0,24,0	DEFAULT	NULL	STATIC
-
-Repair / Smooth [wiener]	-jeje_local_wiener	2,11,0,0	DEFAULT	NULL	STATIC
-
-#Repair / Unstrip	-jeje_unstrip	1,20,4,1,0,0	DEFAULT	NULL	STATIC
-
-Repair / Upscale [diffusion]	-gimp_upscale_smart	"200%","200%",2,0.4,50	DEFAULT	NULL	STATIC
-
-Repair / Upscale [scale2x]	-gimp_scalenx	0,0	DEFAULT	NULL	STATIC
-
-########################################################################
-##
-## Sequences
-##
-########################################################################
-
-Sequences / 3d elevation [animated]	-gimp_animate_elevation3d	10,1,0,"/tmp/gmic",100,1,512,512,2,0.8,35,0,0,45,0,0,-100,0.5,0.7,0.8,35,0,360,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-
-Sequences / 3d extrusion [animated]	-gimp_animate_extrude3d	10,1,0,"/tmp/gmic",10,512,0.6,512,512,4,0.8,35,0,0,45,0,0,-100,0.5,0.7,0.8,35,360,0,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-
-Sequences / 3d image object [animated]	-gimp_animate_imageobject3d	10,1,0,"/tmp/gmic",1,512,512,4,0.5,57,41,21,45,0,0,-100,0.5,0.7,0.5,57,401,21,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-Sequences / 3d image object [animated]	-gimp_animate_imageobject3d	10,1,0,"/tmp/gmic",0,512,512,4,0.5,57,41,21,45,0,0,-100,0.5,0.7,0.5,57,401,21,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-Sequences / 3d image object [animated]	-gimp_animate_imageobject3d	10,1,0,"/tmp/gmic",2,512,512,4,0.5,57,41,21,45,0,0,-100,0.5,0.7,0.5,57,401,21,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-Sequences / 3d image object [animated]	-gimp_animate_imageobject3d	10,1,0,"/tmp/gmic",3,512,512,4,0.5,57,41,21,45,0,0,-100,0.5,0.7,0.5,57,401,21,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-Sequences / 3d image object [animated]	-gimp_animate_imageobject3d	10,1,0,"/tmp/gmic",4,512,512,4,0.5,57,41,21,45,0,0,-100,0.5,0.7,0.5,57,401,21,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-Sequences / 3d image object [animated]	-gimp_animate_imageobject3d	10,1,0,"/tmp/gmic",5,512,512,4,0.5,57,41,21,45,0,0,-100,0.5,0.7,0.5,57,401,21,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-Sequences / 3d image object [animated]	-gimp_animate_imageobject3d	10,1,0,"/tmp/gmic",6,512,512,4,0.5,57,41,21,45,0,0,-100,0.5,0.7,0.5,57,401,21,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-Sequences / 3d image object [animated]	-gimp_animate_imageobject3d	10,1,0,"/tmp/gmic",7,512,512,4,0.5,57,41,21,45,0,0,-100,0.5,0.7,0.5,57,401,21,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-Sequences / 3d image object [animated]	-gimp_animate_imageobject3d	10,1,0,"/tmp/gmic",8,512,512,4,0.5,57,41,21,45,0,0,-100,0.5,0.7,0.5,57,401,21,45,0,0,-100,0.5,0.7	CUSTOM	-resize 50%,50%	ANIMATED
-
-Sequences / 3d text pointcloud	-gimp_text_pointcloud3d	16,"G'MIC","Rocks!",1,200,220,255,255,255,255,255,2,2,1,19	CUSTOM	-resize 25%,25%	ANIMATED
-
-Sequences / B&W pencil [animated]	-gimp_animate_pencilbw	10,1,0,"/tmp/gmic",2.3,100,0.3,60	DEFAULT	-resize 50%,50%	ANIMATED
-
-Sequences / B&W stencil [animated]	-gimp_animate_stencilbw	10,1,0,"/tmp/gmic",10,10,10,20	DEFAULT	NULL	ANIMATED
-
-Sequences / Cartoon [animated]	-gimp_animate_cartoon	10,1,0,"/tmp/gmic",4,0.5,200,10,0.1,1.5,2,200,10,0.1,1.5	DEFAULT	NULL	ANIMATED
-
-Sequences / Edges [animated]	-gimp_animate_edges	10,1,0,"/tmp/gmic",0,0,10,0,30	DEFAULT	NULL	ANIMATED
-
-Sequences / Edges on fire	-gimp_fire_edges	0.7,0.25,0.5,25,20,20,0,0	DEFAULT	-resize 50%,50%	ANIMATED
-
-Sequences / Lava lamp	-gimp_lavalampbw	3,30,1,20,2,0.01,0	DEFAULT	-resize 25%,25%	ANIMATED
-
-Sequences / Lissajous [animated]	-gimp_animate_lissajous	10,1,0,"/tmp/gmic",4096,0.9,0.9,3,8,7,0,1,0,0,0,0,0,0,255,255,255,255,4096,0.9,0.9,3,8,7,0,0,0,0,0,0,0,0,255,255,255,255	CUSTOM	-resize 50%,50%	ANIMATED
-
-Sequences / Morphological filter [animated]	-gimp_animate_morpho	10,1,0,"/tmp/gmic",0,0,0,5,50	DEFAULT	NULL	ANIMATED
-Sequences / Morphological filter [animated]	-gimp_animate_morpho	10,1,0,"/tmp/gmic",1,0,0,5,50	CUSTOM	NULL	ANIMATED
-Sequences / Morphological filter [animated]	-gimp_animate_morpho	10,1,0,"/tmp/gmic",2,0,0,5,50	CUSTOM	NULL	ANIMATED
-Sequences / Morphological filter [animated]	-gimp_animate_morpho	10,1,0,"/tmp/gmic",3,0,0,5,50	CUSTOM	NULL	ANIMATED
-Sequences / Morphological filter [animated]	-gimp_animate_morpho	10,1,0,"/tmp/gmic",4,0,0,5,50	CUSTOM	NULL	ANIMATED
-Sequences / Morphological filter [animated]	-gimp_animate_morpho	10,1,0,"/tmp/gmic",5,0,0,5,50	CUSTOM	NULL	ANIMATED
-Sequences / Morphological filter [animated]	-gimp_animate_morpho	10,1,0,"/tmp/gmic",6,0,0,5,50	CUSTOM	NULL	ANIMATED
-Sequences / Morphological filter [animated]	-gimp_animate_morpho	10,1,0,"/tmp/gmic",7,0,0,5,50	CUSTOM	NULL	ANIMATED
-
-Sequences / Rodilius [animated]	-gimp_animate_rodilius	10,1,0,"/tmp/gmic",1,10,10,300,5,0,10,10,300,5,180	DEFAULT	-resize 50%,50%	ANIMATED
-
-Sequences / Soft glow [animated]	-gimp_animate_glow	10,1,0,"/tmp/gmic",0,3	DEFAULT	-resize 50%,50%	ANIMATED
-
-########################################################################
-##
-## Stereoscopic 3d
-##
-########################################################################
-
-Stereoscopic 3d / 3d conversion	-gimp_tk_make3D	0,20,0,20,0,0,0,0,0,0,0,0,0,1.2,25,1,0,1,0,0,0,2,200	DEFAULT	NULL	STATIC
-
-Stereoscopic 3d / Automatic depth estimation	-gimp_tk_autodepth	NULL	DEFAULT	NULL	STATIC
-
-Stereoscopic 3d / Depth map construction	-gimp_tk_depthmap	0,20,0,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
-Stereoscopic 3d / Depth map construction	-gimp_tk_depthmap	1,20,0,0,0,0,0,0,0,0	CUSTOM	NULL	STATIC
-Stereoscopic 3d / Depth map construction	-gimp_tk_depthmap	19,20,0,0,0,0,0,0,0,0	CUSTOM	NULL	STATIC
-Stereoscopic 3d / Depth map construction	-gimp_tk_depthmap	20,20,0,0,0,0,0,0,0,0	CUSTOM	NULL	STATIC
-Stereoscopic 3d / Depth map construction	-gimp_tk_depthmap	21,20,0,0,0,0,0,0,0,0	CUSTOM	NULL	STATIC
-Stereoscopic 3d / Depth map construction	-gimp_tk_depthmap	22,20,0,0,0,0,0,0,0,0	CUSTOM	NULL	STATIC
-
-Stereoscopic 3d / Single image stereogram	-gimp_tk_stereogram	50,0.5,10,0,40,255,255,0,255,0,0,0,255,0,0,0,255,0.5,0	DEFAULT	NULL	STATIC
-
-Stereoscopic 3d / Stereo image	-gcd_stereo_img	0,0.5,1.2,1,0.25,2,4,1,0	DEFAULT	NULL	STATIC
-Stereoscopic 3d / Stereo image	-gcd_stereo_img	2,0.5,1.2,1,0.25,2,4,1,0	CUSTOM	NULL	STATIC
-
-########################################################################
-##
-## Testing
-##
-########################################################################
-
-####################################
-# Testing / Corvo
-####################################
-
-Testing / Corvo / Corvo's painting 5	-gimp_corvo_painting_5	35,10,10,0.5,50,0.3,50,2,5,1	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Garagecoder
-####################################
-
-Testing / Garagecoder / Anti alias	-gcd_anti_alias	60,0.3,50,0	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Compression blur	-gcd_comp_blur	2,3,1,100,1,0,0	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Depth blur	-gcd_depth_blur	0,15,0.25,2,4,0,1	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Emboss	-gcd_emboss	128	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Jpeg smooth	-gcd_jpeg_smooth	1,1,0,0	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Seam carve	-gcd_seamcarve	10	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Seam carve [fast]	-gcd_opt_seams	75	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Sharpen [gradient]	-gcd_sharpen_gradient	0.5,2,0	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Sharpen [tones]	-gcd_sharpen_tones	1,128,0	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Smart rotate	-gcd_srotate	45,50,50,1,1,6,0.6,0	CUSTOM	NULL	STATIC
-
-Testing / Garagecoder / Tone enhance	-gcd_tone_enhance	1,0,0,1,0,128,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Unquantize [jpeg smooth]	-gcd_unquantize	6,1,1,5,15	DEFAULT	NULL	STATIC
-
-Testing / Garagecoder / Xbr2x	-gcd_xbr2x	NULL	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Gentlemanbeggar
-####################################
-
-Testing / Gentlemanbeggar / 60's cinema	-gimp_gb_cfx	10,0,0,0,0,0	DEFAULT	NULL	STATIC
-Testing / Gentlemanbeggar / 60's cinema	-gimp_gb_cfx	10,1,0,0,0,0	CUSTOM	NULL	STATIC
-Testing / Gentlemanbeggar / 60's cinema	-gimp_gb_cfx	10,0,1,0,0,0	CUSTOM	NULL	STATIC
-Testing / Gentlemanbeggar / 60's cinema	-gimp_gb_cfx	10,0,0,1,0,0	CUSTOM	NULL	STATIC
-Testing / Gentlemanbeggar / 60's cinema	-gimp_gb_cfx	10,0,0,0,1,0	CUSTOM	NULL	STATIC
-
-Testing / Gentlemanbeggar / Lens blur	-gimp_gb_lb	10,7,0	DEFAULT	NULL	STATIC
-
-Testing / Gentlemanbeggar / Maxfield parrish	-gimp_gb_mp	2,0,0	DEFAULT	NULL	STATIC
-
-Testing / Gentlemanbeggar / Modern cinema	-gimp_gb_mcfx	0,0,0	DEFAULT	NULL	MERGE
-Testing / Gentlemanbeggar / Modern cinema	-gimp_gb_mcfx	1,0,0	CUSTOM	NULL	MERGE
-Testing / Gentlemanbeggar / Modern cinema	-gimp_gb_mcfx	2,0,0	CUSTOM	NULL	MERGE
-Testing / Gentlemanbeggar / Modern cinema	-gimp_gb_mcfx	3,0,0	CUSTOM	NULL	MERGE
-
-Testing / Gentlemanbeggar / Urban blight	-gimp_gb_ub	-1,0	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Gmic tutorials
-####################################
-
-Testing / Gmic tutorials / Hedcut (experimental)	-hedcut	0.5,0.5,0.5,0,0.5,0,1,0	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Iain fergusson
-####################################
-
-Testing / Iain fergusson / Automixer	-automixer	0,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Brown spot clean	-iain_brown_spot_clean	1,2	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Easy skin retouch	-iain_easy_skin_retouch	7,2,0.7,1,1,0.7,0.6,0.5,0.5,0.5,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Exfuse	-exfuse	1,0.6,0,0.5,1,5	DEFAULT	NULL	STATIC
-
-#Testing / Iain fergusson / Exfusion5	-exfusion5	0,0.2,0.2,1,0,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Fft tile	-fft_tile	500,128,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Fill holes	-fill_holes	11,21,5,0,0,1	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Grey descreen	-iain_descreen2	3,-10000,10	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Hearttone	-iain_hearttone	100,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Iain 2x	-iain_2x	NULL	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Iain demosaic	-iain_demosiac	0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Iain star burst	-iain_star_burst	254,50,5,45,2,0,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Iain unindex	-iain_unindex	30,20,1,50,50	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Iain weightmap	-iain_weightmap	1,40	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Luminance nr2	-luminance_nr_two	10,1,1,0.8,0.7,0.6,0.5,0.4,0.3,1200,64,0,0,0,0,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Moire removal	-iain_moire_removal	5,5,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Ms nlmeans c noise2	-ms_nlmeans_c_noise2_p	3,1,0,0,0,0,0,10,2,4,2,7,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Ms patch chroma	-ms_patch_c	5,1,1,5,4,3,2,1,1,1.3,0.375,0.5,0.125,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Multi scale patch smoothing	-ms_patch_smooth	10,5,3,5,0,1,1,7,5,4,3,2,1,1,1.3,0	DEFAULT	NULL	STATIC
-
-#Testing / Iain fergusson / Noise reduction 3	-nr3	1,1,0,0,0,0,1,0.75,1,0,0.75,1,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Noise reduction 5	-nr5	1.6,5,1,1,0.75,3,0,0.75,0.5,0,1,1,100,0,-100,0,1.3,0	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Skin mask	-iain_gimp_skin_mask_pr	55,200,0,0,0,1	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Smart demosaic	-iain_smartdemos	0,1.5,2	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Star tone	-star_tone	100	DEFAULT	NULL	STATIC
-
-Testing / Iain fergusson / Turbulent halftone	-iain_turbulent_halftone	15,20,0,1,512,0.75,0,0	DEFAULT	NULL	STATIC
-Testing / Iain fergusson / Turbulent halftone	-iain_turbulent_halftone	15,20,0,1,512,0.75,1,0	CUSTOM	NULL	STATIC
-Testing / Iain fergusson / Turbulent halftone	-iain_turbulent_halftone	15,20,0,1,512,0.75,2,0	CUSTOM	NULL	STATIC
-
-####################################
-# Testing / Jayprich
-####################################
-
-Testing / Jayprich / Jpr colourillusion	-jpr_colourillusion	2,25	DEFAULT	NULL	STATIC
-
-Testing / Jayprich / Jpr coltexindex	-jpr_coltexindex	5,55,55,45,45,1,1,0,0.05,0.5,0.95,0.5,1,2,0.7	DEFAULT	NULL	STATIC
-
-Testing / Jayprich / Jpr decimate	-jpr_decimate	0.375,2	DEFAULT	NULL	STATIC
-
-Testing / Jayprich / Jpr gradient smooth	-jpr_gradient_smooth	0,1.5	DEFAULT	NULL	STATIC
-
-Testing / Jayprich / Jpr line edges	-jpr_line_edges	2,2,4,1	DEFAULT	NULL	STATIC
-
-Testing / Jayprich / Jpr orientedthinning	-jpr_orientedthinning	5,15,1,0,0	DEFAULT	NULL	STATIC
-
-Testing / Jayprich / Jpr phasecongruence	-jpr_phasecongruence	45,1,50,1	DEFAULT	NULL	STATIC
-Testing / Jayprich / Jpr phasecongruence	-jpr_phasecongruence	45,1,50,0	CUSTOM	NULL	STATIC
-
-Testing / Jayprich / Jpr remove blocks1	-jpr_remove_blocks1	4,3,70	DEFAULT	NULL	STATIC
-
-Testing / Jayprich / Jpr shapes gradient	-jpr_shapes_gradient	4.5,0.25,0.01,7	DEFAULT	NULL	STATIC
-
-Testing / Jayprich / Jpr specularbumps	-jpr_specularbumps	270,1,13,0,80,0.1,0.1,0	DEFAULT	NULL	STATIC
-
-Testing / Jayprich / Jpr warpfromthreshold	-jpr_warpfromthreshold	170,2,10,2	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Lylejk
-####################################
-
-Testing / Lylejk / Lylejk's stencil	-gimp_lylejk_stencil	5,10,3,0	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Naggobot
-####################################
-
-Testing / Naggobot / Abstract flood	-gimp_AbstractFlood	1,10,7,2,0,10,5,3,255,255,255,255,0,300,10,90,0.7,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Naggobot / Composition analysis	-gimp_CompositionAnalysis	0	DEFAULT	NULL	STATIC
-Testing / Naggobot / Composition analysis	-gimp_CompositionAnalysis	1	CUSTOM	NULL	STATIC
-
-Testing / Naggobot / Dodge sketch	-gimp_dodgesketch	3,10,7,2,0,0	DEFAULT	NULL	STATIC
-
-Testing / Naggobot / Exposure fusion weight map	-gimp_ExposureWeightMap	0.3,0.3,0.2,0.3,1,0	DEFAULT	NULL	STATIC
-Testing / Naggobot / Exposure fusion weight map	-gimp_ExposureWeightMap	0.3,0.3,0.2,0.3,0,0	CUSTOM	NULL	STATIC
-
-Testing / Naggobot / Gmic structure tensors	-gimp_StructureTensors	0.1,0	DEFAULT	NULL	STATIC
-
-Testing / Naggobot / Luminance to alpha	-gimp_split_luminance	1,1,1,0,"-keep[-1]"	DEFAULT	NULL	MERGE
-
-Testing / Naggobot / Mapped smoothing	-gimp_MappedSmooth	0,0,0,300,1,0	DEFAULT	NULL	STATIC
-
-Testing / Naggobot / Night hdr image black noise correction	-gimp_fix_HDR_black	20,25,50,200,0,0	DEFAULT	NULL	STATIC
-
-Testing / Naggobot / Noise painting	-gimp_noisepainting	0,0,0,5,2.5,1.5,50,1,0	DEFAULT	NULL	STATIC
-
-Testing / Naggobot / Smooth sketch	-gimp_SmoothSketch	1,6,0.8,0.3,0.3,0,1000,0,50,10,2,0.6,0.55,1,0	DEFAULT	NULL	STATIC
-Testing / Naggobot / Smooth sketch	-gimp_SmoothSketch	0,6,0.8,0.3,0.3,0,1000,0,50,10,2,0.6,0.55,1,0	CUSTOM	NULL	STATIC
-
-Testing / Naggobot / Vector field rotation demo	-gimp_DemoVecRot	0	DEFAULT	NULL	STATIC
-
-Testing / Naggobot / Warp test	-gimp_WarpTest	0,0,0,1,0	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Okyl168
-####################################
-
-Testing / Okyl168 / Jobs colors	-gimp_jobs_colors	0,0,0	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Photocomix
-####################################
-
-Testing / Photocomix / B&W steampunk pencil	-gimp_steampen	0.95,14,2,2,0.9,0,1,0,0.5,0.75,0.48,0	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Boost screen	-gimp_compose_boostscreen	0.7,0,0.7	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Color doping	-gimp_compose_colordoping	1,0	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Color sketch	-gimp_colorsketchbw	300,50,1,0.1,20,1,0,20,2,0,1,0	DEFAULT	NULL	STATIC
-Testing / Photocomix / Color sketch	-gimp_colorsketchbw	300,50,1,0.1,20,1,0,20,2,2,1,0	CUSTOM	NULL	STATIC
-Testing / Photocomix / Color sketch	-gimp_colorsketchbw	300,50,1,0.1,20,1,0,20,2,3,1,0	CUSTOM	NULL	STATIC
-Testing / Photocomix / Color sketch	-gimp_colorsketchbw	300,50,1,0.1,20,1,0,20,2,5,1,0	CUSTOM	NULL	STATIC
-Testing / Photocomix / Color sketch	-gimp_colorsketchbw	300,50,1,0.1,20,1,0,20,2,6,1,0	CUSTOM	NULL	STATIC
-
-Testing / Photocomix / Color stamp	-gimp_colorstamp	1,50,1,20,2,0	DEFAULT	NULL	STATIC
-Testing / Photocomix / Color stamp	-gimp_colorstamp	0,50,1,20,2,0	CUSTOM	NULL	STATIC
-
-Testing / Photocomix / Comix colors	-gimp_compose_comix_color	1,0,1	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Dark edges	-gimp_compose_darkedges	1,0.5,0,0.7	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Dark screen	-gimp_compose_darkscreen	0.7,0,0.7	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Heavy screen	-gimp_compose_heavyscreen	0.6,0,0.7	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Metallic grain	-gimp_metalgrain	0.5,0,0	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Metallic stencils	-gimp_metallicstencils	0,0	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Phoenix steam-pencil	-gimp_phoenix	0.95,14,2,2,0.9,0,0,0,1,1,0	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Photocomix smoothing	-gimp_anisotropic_smoothing	60,0.16,0.63,0.6,2.35,0.8,30,2,0,1,1,0,1	DEFAULT	NULL	STATIC
-Testing / Photocomix / Psychedelic glasswork tiler	-gimp_psyglass	0,20,0.1,1,1,0,1,1,0,1,1,0,0,2,0,0,0	DEFAULT	NULL	STATIC
-Testing / Photocomix / Psychedelic glasswork tiler	-gimp_psyglass	1,20,0.1,1,1,0,1,1,0,1,1,0,0,2,0,0,0	CUSTOM	NULL	STATIC
-Testing / Photocomix / Psychedelic glasswork tiler	-gimp_psyglass	0,20,0.1,1,0,0,1,1,0,1,1,0,0,2,0,0,0	CUSTOM	NULL	STATIC
-Testing / Photocomix / Psychedelic glasswork tiler	-gimp_psyglass	0,20,0.1,1,1,0,1,1,0,0,1,0,0,2,0,0,0	CUSTOM	NULL	STATIC
-
-Testing / Photocomix / Scale down neat	-gimp_scaledown3	0,1,1,1,1600,1600,0,2.3,1,3,0	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Symmetry master	-gimp_viral	3,0,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Photocomix / Wild cartoonizer	-gimp_m_l_unsharp2	12,2.18,0.3,1.5,1,0.5,0,0.5,0.8,1.28,0	DEFAULT	NULL	STATIC
-Testing / Photocomix / Wild cartoonizer	-gimp_m_l_unsharp2	12,2.18,0.3,1.5,1,0.5,1,0.5,0.8,1.28,0	CUSTOM	NULL	STATIC
-
-####################################
-# Testing / Rl
-####################################
-
-Testing / Rl / Randomwaves	-randomwaves	84,80,1.2,42	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Ronounours
-####################################
-
-Testing / Ronounours / Auto-adjust orientation	-gimp_adjust_orientation	5	DEFAULT	NULL	STATIC
-
-Testing / Ronounours / Faded mirror	-gimp_faded_mirror	0,10,10	DEFAULT	NULL	STATIC
-
-Testing / Ronounours / Graduated color accent	-gimp_gca	255,255,255,1,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Ronounours / Grain [old]	-gimp_grain	40,5,0,2,0.8,0.5,0.5,1,0,0.5,0.6,0.2,0.5,0	DEFAULT	NULL	STATIC
-
-Testing / Ronounours / Layer info	-gimp_layer_info	1	DEFAULT	NULL	STATIC
-
-Testing / Ronounours / Perspective scale	-gimp_perspective_scale	2,75,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Ronounours / Shaded segmentation	-dt_segment_shaded	1,0.7,1	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Samj
-####################################
-
-##################
-# Testing / Samj / Arrays & tiles
-##################
-
-Testing / Samj / Arrays & tiles / Hearts	-samj_en_Coeurs_Hearts_002	16,100,0,0,1,0,255,255,255,255,0,0,0,1,1	DEFAULT	NULL	STATIC
-
-##################
-# Testing / Samj / Artistic
-##################
-
-Testing / Samj / Artistic / Chalk it up	-samj_chalkitup	5,2.5,1.5,50,1,5,5,0,0,7,0.8,1.9,7,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Artistic / Colored engraving	-Engrave_colore_en	0,0.5,4,0,8,40,0,25,1,2,0,0,0,255,255,255	DEFAULT	NULL	STATIC
-Testing / Samj / Artistic / Colored engraving	-Engrave_colore_en	2,0.5,4,0,8,40,0,25,1,2,0,0,0,255,255,255	CUSTOM	NULL	STATIC
-
-Testing / Samj / Artistic / Granular texture	-samj_en_Texture_Granuleuse	0.5,20,80,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Artistic / Samj angoisse	-samj_Angoisse	1,5,0,5,100,2,4,1,250	DEFAULT	NULL	STATIC
-
-Testing / Samj / Artistic / Samj impressions	-samj_Impressions	10,5,5,1,1,0,2,0,1,5,0,5,100,2,4,1,250,1.2	DEFAULT	NULL	STATIC
-
-Testing / Samj / Artistic / Variations on a single color	-samj_texture_coloree_en	0,0.7,200,125,50,5,5,45,200,4,0.2,1,10,1,1	DEFAULT	NULL	STATIC
-Testing / Samj / Artistic / Variations on a single color	-samj_texture_coloree_en	1,0.7,200,125,50,5,5,45,200,4,0.2,1,10,1,1	CUSTOM	NULL	STATIC
-Testing / Samj / Artistic / Variations on a single color	-samj_texture_coloree_en	2,0.7,200,125,50,5,5,45,200,4,0.2,1,10,1,1	CUSTOM	NULL	STATIC
-
-##################
-# Testing / Samj / Black & white
-##################
-
-Testing / Samj / Black & white / Hard sketch xy	-XY_hardsketchbw_samj_en	0.2,300,50,1,0.1,20,0,0,0,0,180,40,160,255,0	DEFAULT	NULL	STATIC
-
-##################
-# Testing / Samj / Colors
-##################
-
-Testing / Samj / Colors / Couleurs metalliques	-Couleurs_Metalliques_samj_en	0,0,22,0,0,0,0,6,5,20,1,0,0,0,0.3,60,1,1,0	DEFAULT	NULL	STATIC
-
-##################
-# Testing / Samj / Contours
-##################
-
-Testing / Samj / Contours / Samj contours arrondis	-samj_Contours_Arrondis	1,3,5,10,0,0	DEFAULT	NULL	STATIC
-
-##################
-# Testing / Samj / Deformations
-##################
-
-Testing / Samj / Deformations / Samj cercle polaire	-samj_Cercle_Polaire	1,0,0,1,0,0,2,0,0,0,50,50	DEFAULT	NULL	STATIC
-
-##################
-# Testing / Samj / Degradations
-##################
-
-Testing / Samj / Degradations / Deteriorated areas	-samj_Zones_Grises_en	3,0,3,4,1	DEFAULT	NULL	STATIC
-Testing / Samj / Degradations / Deteriorated areas	-samj_Zones_Grises_en	3,1,3,4,1	CUSTOM	NULL	STATIC
-Testing / Samj / Degradations / Deteriorated areas	-samj_Zones_Grises_en	3,2,3,4,1	CUSTOM	NULL	STATIC
-
-##################
-# Testing / Samj / Patterns
-##################
-
-Testing / Samj / Patterns / Motifs degrades cie	-samj_Degrades_XYZ_CIE	6,800,240,240,40,255,120,40,240,255,0,0,0,100,64,64,0,0,1,0,100,-128,127,-128,127,0,11,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Patterns / Points aleatoires 001	-samj_Points_Aleatoires_001	10,255,255,0,255,3,0,1	DEFAULT	NULL	STATIC
-
-##################
-# Testing / Samj / Rendering
-##################
-
-Testing / Samj / Rendering / Adjacent rectangles	-samj_en_Rectangles_Adjacents	10,10,80,80,0,50,6,0,0,0,0,0,255,1,255,255,0,127,0,0,255,127,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Chryzodes	-samj_en_Chryzodes	100,0,0,0,255,0,50,50,45,79,3,1,240,128,64,255,0,0,0,0,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Dessiner un polygone - draw a polygon	-samj_dessiner_un_polygone	5,50,50,0,40,50,1,255,255,0,0,0,0,0,1,0,0,255,0,0,255,0,0,0,127,127,127,0,0,0,0,0,255,255,255,0,0,0,0,1,255,0,0,0,1	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Egg oeuf granville	-samj_Egg_Oeuf_Granville	50,50,0,20,30,10,0,0,0,0,255,1,255,255,0,127,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Egg oeuf hugelschaffer	-samj_Egg_Oeuf_Hugelschaffer	50,50,50,6,48,0,0,0,0,0,255,1,255,255,0,127,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Egg oeuf rosillo	-samj_Egg_Oeuf_Rosillo	50,50,40,200,300,0,0,0,0,255,1,255,255,0,127,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Etoile de pompei triangles sierpinski	-samj_Etoile_De_Pompei_Triangles_Sierpinski	50,50,30,100,0,0,0,255,0,5,255,0,0,127,255,0,255,127,0,0,255,127,0,255,255,127,255,255,0,127,0,63,255,64,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Etoiles remplies triangles sierpinski	-samj_Etoiles_Remplies_Triangles_Sierpinski	6,50,50,50,40,30,0,0,0,0,0,255,1,4,255,0,0,127,255,192,64,127,0,0,255,127,0,255,255,127,255,255,0,127,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Hawaiian earring	-samj_en_Hawaiian_Earring	50,50,40,6,0,0,0,0,0,255,1,255,255,0,127,0,0,255,127,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Lines of varying thickness	-samj_Lignes_Epaisseur_Variable	0,32,3,0,0,0,255,255,255,255,255,0,0,1,0,0,0,0,0,0,0.5,0.5,1.8,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Pappus chain	-samj_en_Cercles_Tangents_Dans_Cercle	50,50,50,40,0,0,0,0,255,1,127,127,127,127,255,0,0,127,0,255,0,127,0,0,255,127,255,0,255,127,255,255,0,127,0,255,255,127,192,128,64,127,64,192,128,127,128,64,192,127,192,64,128,127,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Pintograph	-Pintograph_samj_en	50,50,192,128,64,255,0,0,1000,0,400,150,200,200,100,4,4.05,4.16,4.32,75,150,75,60,0,0,0,1,1	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Poisson d avril	-samj_Poisson_D_Avril	50,50,40,2,0,0,0,0,255,1,250,60,10,255,255,255,255,255,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Rosace triangles sierpinski	-samj_Rosace_Triangles_Sierpinski	6,6,50,50,50,-15,25,5,30,0,0,0,255,0,0,0,0,3,0,0,255,127,255,255,0,127,128,64,192,127,64,128,192,127,0,255,255,127,0,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Straight lines	-samj_en_Des_Lignes_002	100,0,0,192,128,64,255,0,0,1,50,50,0,0,0,0,1	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Superposition triangles sierpinski	-samj_Superposition_Triangles_Sierpinski	6,6,50,50,50,1,20,30,0,0,0,255,1,4,0,0,255,127,255,255,0,127,128,64,192,127,64,128,192,127,0,255,255,127,0,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
-
-#Testing / Samj / Rendering / Traits strokes	-Traits_Strokes_samj	50,50,35,0,100,0,30,0,360,240,60,120,255,0,0,0,20,0,0,0,1,1	DEFAULT	NULL	STATIC
-
-Testing / Samj / Rendering / Triangles shades adjacents	-Triangles_Shades_Adjacents	0,50,50,60,-1,0,255,255,255,255,0,221,72,0,255,0,145,255,0,255,144,72,255,0,255,217,0,255,0,0,5,0,0,128,128,128,1,0,3,1,0	DEFAULT	NULL	MERGE
-
-##################
-# Testing / Samj / Repair
-##################
-
-Testing / Samj / Repair / Samj corline	-samj_CorLine	0,10,0.5,0,0,50,1,0	DEFAULT	NULL	MERGE
-
-Testing / Samj / Repair / Samj corline b	-samj_CorLine_B	0,1,10,0,0,0,0.5,0,0,50,1,0	DEFAULT	NULL	MERGE
-
-##################
-# Testing / Samj / Various
-##################
-
-Testing / Samj / Various / Cekoasa 001	-samj_CeKoaSa_001	0,15,3,1,3,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Various / Cekoasa 002	-samj_CeKoaSa_002	0,15,3,1,3,1,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Various / Cekoasa 003	-samj_CeKoaSa_003	0,5,1,1,3,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Various / Cekoasa 004	-samj_CeKoaSa_004	30,0,0,0.8,0,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Various / Cekoasa 005	-samj_CeKoaSa_005	16,16,0,0,0.2,1,1,0,1,0	DEFAULT	NULL	STATIC
-
-Testing / Samj / Various / Samj test a	-samj_test_A	64,192,500	DEFAULT	NULL	STATIC
-
-Testing / Samj / Various / Samj test b	-samj_test_B	100	DEFAULT	NULL	MERGE
-
-Testing / Samj / Various / Samj test c	-samj_test_C	100	DEFAULT	NULL	MERGE
-
-#Testing / Samj / Various / Samj test e	-samj_test_E	0,0.7,0.3,0.6,1.1,0,200,125,50,0,1	DEFAULT	NULL	STATIC
-
-Testing / Samj / Various / Samj test f	-samj_test_F	40,50,1	DEFAULT	NULL	STATIC
-
-#Testing / Samj / Various / Test courbes	-samj_test_x_color_curves	1,0	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Telperion
-####################################
-
-Testing / Telperion / Mc pendraw	-mc_pendraw	8,0.8,450,21,0.5,1,0,0,255,0,0	DEFAULT	NULL	STATIC
-
-####################################
-# Testing / Tom keil
-####################################
-
-Testing / Tom keil / Beauty retouch	-gimp_tk_retouch	30,3,1,20,1.5,1,2.5,0,0,0	DEFAULT	NULL	STATIC
-
-Testing / Tom keil / Dof manipulation	-gimp_tk_dof	50,50,30,60,5,15,2,0,0,200,40,2,0,0,0,0,0.01,0,1,0,0	DEFAULT	NULL	STATIC
-
-Testing / Tom keil / Infrared simulation	-gimp_tk_infrared	0.75,0.5,-100,0.75,0,1,0,0,1,1,0,50,0	DEFAULT	NULL	STATIC
-Testing / Tom keil / Infrared simulation	-gimp_tk_infrared	0.75,0.5,-100,0.75,0,1,0,0,1,1,1,50,0	CUSTOM	NULL	STATIC
-
-########################################################################
-##
-## Various
-##
-########################################################################
-
-Various / Histogram analysis	-gimp_display_histogram	256,0	DEFAULT	NULL	STATIC
-
-Various / Solve maze	-gimp_solve_maze	5,5,95,95,0.1,3,255,0,0,0	DEFAULT	NULL	MERGE
+filter_name	filter_command	arguments	customized	more_options_txt	layers
+パターン / ロールシャッハ図形	fx_rorschach	3,1,2	DEFAULT	NULL	STATIC
+パターン / 迷彩	fx_camouflage	9,179,189,117,255,246,158,12,100,30,46,33,75,90,65	DEFAULT	NULL	STATIC
+フィルムエミュレーション / インスタント [業務用]	fx_emulate_film_instant_pro	0,1,0,1,0,0,0,0,0	DEFAULT	NULL	STATIC
+フィルムエミュレーション / インスタント [民生用]	fx_emulate_film_instant_consumer	0,1,0,1,0,0,0,0,0	DEFAULT	NULL	STATIC
+フィルムエミュレーション / ネガフィルム [カラー]	fx_emulate_film_negative_color	0,100,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+フレーム / フレーム [ぼかし]	fx_frame_blur	30,0,5,255,255,255,2,2,1,0,0.5,30,0.5,0,0,5,0,0,128,128,128	DEFAULT	NULL	STATIC
+修復 / アップスケール [Scale2x]	fx_scalenx	0,0	DEFAULT	NULL	STATIC
+修復 / インターレース除去	deinterlace	0,0	DEFAULT	NULL	STATIC
+修復 / ホットピクセル除去	fx_remove_hotpixels	3,10,0	DEFAULT	NULL	STATIC
+修復 / 補修 [パッチベース]	fx_inpaint_patch	7,0,16,0.1,1.2,0,0.05,10,1,255,0,0,255	DEFAULT	NULL	STATIC
+修復 / 補修 [マルチスケール]	fx_inpaint_matchpatch	0,0,0,9,10,5,1,255,0,0,255	DEFAULT	NULL	STATIC
+修復 / 透明部分を埋める	fx_solidify_td	75,1,20,0,0	DEFAULT	NULL	STATIC
+修復 / Iain 式高速ノイズ除去	iain_fast_denoise_p	0,0,1,0,0,0,1	DEFAULT	NULL	STATIC
+光と影 / ライトリーク	fx_light_leaks	0,0,1,1,0,0.85,2,1,0	DEFAULT	NULL	STATIC
+劣化 / ぼかし [ガウス]	fx_gaussian_blur	3,0,0,1,0,0,0	DEFAULT	NULL	STATIC
+劣化 / ぼかし [グロー]	fx_glow	6,7,0,0	DEFAULT	NULL	STATIC
+劣化 / ぼかし [回転]	fx_blur_angular	2,50,50,0,1,7,0	DEFAULT	NULL	STATIC
+劣化 / ぼかし [放射状]	fx_blur_radial	3,50,50,0,1,7,0	DEFAULT	NULL	STATIC
+劣化 / ぼかし [線形]	fx_blur_linear	10,0.5,0,0,1,7,0,0	DEFAULT	NULL	STATIC
+劣化 / ぼかし [被写界深度]	fx_blur_dof	3,1,1,0,16,0,0,50,50,30,30,0	DEFAULT	NULL	STATIC
+劣化 / 色収差	fx_chromatic_aberrations	255,0,0,0,0,2,2,0,255,0,0	DEFAULT	NULL	STATIC
+劣化 / LOMO 風	fx_lomo	20,0	DEFAULT	NULL	STATIC
+変形 / レンズ歪み	fx_distort_lens	0.1,0,0,50,50,0,0	DEFAULT	NULL	STATIC
+変形 / 正距円筒図法画像から天頂・天底を生成	fx_equirectangular2nadirzenith	0	DEFAULT	NULL	STATIC
+描画 / キューピッド	fx_cupid	0,255,0,0,255	DEFAULT	NULL	STATIC
+描画 / グラデーション [四隅]	fx_corner_gradient	255,255,255,128,0,0,255,255,1,255,0,0,255,0,255,0,255	DEFAULT	NULL	STATIC
+描画 / シェルピンスキーの三角形	fx_sierpinski	6,1,50,0,0,100,100,100,128,128,128	DEFAULT	NULL	STATIC
+描画 / ハートマーク	fx_heart	75,0,255,0,0,255	DEFAULT	NULL	STATIC
+描画 / バーンスレイのシダ	fx_barnsley_fern	0,100,30,40,10,178,0,255,1	DEFAULT	NULL	STATIC
+描画 / ボール	fx_ball	128,0.8,1,1.5,255,0,255	DEFAULT	NULL	STATIC
+描画 / 方程式プロット [パラメトリック]	fx_equation_parametric	sin(t)*(exp(cos(t))-2*cos(4*t)-sin(t/12)^5),128,0,0,1,1,1,cos(t)*(exp(cos(t))-2*cos(4*t)-sin(t/12)^5),0,100,4096,1,0,64,0,0	DEFAULT	NULL	STATIC
+描画 / 虹	fx_rainbow	80,80,175,175,3,80	DEFAULT	NULL	STATIC
+描画 / 雪片	fx_snowflake	5,1,255,255,255	DEFAULT	NULL	STATIC
+描画 / 3D 押し出し	fx_extrude3d	10,45,0,0,-100,0.5,0.7,4,1,512,0.6,1024,1024,0.5,57,41,21	DEFAULT	NULL	STATIC
+白黒画像編集 / 彩色 [インタラクティブ]	fx_colorize_interactive	0,0,1,,,0.5	DEFAULT	NULL	STATIC
+白黒画像編集 / 彩色 [コミック]	fx_colorize_comics	0,1,0,0.05	DEFAULT	NULL	STATIC
+白黒画像編集 / 線画を自動的に色分け	fx_autofill_lineart	90,32,200,0,85,2,60,20,90,1,10,1,1,0,8,0,0,0,95,0,0	DEFAULT	NULL	STATIC
+色 / セピア	fx_sepia	0,1,0,0	DEFAULT	NULL	STATIC
+色 / 色を転写 [基本的]	fx_transfer_colors	0,0	DEFAULT	NULL	STATIC
+色 / 色を選択して置換	fx_select_color	0,255,0,0,255,0,20,0,0,255,255,255,255,0	DEFAULT	NULL	STATIC
+色 / 選択的脱色	fx_selective_desaturation	255,255,255,0,3,0,0,0	DEFAULT	NULL	STATIC
+芸術的 / 四分木画像処理	fx_quadtree	0,1024,0.5,0,3,1.5,1,1,0	DEFAULT	NULL	STATIC
+詳細 / シャープ化 [テクスチャ]	fx_sharpen_texture	1,4,16,0	DEFAULT	NULL	STATIC
+詳細 / DCP 霞除去	jeje_dehaze	5,1,.2,1,0,0,0,0,0	DEFAULT	NULL	STATIC
+輪郭 / 前景切り出し [インタラクティブ]	fx_extract_foreground	0,0,3,1	DEFAULT	NULL	STATIC
+配列とタイリング / シームレス化 [パッチベース]	fx_frame_seamless	32,9,0,1,100,0,3,0	DEFAULT	NULL	STATIC
+About / ♥ Support Us ! ♥	_none_		DEFAULT	NULL	STATIC
+About / About G'MIC	_none_		DEFAULT	NULL	STATIC
+About / Contributors	_none_		DEFAULT	NULL	STATIC
+About / Download External Data	gui_download_all_data	0	DEFAULT	NULL	STATIC
+About / Filter Design	_none_		DEFAULT	NULL	STATIC
+About / Friends Hall of Fame	_none_		DEFAULT	NULL	STATIC
+About / G'MIC per al GIMP	_none_		DEFAULT	NULL	STATIC
+About / Gmicky - Roddy	fx_gmicky	0	DEFAULT	NULL	STATIC
+About / Privacy Notice	_none_		DEFAULT	NULL	STATIC
+About / Release Notes	_none_		DEFAULT	NULL	STATIC
+About / What's New?	_none_	0,1,1,0.5	DEFAULT	NULL	STATIC
+afre / Contrast FFT	afre_contrastfft	75,50,1	DEFAULT	NULL	STATIC
+afre / Gamify	fx_gamify	50,2,1,1,0	DEFAULT	NULL	STATIC
+afre / Gleam	afre_gleam	3,50	DEFAULT	NULL	STATIC
+afre / Half & half	afre_halfhalf	0	DEFAULT	NULL	STATIC
+afre / Hessian Norm	fx_hnorm	1,50,0	DEFAULT	NULL	STATIC
+afre / Portrait Montage	afre_portraitmontage	5,230,255,230	DEFAULT	NULL	STATIC
+afre / Sharpen FFT	afre_sharpenfft	15,1	DEFAULT	NULL	STATIC
+afre / Vigcirc	afre_vigcirc	90,75,50,50	DEFAULT	NULL	STATIC
+afre / Vigrect	afre_vigrect	50,75,10,50,50	DEFAULT	NULL	STATIC
+Animals / Dragonfly	mc_dragonfly	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Animals / Kookaburra	mc_kookaburra	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Animals / Paw	mc_paw	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Animals / Rooster	mc_rooster	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Arrays & Tiles / Annular Steiner Chain Round Tile	Annular_Steiner_Chain_Round_Tile	800,1,0,0,0,255,0,255,255,0,127,1,0,0,255,127,0,0,0,100,0,100,12,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Array [Faded]	fx_array_fade	2,2,0,0,80,90,0,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Array [Mirrored]	fx_array_mirror	1,0,0,2,0,0,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Array [Random Colors]	fx_array_color	5,5,0.5	DEFAULT	NULL	STATIC
+Arrays & Tiles / Array [Random]	array_random	5,5,7,7	DEFAULT	NULL	STATIC
+Arrays & Tiles / Array [Regular]	fx_array	2,2,0,0,0,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Ascii Art	fx_asciiart	5,0,,gmic_asciiart.txt," .oO0",16,15,16,2,0,0.2,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Bulles Colorees	samj_Bulles_Colorees	64,64,64,255,0,0,0,0,0,0,0,255,8,0,0,3,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Carres Noirs	samj_Carres_Noirs	128,96,96,96,255,2,255,255,255,255,0,40,2,0,7,0,0,0,0,255,2	DEFAULT	NULL	STATIC
+Arrays & Tiles / Cercles Concentriques	Cercles_Concentriques_A	800,1,1,0,0,0,255,0,0,0,0,1,5,0,0,0,255,255,255,255,0,255,6,255,0,0,255,0,255,255,255,255,0,255,255,0,0,1,0,5,0,0,0,90,1,1,50	DEFAULT	NULL	STATIC
+Arrays & Tiles / Chessboard	fx_chessboard	64,255,255,255,255,0,50,50,64,0,0,0,0.5,0,0,0,255	DEFAULT	NULL	STATIC
+Arrays & Tiles / Coeurs Hearts 002	samj_Coeurs_Hearts_002	16,0,0,0,1,1,100,0,0,1,0,255,255,255,255	DEFAULT	NULL	STATIC
+Arrays & Tiles / Deconstruction	samj_Tiles_Deconstruction	63,0,0,0,0,64	DEFAULT	NULL	STATIC
+Arrays & Tiles / Dices	fx_dices	2,24,1	DEFAULT	NULL	STATIC
+Arrays & Tiles / Drawn Montage	fx_drawn_montage	0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0,0,0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,0:0:0:0:50:50:0,-10,50,50,0,-1	DEFAULT	NULL	STATIC
+Arrays & Tiles / Ellipses Colorees	samj_Ellipses_Colorees	64,64,64,255,8,8,0,0,0,0,0,255	DEFAULT	NULL	STATIC
+Arrays & Tiles / Extract Objects	fx_extract_objects	0,0,20,50,0.3,0,0,1	DEFAULT	NULL	STATIC
+Arrays & Tiles / Filters On Tiles	samj_Filtres_Sur_Tuiles	20,0,"shift 2","dilate 20"	DEFAULT	NULL	STATIC
+Arrays & Tiles / Floutage Blurring	samj_Flouter	0,0,0,10,0,0,1	DEFAULT	NULL	STATIC
+Arrays & Tiles / Grid [Cartesian]	fx_imagegrid	10,10	DEFAULT	NULL	STATIC
+Arrays & Tiles / Grid [Hexagonal]	fx_imagegrid_hexagonal	32,0.1,1	DEFAULT	NULL	STATIC
+Arrays & Tiles / Grid [Triangular]	fx_imagegrid_triangular	10,18,0,255,255,255,128	DEFAULT	NULL	STATIC
+Arrays & Tiles / Losanges Colores	samj_Losanges_Colores	64,64,64,255,0,1,0,0,0,0,0,255,0,8,0,0,0,1.5	DEFAULT	NULL	STATIC
+Arrays & Tiles / Make Seamless [Diffusion]	fx_make_seamless	0,0,3,0,50,50	DEFAULT	NULL	STATIC
+Arrays & Tiles / Make Seamless [Patch-Based]	fx_frame_seamless	32,9,0,1,100,0,3,0,50,50	DEFAULT	NULL	STATIC
+Arrays & Tiles / Ministeck	fx_ministeck	8,64,8,2,100,0.3,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Moirage Spline	samj_Moirage_Spline	0,0,0,255,50,0,0,0,0,0,255,8,0,-50,50,-50,50,0,0,8,0,-50,50,-50	DEFAULT	NULL	STATIC
+Arrays & Tiles / Moirage Spline XY	samj_Moirage_Spline_XY	0,0,0,255,50,0,0,0,0,255,8,0,-50,50,-50,50,0,0,8,0,-50,50,-50	DEFAULT	NULL	STATIC
+Arrays & Tiles / Montage	fx_montage	0,0,0,0,0,0,V(H(0,1,0.5,0,0,0,0,0,255	DEFAULT	NULL	STATIC
+Arrays & Tiles / Montage Annular Steiner Chain	samj_Montage_Annular_Steiner_Chain	2400,1,0,0,90,1,100,0,1,0,0,12,1,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Montage Cercle Spirale	samj_Montage_Cercle_Spirale	2400,8,0,1,0,0,0,0,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Montage Geometric Figures	samj_Montage_Figures_Geometriques	4800,0,0,0,1,10,255,255,255,6,30,0,1,-3,300,270,0,1,0,0,0,0,1	DEFAULT	NULL	STATIC
+Arrays & Tiles / Montage Multi Rows	samj_montage_multi_rows_GUI	4,2,0,1,2400,2,2,0,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Montage Pappus Chain	samj_Montage_Pappus_Chain	1200,0,0,0,0,0,1,0,35,100,0,0,255,255,255,255	DEFAULT	NULL	STATIC
+Arrays & Tiles / Montage Row	samj_montage_row_GUI	8,1,0,0,1,2400,2,2,0,0,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Montage Zigzag	samj_Montage_Zigzag	4800,8,1,256,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Pixelisation Contours	samj_Pixelisation_Contours	0.5,0.8,0,20,8,0,0,1,0,10	DEFAULT	NULL	STATIC
+Arrays & Tiles / Pointes De Diamants Colorees	samj_Pointes_De_Diamants_Colorees	64,64,64,255,0,0,0,0,0,0,255,0,8,0,0,1.5,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Puzzle	fx_puzzle	5,100,0,0,0,0,0,0,5,0.5,0,0,0.3,100,0.2,255	DEFAULT	NULL	STATIC
+Arrays & Tiles / Reptile	samj_reptile	0,64,25,2,0,40,1	DEFAULT	NULL	STATIC
+Arrays & Tiles / Scintillements Colores	samj_Scintillements_Colores	64,64,64,255,0,0,0,0,0,0,0,255,0,8,8,1,768,12	DEFAULT	NULL	STATIC
+Arrays & Tiles / Taquin	fx_taquin	7,0,7,0,50,5,0,0,0,0,255	DEFAULT	NULL	STATIC
+Arrays & Tiles / Tileable Rotation	fx_rotate_tileable	45,8,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Tiled Isolation	fx_isolate_tiles	10,10,5,5,1,1	DEFAULT	NULL	STATIC
+Arrays & Tiles / Tiled Normalization	fx_normalize_tiles	25,25,0,255,11	DEFAULT	NULL	STATIC
+Arrays & Tiles / Tiled Parameterization	fx_parameterize_tiles	10,10,0	DEFAULT	NULL	STATIC
+Arrays & Tiles / Tiled Random Shifts	fx_shift_tiles	10,10,10,1	DEFAULT	NULL	STATIC
+Arrays & Tiles / Tiled Rotation	fx_rotate_tiles	5,5,15,3,3,1.8	DEFAULT	NULL	STATIC
+Artistic / Angoisse Anguish	samj_Angoisse	1,5,0,5,100,2,4,1,250	DEFAULT	NULL	STATIC
+Artistic / Aurora	gcd_aurora	6,1,0	DEFAULT	NULL	STATIC
+Artistic / Barbouillage Paint Daub	samj_Barbouillage_Paint_Daub	2,2,100,0.2,1,4,1,0,8	DEFAULT	NULL	STATIC
+Artistic / Black Crayon Graffiti	fx_crayongraffiti2	300,50,1,0.4,12,1,2,2,0	DEFAULT	NULL	STATIC
+Artistic / Bokeh	fx_bokeh	3,0.7,30,20,20,1,2,170,130,20,110,8,0.15,0,50,50,0,30,8,4,0.3,0.2,210,210,80,160	DEFAULT	NULL	STATIC
+Artistic / Brushify	fx_brushify	7,0.2,0.5,30,1,1,1,5,0,0.2,1,0.25,4,64,25,12,0,2,4	DEFAULT	NULL	STATIC
+Artistic / Cartoon	cartoon	3,200,20,0.25,1.5,8,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Chalk It Up [Fr]	samj_chalkitup	5,7,0.8,1.9,7,0,2.5,1.5,50,1,5,5,0,0	DEFAULT	NULL	STATIC
+Artistic / Charred Plastic	fx_charred_plastic	1,5,20,0,11,10,40,1,10,0,0,2,6	DEFAULT	NULL	STATIC
+Artistic / Circle Abstraction	fx_circle_abstraction	8,5,0.8,0,1,1,1,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Color Abstraction Paint	fx_ColorAbstractionPaint	5,0,0,0,0,0,10,1,0,1,0,1,0,0	DEFAULT	NULL	STATIC
+Artistic / Color Edges Engrave	samj_Color_EdgesO_Engrave	0,0,0,1,0,0,0,50,9,1,2,50,0,8,40	DEFAULT	NULL	STATIC
+Artistic / Colored Pencils	fx_cpencil	1.3,50,20,2,2,1,0	DEFAULT	NULL	STATIC
+Artistic / Contour Drawings	samj_Contour_Drawings_en	5,1.1,10,0,1,0,2,0,0,5,10,0.8,0	DEFAULT	NULL	STATIC
+Artistic / Contour epais	samj_Contour_Epais	1,1,0,5,1,5,5,10,0.8,2	DEFAULT	NULL	STATIC
+Artistic / Couleurs Rayees	samj_Couleurs_Rayees	0,0,30,0,100,4,4,0,2,0.7	DEFAULT	NULL	STATIC
+Artistic / Couleurs Rayees 2	samj_Couleurs_Rayees_2	0,30,0,100,4,4,255,1	DEFAULT	NULL	STATIC
+Artistic / Cubism	fx_cubism	2,50,10,90,0.7,0,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Cubisme A	samj_Test_Cubisme_A	1,0,1,300,8,10,10,20,1,1,5,120,1,1,64,25,8,1,0,70,1,30,30,2,0,6	DEFAULT	NULL	STATIC
+Artistic / Cubisme B	samj_Test_Cubisme_B	11,0,0,3,1,1,64,25,8,1,0,6,0,30,40,17,6,0,0	DEFAULT	NULL	STATIC
+Artistic / Cutout	fx_cutout	4,0.5,4,1,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Diff Tensors Blend	samj_Diff_Tensors_Blend	10,3,1,5,1,0.15,1,0,3,1,0	DEFAULT	NULL	STATIC
+Artistic / Diffusion Tensors	fx_diffusiontensors	10,50,50,5,3,1,0.15,1,0,3,0	DEFAULT	NULL	STATIC
+Artistic / Doodle	fx_doodle	30,2,2,1.5,2,70,1	DEFAULT	NULL	STATIC
+Artistic / Dream Smoothing	fx_dreamsmooth	3,1,1,0.8,0,0.8,1,24,0	DEFAULT	NULL	STATIC
+Artistic / Dreamy Abstraction	fx_dreamy_abstraction	2,3,1,1,1,1,1,11,1,25,5,1,1,0,1.5,0,50,50,1,0.5,10,0,0,7,1	DEFAULT	NULL	STATIC
+Artistic / Dreamy Watercolour	fx_dreamy_watercolour	0,2,1,1,0.5,10,0,0,7,1,3,0.3,1,1,1,1,1,11,1,25,5,1,40,10,1,0,0,1,0.5,0,8,1,0,60,128,128,128,0.5,1,8,0.2,1,1,0,0,27,0.75,0,1,20,40,40,1,2,1.25,1,0,2,1,27,1,50,0,10	DEFAULT	NULL	STATIC
+Artistic / Edges And LIC	samj_Edges_And_LIC	0,0,0,1,20,0.2,0,14,1,200,0,0,0,15,8,127,255	DEFAULT	NULL	STATIC
+Artistic / Ellipsionism	fx_ellipsionism	20,10,0.5,0.7,3,0.5,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Felt Pen	fx_feltpen	300,50,1,0.1,20,5,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Finger Paint	gtutor_fpaint	0.5,0.5,0.0,0,45.0,0.5,0.5,0.5,0	DEFAULT	NULL	STATIC
+Artistic / Flamboyance Test	samj_Flamboyance_Test	65,2,0,0,1,0,150,0.42,0.85,0.6,7.83,28,0.68,19,2.65,0,1,1,3,200,20,0.1,9.25,1.5,8,1,3,1,0,20,0,0,0,0.3,0,0,1,1.1,10,12	DEFAULT	NULL	STATIC
+Artistic / Fond Broderie	samj_fond_broderie	8,2,0,1,1	DEFAULT	NULL	STATIC
+Artistic / Fond Brosse	samj_Fond_Brosse	3,1	DEFAULT	NULL	STATIC
+Artistic / Fractalize	fractalize	0.8	DEFAULT	NULL	STATIC
+Artistic / Fx Sketchbw Modifie	samj_fx_sketchbw_modifie	3,0.7,3,6,0,1,4,0,1234,0,2,45,100,0.2,1,4,1,0,180,30,1.75,0.02,0.5,0.75,0.1	DEFAULT	NULL	STATIC
+Artistic / Ghost	fx_ghost	200,2,2,1,3,16,0,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Granular Texture	samj_Texture_Granuleuse	0,20,80.0,0,0	DEFAULT	NULL	STATIC
+Artistic / Graphic Boost	fx_graphic_boost4	1.25,2,0,1,0,1,1,1,0.5,0.45,1,2,0,0.15,14,0,1,0.5,0.45	DEFAULT	NULL	STATIC
+Artistic / Graphic Novel	fx_graphic_novelfxl	0,1,0.5,0.78,1.92,0,0,0,1,1,1,2,0.5,0.8,1.28,6,5,20,0,0.62,14,0	DEFAULT	NULL	STATIC
+Artistic / Gris Raye	samj_Gris_Raye	0,30,0,100,4,4,255,1	DEFAULT	NULL	STATIC
+Artistic / Hallucinogen	samj_Hallucinogen	80,80,8,2,80,1.5,2,0,0,0,1	DEFAULT	NULL	STATIC
+Artistic / Hallucinogen 2	samj_Hallucinogen_b	1,1.5,2,0,0,1,1,80,8,1,0,300,14,1,10,10,10,10,80,2,80	DEFAULT	NULL	STATIC
+Artistic / Hard Painting	fx_hard_painting	1,5,20,0,0.62,14,0,1,0.5,0.78,1.92,2.5,0,0,0,1,1,1,0.5,0.8,1.28,0,4,50,50,50,1,1,0,2,6	DEFAULT	NULL	STATIC
+Artistic / Hard Sketch	fx_hardsketchbw	300,50,1,0.1,20,0,4,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Highlight Bloom	fx_highlight_bloom	90,60,60,30,20,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Hope Poster	fx_poster_hope	0,3,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Hough Sketch	fx_houghsketchbw	1.25,10,5,80,0.1,4,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Illustration Look	fx_illustration_look	100,0,0,0,0	DEFAULT	NULL	STATIC
+Artistic / Impressions	samj_Impressions	10,5,0,5,100,2,4,1,250,1.2,5,5,1,1,0,2,0,1	DEFAULT	NULL	STATIC
+Artistic / Isophotes Vers Aquarelle	samj_Isophotes_Vers_Aquarelle	16,0,0,1,10,10,4,3,251,237,206,0.5,1,4,0,1,10,1,0,0	DEFAULT	NULL	STATIC
+Artistic / Kuwahara	fx_kuwahara	2,5,0,0,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Linify	fx_linify	40,2,40,10,24,0,1,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Lylejk's Painting	fx_lylejk_painting	10,2,4,10,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Make Squiggly	fx_Squiggly	2,0.2,0.4,0,1,1,0,12,0.8,0,0.5,1,0,0,3	DEFAULT	NULL	STATIC
+Artistic / Morphology Painting	fx_MorphoPaint	1,0.5,2,0.5,200,1,1,1,1,1,1,18,1,1,0,2,25,100,230,8,3,4	DEFAULT	NULL	STATIC
+Artistic / Neon	fx_neon	0,0,1,1.15,2,3,0,3,20,0.4,0.1,1,1.5,5,0.2,0.1,1,2,1,0,0,1,1,1,0,50,50,1,1,0,0.45,40,60	DEFAULT	NULL	STATIC
+Artistic / Neon Alpha	fx_neon_alpha	0,0.1,2.25,5,0.2,0.1,2.25,2,1,0.45,40,60,0,2,1.15,20,0.4	DEFAULT	NULL	STATIC
+Artistic / Otsu-Hessian Blend	fx_otsu_hessian_blend	4,0,1,27,1,0	DEFAULT	NULL	STATIC
+Artistic / Painting	fx_painting	5,2.5,1.5,50,1,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Pastell Art	fx_pastell	0.6,1,0.5,0,0,10,3,0,9,3,0,1,12,0,0,20,30,300,1,30,1	DEFAULT	NULL	STATIC
+Artistic / Pen Drawing	fx_pen_drawing	10,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Photoillustration	fx_tk_photoillustration	0,0,1,0,0,1,0,0,1.2,98.5,5,0.25,0.5,0,0,0,0,0,1,0,0,0.30,0.50,0.50,1.00,0,5.00	DEFAULT	NULL	STATIC
+Artistic / Plasmic	samj_Plasmic	0,1.1,2,40,0,0,0,0	DEFAULT	NULL	STATIC
+Artistic / Plasmic V2	samj_Plasmic_V2	2,0,0,0,255,4,10,2,0.02,8,0,0,0	DEFAULT	NULL	STATIC
+Artistic / Pointillisme	samj_Pointillisme	10,2,5,1,1,1,0,0,0,255	DEFAULT	NULL	STATIC
+Artistic / Pointillisme B	samj_Pointillisme_B	1,0,90,3,1,1,0,0,0,255	DEFAULT	NULL	STATIC
+Artistic / Polygonize [Delaunay]	fx_polygonize_delaunay	40,1,0,50,50,5,75,0.5,3,50,0,0,0,255	DEFAULT	NULL	STATIC
+Artistic / Polygonize [Energy]	fx_polygonize	300,0,50,50,10,10,10,10,0,0,0,255	DEFAULT	NULL	STATIC
+Artistic / Poster Edges	fx_poster_edges	20,60,5,0,10,0,0,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Posterize	fx_posterize	150,30,1,12,0,0,0,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Posterize B	samj_Posterize_B	1,0,0,1,0,0,0,0,0,0,12,1,0,40,30,1,0,0	DEFAULT	NULL	STATIC
+Artistic / Posterized Dithering	fx_pdithered	1,1,0,0,20,1,0,1,0	DEFAULT	NULL	STATIC
+Artistic / Quadtree Variations	fx_quadtree	0,50,50,1024,0.5,0,3,1.5,1,1,0	DEFAULT	NULL	STATIC
+Artistic / Rodilius	fx_rodilius	10,0,50,50,10,300,5,30,0,1,0,0	DEFAULT	NULL	STATIC
+Artistic / Shapeism	fx_shapeism	2,1,5,0.5,1,0,0,0,255,7,0.38,0,1,5,32,8,3	DEFAULT	NULL	STATIC
+Artistic / Sharp Abstract	fx_sharp_abstract	4,10,0.5,0,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Simple Noise Canvas	fx_SimpleNoiseCanvas	0,0,0,0,1,0,255,255,255,255,0,3,2,5,5,0,255,0,2	DEFAULT	NULL	STATIC
+Artistic / Skeletik	samj_Test_Skeletik	10,1,0,0,0,3,1,0,0,0,255	DEFAULT	NULL	STATIC
+Artistic / Sketch	fx_sketchbw	3,0.7,3,6,0,1,4,0,50,50,45,180,30,1.75,0.02,0.5,0.75,0.1	DEFAULT	NULL	STATIC
+Artistic / Smooth Abstract	fx_smooth_abstract	75,0,20,1,30,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Stylize	fx_stylize	0,3,3,0,0.7,1,0,1,0,5,5,5,7,1,30,10,2,1.85,0,0,1,0.5,2,3,0.5,0.1	DEFAULT	NULL	STATIC
+Artistic / Tensor Test	samj_TensorTest	0.3,2,1,0,2,0.9,0.6,1.1,0,0,20,32,20	DEFAULT	NULL	STATIC
+Artistic / Texture Coloree	samj_texture_coloree	A,4,0.2,0.7,200,125,50,5,5,45,200	DEFAULT	NULL	STATIC
+Artistic / Variations on a Single Color	samj_texture_coloree_en	A,4,0.2,1,10,1,1,0.7,200,125,50,5,5,45,200	DEFAULT	NULL	STATIC
+Artistic / Vector Painting	fx_vector_painting	9,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Warhol	warhol	3,3,2,40	DEFAULT	NULL	STATIC
+Artistic / Whirl Drawing	fx_draw_whirl	20,0,50,50	DEFAULT	NULL	STATIC
+Artistic / Whirling Lines	fx_whirling_lines	30,30,0,3,3,6,0,0,0.45,40,60,0,0	DEFAULT	NULL	STATIC
+Black & White / B&W Stencil	fx_stencilbw	10,10,0,0,0,50,50	DEFAULT	NULL	STATIC
+Black & White / Black & White	fx_blackandwhite	0.299,0,0,0,0,0,2,0,0,0,16,0,4,0,0,0,50,50,0.587,0,0.114,0,0,0,0	DEFAULT	NULL	STATIC
+Black & White / Charcoal	fx_charcoal	65,0,0,0,0,0,50,50,70,170,0,1,0,50,70,255,255,255	DEFAULT	NULL	STATIC
+Black & White / Colored Engraving	Engrave_colore	0,2,0,0,0,255,255,255,0.5,4,0,8,40,0,25,1	DEFAULT	NULL	STATIC
+Black & White / Colorize [Interactive]	fx_colorize_interactive	0,0,1,,,,0.5,0,0,-1	DEFAULT	NULL	STATIC
+Black & White / Colorize [Photographs]	fx_recolorize	2,0.2,0	DEFAULT	NULL	STATIC
+Black & White / Colorize [with Colormap]	fx_bwrecolorize	0,43,25,55,255,158,137,189,255,0,224,191,228,255,255,255,255,255,255,255,255,255,0,255,255,255,255,255,255,255,255,0,0,50,50,0,1,0,5,0,0,0,255	DEFAULT	NULL	STATIC
+Black & White / Colorize Lineart [Auto-Fill]	fx_autofill_lineart	90,1,8,0,0	DEFAULT	NULL	STATIC
+Black & White / Colorize Lineart [Propagation]	fx_colorize_lineart	0,1,0,0.05	DEFAULT	NULL	STATIC
+Black & White / Colorize Lineart [Smart Coloring]	fx_colorize_lineart_smart	0,2,60,20,90,1,10,1,0,95,0,0,1,24,200,0,75	DEFAULT	NULL	STATIC
+Black & White / Desaturate Norm	fx_gcd_norm_eq	0.5,0.5,2,0	DEFAULT	NULL	STATIC
+Black & White / Dithering	fx_ditheredbw	0,0,0,0,0,0,0,50,50	DEFAULT	NULL	STATIC
+Black & White / Engrave	fx_engrave	0.5,1,0,0,0,1,0,50,50,50,0,8,40,0,0,0,10	DEFAULT	NULL	STATIC
+Black & White / Engrave Modifie	engrave_modifie	0,0.5,4,0,8,40,0,25,1	DEFAULT	NULL	STATIC
+Black & White / Freaky B&W	fx_freaky_bw	90,20,0,0,0,0,50,50	DEFAULT	NULL	STATIC
+Black & White / Grid BW Color	samj_Grid_BW_Color	3,32,0,1,4,4,32,1,2,0	DEFAULT	NULL	STATIC
+Black & White / Hard Sketch XY	XY_hardsketchbw_samj	0.2,0,180,40,160,255,0,300,50,1,0.1,20,0,0,0	DEFAULT	NULL	STATIC
+Black & White / Ink Wash	fx_ink_wash	0.14,5,20,23,0,0.5,0.54,2.25,0,2,6	DEFAULT	NULL	STATIC
+Black & White / Multi-Layer Etch	fx_gcd_layeretch	11,3,1,1,0,4,12,0.12,100,8.5,5,0,0	DEFAULT	NULL	STATIC
+Black & White / NB Edges Engrave	samj_NB_EdgesO_Engrave	0,0,0,1,50,9,1,2,50,0,8,40	DEFAULT	NULL	STATIC
+Black & White / Pencil	fx_pencilbw	0.3,60,0,0,0,50,50	DEFAULT	NULL	STATIC
+Black & White / Pencil Portrait	fx_pencil_portraitbw	30,120,1,0.5,144,79,21,0,50,50	DEFAULT	NULL	STATIC
+Black & White / Scintillements	samj_scintillements	0,45,2,6,5,20,1,7,0,0,5,0,1,20,2,6,20,5	DEFAULT	NULL	STATIC
+Black & White / Stamp	fx_stamp	1,50,0,0,0,0,1,0,50,50	DEFAULT	NULL	STATIC
+Black & White / Threshold Etch	fx_gcd_etch	125,15,12,20,0,1,0.3,1,0,0,153,171,185,0.1,50,80,50,10	DEFAULT	NULL	STATIC
+Chris From Pixls / Remove Scratches	fx_remove_scratches	72,2,4,3,0	DEFAULT	NULL	STATIC
+Colors / 64 Couleurs Max	samj_64_Couleurs_Max	9,120,40,240,4,2,50,1,0,240,240,40	DEFAULT	NULL	STATIC
+Colors / 9 colors	samj_test_9_colors	70,17,10,186,61,89,220,103,129,239,151,169,246,194,205,253,201,212,255,255,255,0,0,134,35,20,154,27,58	DEFAULT	NULL	STATIC
+Colors / Abstraction	fx_color_abstraction	1,10,0.2,0,50,50	DEFAULT	NULL	STATIC
+Colors / Apply External CLUT	fx_apply_haldclut	2,0,50,50,,100,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Colors / At06A 2017 VarCouleurs	samj_At06A_2017_VarCouleurs	1,0,100,0,0	DEFAULT	NULL	STATIC
+Colors / Basic Adjustments	fx_adjust_colors	0,0,0,0,0,0,50,50	DEFAULT	NULL	STATIC
+Colors / Boost Chromaticity	fx_boost_chroma	50,0,0,50,50	DEFAULT	NULL	STATIC
+Colors / Boost-Fade	fx_boost_fade	5,0,0,50,50	DEFAULT	NULL	STATIC
+Colors / Brightness	afre_brightness	50,0	DEFAULT	NULL	STATIC
+Colors / Channel Processing	fx_channel_processing	0,0,0,2,0,0,50,50,0,0,0,0,0,100,256,0	DEFAULT	NULL	STATIC
+Colors / Channels to Layers	fx_channels2layers	0	DEFAULT	NULL	STATIC
+Colors / CLUT from After - Before Layers	fx_clut_from_ab	0,4,,output.cube,50	DEFAULT	NULL	STATIC
+Colors / CMYK Tone	iain_cmyk_tone_p	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,0,255,255,255,255,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Colors / Color Balance	fx_balance_gamma	128,128,128,1,0,50,50	DEFAULT	NULL	STATIC
+Colors / Color Blindness	colorblind	0,0,50,50	DEFAULT	NULL	STATIC
+Colors / Color Grading	jl_colorgrading	0.,0,1,0,0,0,70,0,0,0,0,0,0,70,180,0,1,0,0,0,1,1,0,0,0,0,0	DEFAULT	NULL	STATIC
+Colors / Color Harmonies	samj_Color_Palettes	50,1,3,2,1,50,0,6,24,0,0,180,90,45	DEFAULT	NULL	STATIC
+Colors / Color Mask [Interactive]	fx_mask_color	13,10,5,0	DEFAULT	NULL	STATIC
+Colors / Color Presets	fx_color_presets	17,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,512,100,0,0,0,1,0,0,0,0,50,50,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1	DEFAULT	NULL	STATIC
+Colors / Color Temperature	fx_tk_colortemp	0,0,0	DEFAULT	NULL	STATIC
+Colors / Colorful Blobs	fx_colorful_blobs	1,-1,-1,-1,-1,255,0,0,-1,-1,-1,-1,75,25,50,50,0,255,0,200,200,200,0,-1,-1,-1,-1,50,75,50,50,0,0,255,-1,-1,-1,-1,5,90,50,50,255,255,0,-1,-1,-1,-1,5,90,50,50,255,0,255,-1,-1,-1,-1,5,90,50,50,0,255,255,-1,-1,-1,-1,5,90,50,50,255,255,255,1,-1,-1,-1,-1,5,90,50,50,0,0,0,25,25,-1,-1,-1,-1,5,90,50,50,255,128,64,-1,-1,-1,-1,5,90,50,50,255,64,128,-1,-1,-1,-1,5,90,50,50,50,50,128,64,255,-1,-1,-1,-1,5,90,50,50,64,128,255	DEFAULT	NULL	STATIC
+Colors / Colormap	fx_colormap	2,255,0,0,0,255,0,0,0,255,1,255,255,0,255,0,255,0,255,255,0,32,50,50,8,0,0,0,255,255,255	DEFAULT	NULL	STATIC
+Colors / Colour Space Swap	csswap	0,0,0,50,50	DEFAULT	NULL	STATIC
+Colors / Contrast	afre_contrast	50	DEFAULT	NULL	STATIC
+Colors / Couleurs Metalliques	Couleurs_Metalliques	0,20,1,0,0,0,0.3,60,1,1,0,0,22,0,0,0,0,6,5	DEFAULT	NULL	STATIC
+Colors / CubeHelix	fx_cubehelix	1,1,-1.5,0,0,1,1,0,0,1,0,1,1,0,1,0,1,0,0,0,50,50,100,0,0,0,0,255,255,255	DEFAULT	NULL	STATIC
+Colors / Curves	fx_curves_interactive	0,0,0,0,0,0,100,100,-1,0,0,100,100,-1,0,0,100,100,-1,0,0,100,100,-1,0,0,100,100	DEFAULT	NULL	STATIC
+Colors / Customize CLUT	fx_customize_clut	100,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0.5,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,255,255,255,255,196,128,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Colors / Dark Sky	afre_darksky	0,0,1,0	DEFAULT	NULL	STATIC
+Colors / Decompose Channels	fx_decompose_channels	7,0,0,1	DEFAULT	NULL	STATIC
+Colors / Detect Skin	fx_detect_skin	1,0,50,50,0.5,0.5,1,1,50,50,5,1	DEFAULT	NULL	STATIC
+Colors / Dorure Gilding	samj_Dorure	0.4,0,60,0,0,100,45,18,32,1,0.2,0.2,0,1,20,20,0,0.5	DEFAULT	NULL	STATIC
+Colors / Equalize HSI-HSL-HSV	fx_equalize_hsv	1,0,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,50,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Colors / Equalize HSV	fx_hsv_equalizer	0,0,0,180,40,0,0,0,180,40,0,0,0,180,40,0	DEFAULT	NULL	STATIC
+Colors / Frequency Representation	fx_frequency_representation	3,256,0,40,0	DEFAULT	NULL	STATIC
+Colors / HSL Adjustment	gcd_hsl	1,0,0,180,0.2,0,1,1,0	DEFAULT	NULL	STATIC
+Colors / HSV Select	gcd_hsv_select	0,0,0,0,0.5,1,180,0.5,0.5,2,2,18	DEFAULT	NULL	STATIC
+Colors / Hue Lighten-Darken	iain_hue_light_dark_p	0,0,0,0,0,0,0,0,0,0,0,0,0,255,100,255,0,0,0,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Colors / Local Contrast	afre_localcontrast	1,50	DEFAULT	NULL	STATIC
+Colors / Metallic Look	fx_tk_metallic	1,0,0,0	DEFAULT	NULL	STATIC
+Colors / Mixer [CMYK]	fx_mix_cmyk	1,1,0,0,0,2,0,50,50,0,0,1,0,0,1,0,0	DEFAULT	NULL	STATIC
+Colors / Mixer [HSV]	fx_mix_hsv	1,0,2,0,50,50,0,0,1,0,0,1,0,0	DEFAULT	NULL	STATIC
+Colors / Mixer [Lab]	fx_mix_lab	1,0,2,0,50,50,0,0,1,0,0,1,0,0	DEFAULT	NULL	STATIC
+Colors / Mixer [PCA]	fx_mix_pca	0,0,0,0,1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,50,50,0,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Colors / Mixer [RGB]	fx_mix_rgb	1,0,2,0,50,50,0,0,1,0,0,1,0,0	DEFAULT	NULL	STATIC
+Colors / Mixer [YCbCr]	fx_mix_ycbcr	1,0,2,0,50,50,0,0,1,0,0,1,0,0	DEFAULT	NULL	STATIC
+Colors / Quick Desaturate	jr_desaturate	0,1,1,1,1,0,50,50	DEFAULT	NULL	STATIC
+Colors / Retinex	fx_retinex	75,0,50,50,16,1,1,1,5,15,80,250	DEFAULT	NULL	STATIC
+Colors / Retro Fade	fx_retrofade	20,6,40,0,50,50	DEFAULT	NULL	STATIC
+Colors / RGB Tone	iain_rgb_tone	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,0,255,255,255,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Colors / Satellite	fx_satellite	0,0,50,50,0,0,100,1,0,255,0,0	DEFAULT	NULL	STATIC
+Colors / Saturation EQ	Saturation_EQ_p	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Colors / Select-Replace Color	fx_select_color	0,255,0,0,255,0,50,50,20,0,0,255,255,255,255,0	DEFAULT	NULL	STATIC
+Colors / Selective Desaturation	fx_selective_desaturation	255,255,255,0,3,0,0,0,50,50	DEFAULT	NULL	STATIC
+Colors / Sepia	fx_sepia	0,0,0,0,50,50	DEFAULT	NULL	STATIC
+Colors / Simulate Film	fx_simulate_film	0,1,512,100,0,0,0,0,0,0,0,1,50,50,1,1,1,1,1,1,1	DEFAULT	NULL	STATIC
+Colors / Softlight	afre_softlight	50,0	DEFAULT	NULL	STATIC
+Colors / Specific Saturation	gcd_hio_levels	1,0,1,39,0,1,1,0,0,0	DEFAULT	NULL	STATIC
+Colors / Tone Presets	iain_tone_presets_p	0,100,0,0	DEFAULT	NULL	STATIC
+Colors / Transfer Colors [Histogram]	fx_transfer_histogram	0,0,1,1,0,50,50	DEFAULT	NULL	STATIC
+Colors / Transfer Colors [Patch-Based]	fx_gcd_transfer_colors_patch	6,3,5,5,0,0	DEFAULT	NULL	STATIC
+Colors / Transfer Colors [PCA]	fx_transfer_pca	0,0,1,1,0,50,50	DEFAULT	NULL	STATIC
+Colors / Transfer Colors [Variational]	fx_transfer_rgb	8,0.2,1,0,0,1,1,0,50,50	DEFAULT	NULL	STATIC
+Colors / Tune HSV Colors	fx_tune_hsv	2,100,100,100,1,128,128,128,0,0,0,0,50,100,0,255,0,0,100,12.5,0,0,255,255,0,100,12.5,0,0,0,255,0,100,12.5,0,0,0,255,255,100,12.5,0,100,0,0,0,255,100,12.5,0,0,255,0,255,100,100,12.5,0,2,0,50,50,100,2,255,255,255	DEFAULT	NULL	STATIC
+Colors / User-Defined	fx_custom_transform	i,"i + 90*(x/w)*cos(i/10)",i,i,i,i,0	DEFAULT	NULL	STATIC
+Colors / Valeur Moyenne LCH	samj_Valeur_Moyenne_LCH	400,14,4,,samj_Valeur_Moyenne_LCH.txt	DEFAULT	NULL	STATIC
+Colors / Variations RVB	samj_Variations_RVB	50,0,1,0,50,0,6,0,0,180,90,45	DEFAULT	NULL	STATIC
+Colors / Vintage Style	fx_tk_vintage	2,0.3,235,220,176,0.4,190,181,108,0.2,0,0,100,0.85,0,0.3,25,0,0,0.7,80,200,5,147,26,161	DEFAULT	NULL	STATIC
+Colors / Zone System	fx_zonesystem	1,10,1,1,0,255,0	DEFAULT	NULL	STATIC
+Contours / Carte De Repoussage	samj_Carte_De_Repoussage	30,1,0,0	DEFAULT	NULL	STATIC
+Contours / Colored Outlines	samj_Colored_Outlines	0,2,8,0,0,0,0,0,255	DEFAULT	NULL	STATIC
+Contours / Coloriage	samj_Coloriage	612,0,255,2,6,2,0,0,0,255	DEFAULT	NULL	STATIC
+Contours / Contours Arrondis	samj_Contours_Arrondis	1,3,5,10,0,0	DEFAULT	NULL	STATIC
+Contours / Contours Blancs	samj_Contours_Blancs	1,2,1,0,0,0,15,4,1,0,16,2,0,0.5,0,100,0,3	DEFAULT	NULL	STATIC
+Contours / Contours Coins Vifs	samj_Contours_Coins_Vifs	20,20,2,0,0.05,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Contours / Contours Colores	samj_Contours_Colores	1.1,2,40,0,0	DEFAULT	NULL	STATIC
+Contours / Convolve	fx_convolve	0,1,0,1,1,0,0,50,50	DEFAULT	NULL	STATIC
+Contours / Curvature	fx_curvature	2,0,100,0,0,0,50,50	DEFAULT	NULL	STATIC
+Contours / Difference of Gaussians	fx_dog	1.4,1.5,0,0,1,0,50,50	DEFAULT	NULL	STATIC
+Contours / Distance Transform	fx_distance	128,2,2,32,0,50,50	DEFAULT	NULL	STATIC
+Contours / Edge	afre_edge	0,1,1,1,1	DEFAULT	NULL	STATIC
+Contours / Edges	fx_edges	0,15,0,0,50,50	DEFAULT	NULL	STATIC
+Contours / Edges Offsets	fx_edge_offsets	0,15,4,1,0,0,50,50	DEFAULT	NULL	STATIC
+Contours / Edges Offsets Dots	samj_Edges_Offsets_Dots	1.3,40,18,2,4,0,0,0,0,0	DEFAULT	NULL	STATIC
+Contours / Extract Foreground [Interactive]	fx_extract_foreground	0,0,3,1,0,0,-1	DEFAULT	NULL	STATIC
+Contours / Gradient Norm	fx_gradient_norm	0,0.5,0,100,0,0,50,50	DEFAULT	NULL	STATIC
+Contours / Gradient Norm[ JR's Mod]	fx_jr_gradient_norm	0,0,0,50,50,0.45,40,60,0,0,1,1,2	DEFAULT	NULL	STATIC
+Contours / Gradient RGB	fx_gradient2rgb	0,0,100,0,0,0,50,50	DEFAULT	NULL	STATIC
+Contours / Isophotes	fx_isophotes	8,0,1,0,50,50	DEFAULT	NULL	STATIC
+Contours / Laplacian	fx_laplacian	0,0,100,0,0,0,50,50	DEFAULT	NULL	STATIC
+Contours / Local Orientation	fx_local_orientation	0,0,100,0,0,0,50,50	DEFAULT	NULL	STATIC
+Contours / Morphological Filter	fx_morphological	0,50,50,0,5,1,0,0,0,0,0	DEFAULT	NULL	STATIC
+Contours / Quelques Isophotes	samj_Quelques_Isophotes	10,10,1,0.02,8	DEFAULT	NULL	STATIC
+Contours / Quelques Isophotes B	samj_Quelques_Isophotes_B	16,100,0,0,4	DEFAULT	NULL	STATIC
+Contours / Quelques Isophotes C	samj_Quelques_Isophotes_C	0,0,20,45,0.7,20,0,160,0,80,6,4,1,1	DEFAULT	NULL	STATIC
+Contours / Scintillements Colores Contours	samj_Scintillements_Colores_Contours	0,0,0,0,0,0,0,255,8,0,8,8,1,768,12,0	DEFAULT	NULL	STATIC
+Contours / Segmentation	fx_segment_watershed	2,1,0,0,0,50,50	DEFAULT	NULL	STATIC
+Contours / Skeletation	samj_Skeletation	2,100,100,0,0,1	DEFAULT	NULL	STATIC
+Contours / Skeleton	fx_skeleton	0,0,0,50,50	DEFAULT	NULL	STATIC
+Contours / Super-Pixels	fx_superpixels	16,0,50,50,10,5,1,1,0,0,0,255	DEFAULT	NULL	STATIC
+Contours / Test Mauvais Contours	samj_Test_Mauvais_Contours	0,0,0,3,1,0,0,2,1,0,255,0,255	DEFAULT	NULL	STATIC
+Contours / Thin Edges	fx_thin_edges	0,15,0,0,50,50	DEFAULT	NULL	STATIC
+Corvo / Corvo's Painting_5	fx_corvo_painting_5	35,1,10,10,0.5,50,0.3,50,2,5	DEFAULT	NULL	STATIC
+Curves [Lab] / A-Color	fx_apply_Labcurve	0,-1,128,255,1,0,0,-1,128,-1,128,-1,128,-1,128	DEFAULT	NULL	STATIC
+Curves [Lab] / B-Color	fx_apply_Labcurve	0,-1,128,255,1,0,0,-1,128,-1,128,-1,128,-1,128	DEFAULT	NULL	STATIC
+Curves [Lab] / Lightness	fx_apply_Labcurve	0,-1,128,255,1,0,0,-1,128,-1,128,-1,128,-1,128	DEFAULT	NULL	STATIC
+Curves [RGB] / Blue	fx_apply_RGBcurve	0,-1,128,255,1,0,0,-1,128,-1,128,-1,128,-1,128	DEFAULT	NULL	STATIC
+Curves [RGB] / Green	fx_apply_RGBcurve	0,-1,128,255,1,0,0,-1,128,-1,128,-1,128,-1,128	DEFAULT	NULL	STATIC
+Curves [RGB] / Red	fx_apply_RGBcurve	0,-1,128,255,1,0,0,-1,128,-1,128,-1,128,-1,128	DEFAULT	NULL	STATIC
+Curves [YCbCr] / Blue Chrominance	fx_apply_YCbCrcurve	0,-1,128,255,1,0,0,-1,128,-1,128,-1,128,-1,128	DEFAULT	NULL	STATIC
+Curves [YCbCr] / Luminance	fx_apply_YCbCrcurve	0,-1,128,255,1,0,0,-1,128,-1,128,-1,128,-1,128	DEFAULT	NULL	STATIC
+Curves [YCbCr] / Red Chrominance	fx_apply_YCbCrcurve	0,-1,128,255,1,0,0,-1,128,-1,128,-1,128,-1,128	DEFAULT	NULL	STATIC
+Deformations / Auto-Gnarl	fx_auto_gnarl	3,6,5,20,1,2.5,0.5,2,2,3,0.45,40,60,0,1,1,2,4	DEFAULT	NULL	STATIC
+Deformations / Beigne Donut	samj_Beigne	100,20,255,255,255,255,0,0,0,0,0,0,0,0,20	DEFAULT	NULL	STATIC
+Deformations / Buffer Destroyer	fx_buffer_destroyer	0,0,50,100,0.5,1,0,3,0,50,100,1,0,0,0,0,2.5,20,2.5,20,1,5,75,5,1,120,80,0,100,0,1,0,50,50,40,0,100,0,1,1	DEFAULT	NULL	STATIC
+Deformations / Buffer Error	fx_buffer_error	50,50,0,100,0,1,0,50,50	DEFAULT	NULL	STATIC
+Deformations / Cartesian Transform	fx_custom_deformation	"(w+h)/20 * cos(y*20/h)","(w+h)/20 * sin(x*20/w)",1,1,3	DEFAULT	NULL	STATIC
+Deformations / Cercle Polaire	samj_Cercle_Polaire	1,0,50,50,0,0,1,0,0,2,0,0	DEFAULT	NULL	STATIC
+Deformations / Circle Transform	fx_circle_transform	50,50,1,75,50,-2,-2,0,1,3	DEFAULT	NULL	STATIC
+Deformations / Conformal Maps	fx_conformal_maps	8,3,0,0,1024,1024,1,0,1,0,0,0,0,0	DEFAULT	NULL	STATIC
+Deformations / Continuous Droste	souphead_droste10	40,0,1,10,1,0,90,0,0,0,0,100,1,0,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0	DEFAULT	NULL	STATIC
+Deformations / Crease	fx_crease	30,10,3	DEFAULT	NULL	STATIC
+Deformations / Distort Lens	fx_distort_lens	0.1,0,0,50,50,0	DEFAULT	NULL	STATIC
+Deformations / Drop Water	fx_drop_water	0,0.5,0.25,0.5,0.75,0.05,0.15,1,20,2,80,0,3,35,10,1	DEFAULT	NULL	STATIC
+Deformations / Ecraser Etirer	samj_Ecraser_Etirer	12,0,0,0,100,0	DEFAULT	NULL	STATIC
+Deformations / Ecraser Etirer V2	samj_Ecraser_Etirer_V2	12,0,0,100,50,0	DEFAULT	NULL	STATIC
+Deformations / Equirectangular to Nadir-Zenith	fx_equirectangular2nadirzenith	0	DEFAULT	NULL	STATIC
+Deformations / Euclidean - Polar	fx_euclidean2polar	50,50,1,1,0	DEFAULT	NULL	STATIC
+Deformations / Fish-Eye	fisheye	50,50,70,1	DEFAULT	NULL	STATIC
+Deformations / Flower	fx_flower	50,50,75,50,6,0,3	DEFAULT	NULL	STATIC
+Deformations / Kaleidoscope [Blended]	fx_rotoidoscope	50,50,10,0.5,3	DEFAULT	NULL	STATIC
+Deformations / Kaleidoscope [Polar]	fx_kaleidoscope	50,50,0,0,100,10,3	DEFAULT	NULL	STATIC
+Deformations / Kaleidoscope [Symmetry]	fx_symmetrizoscope	4,0,3,0	DEFAULT	NULL	STATIC
+Deformations / Kaleidoscope Layer Cake	fx_jr_klc	6,0,30,0,0,100,1,2,3,0,0,0,0,50,50,50,50	DEFAULT	NULL	STATIC
+Deformations / Layer Cake	fx_layer_cake	4,30,0,3,0,0,50,50,360,0,75,50,50,3,1,0	DEFAULT	NULL	STATIC
+Deformations / Layer Cake 2	fx_layer_cake_2	4,0,360,0,50,50,2,3,50,0	DEFAULT	NULL	STATIC
+Deformations / Morph [Interactive]	fx_morph_interactive	16,2,-1	DEFAULT	NULL	STATIC
+Deformations / Perspective	fx_warp_perspective	1.73,0,1,50,50,0,0,2	DEFAULT	NULL	STATIC
+Deformations / Polar Transform	fx_transform_polar	0,50,50,"r + R/10*cos(a*5)",a,3	DEFAULT	NULL	STATIC
+Deformations / PowerTwirl	fx_powertwirl	1,0,50,50,1,2,3,0	DEFAULT	NULL	STATIC
+Deformations / Quadrangle	fx_quadrangle	5,5,3,1,95,25,60,95,40,95,1	DEFAULT	NULL	STATIC
+Deformations / Raindrops	raindrops	80,0.1,1,0	DEFAULT	NULL	STATIC
+Deformations / Random	deform	10	DEFAULT	NULL	STATIC
+Deformations / Random Deformations (JR's Mod)	fx_jr_deform	0,50,50,5,1,10,1,0,0,1,0	DEFAULT	NULL	STATIC
+Deformations / Random Small Deformations	samj_Random_Small_Deformations	10,5,3	DEFAULT	NULL	STATIC
+Deformations / Rays from Image	fx_rays_from_image	5,50,50,0,0	DEFAULT	NULL	STATIC
+Deformations / Reflection	fx_reflect	50,-3.30,7,1.5,1,110,160,190,64,0,1.5,0	DEFAULT	NULL	STATIC
+Deformations / Ripple	ripple	10,20,2,0,0	DEFAULT	NULL	STATIC
+Deformations / Seamcarve	fx_seamcarve	85,100,15,0,1	DEFAULT	NULL	STATIC
+Deformations / Shifter	fx_shifter	0,5,0,50,50,0,1,1,20,1,20,1,5	DEFAULT	NULL	STATIC
+Deformations / Sphere	fx_map_sphere	512,0,0.5,512,90,0.5,0,0,20,0,0	DEFAULT	NULL	STATIC
+Deformations / Spherize	fx_spherize	50,1,0,50,50,0,0,2,0	DEFAULT	NULL	STATIC
+Deformations / Spiral Matrix Transformation	fx_jr_spiral_transform	0,0,0,0,0	DEFAULT	NULL	STATIC
+Deformations / Square to Circle	fx_square_circle	0,1,0,0,0,0,0	DEFAULT	NULL	STATIC
+Deformations / Stereographic Projection	fx_project_stereographic	0,0,50,50,50,50,50,75,0,0,0,0	DEFAULT	NULL	STATIC
+Deformations / Symmetrize	fx_symmetrize	50,50,50,75,0,0,0,0	DEFAULT	NULL	STATIC
+Deformations / Textured Glass	fx_textured_glass	40,40,1,1,0,2,0,0,50,50	DEFAULT	NULL	STATIC
+Deformations / Twirl	fx_twirl	1,50,50,3	DEFAULT	NULL	STATIC
+Deformations / UltraWarp 2	fx_ultrawarptwo	0,0,3,2,2,5,3,0,1,1,1,3,0,1,0.5,2.5,5,1,0,1,0,0,1,255,0,255,0,0,0,0,0,3,0,3,0,3	DEFAULT	NULL	STATIC
+Deformations / UltraWarp++++	fx_ultrawarp4plus	0,4,256,4.8,5,2,0,0,2,3,3,0,20,1,1,0,5,2,1,2,0.25,1,3.3,1,0,5,0,3,0.5,2,-180,0,0,0,1,11,0,0,0,5,0,0,0	DEFAULT	NULL	STATIC
+Deformations / Warp [Interactive]	fx_warp_interactive	1,2,0,-1	DEFAULT	NULL	STATIC
+Deformations / Water	water	30,1.5,45	DEFAULT	NULL	STATIC
+Deformations / Wave	wave	10,0.4,50,50	DEFAULT	NULL	STATIC
+Deformations / Wind	fx_wind	20,0,0.7,20,1,0,0,0,50,50	DEFAULT	NULL	STATIC
+Deformations / Zoom	fx_zoom	2,50,50,0	DEFAULT	NULL	STATIC
+Degradations / Add Grain	fx_simulate_grain	0,0,0,0,1,0.2,100,0,0,0,0,0	DEFAULT	NULL	STATIC
+Degradations / Blur [Angular]	fx_blur_angular	2,50,50,0,1,7,0	DEFAULT	NULL	STATIC
+Degradations / Blur [Bloom Glare]	fx_blur_bloom_glare	1,0.5,7,0,2,5,0,0,0,0,0,3	DEFAULT	NULL	STATIC
+Degradations / Blur [Bloom]	fx_blur_bloom	1,0,50,50,2,5,0,1,0,0,0,7	DEFAULT	NULL	STATIC
+Degradations / Blur [Depth-of-Field]	fx_blur_dof	3,1,1,0,16,0,0,50,50,30,30,0	DEFAULT	NULL	STATIC
+Degradations / Blur [Gaussian]	fx_gaussian_blur	3,0,0,1,0,0,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Blur [Glow]	fx_glow	6,7,0,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Blur [Linear]	fx_blur_linear	10,0.5,0,0,1,7,0,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Blur [Multidirectional]	fx_blur_multidirectional	5,7,0,50,50,0,360,150,0,1,0,2,2	DEFAULT	NULL	STATIC
+Degradations / Blur [Radial]	fx_blur_radial	3,50,50,0,1,7,0	DEFAULT	NULL	STATIC
+Degradations / Bomb Blend	fx_blend_bomb	0,0,0,0,1,16,16,2,0,50,0,0	DEFAULT	NULL	STATIC
+Degradations / Broken Texture_Afre	fx_texture_afre_broken	1,10,0	DEFAULT	NULL	STATIC
+Degradations / Butterworth Bandpass	fx_butterworth_bp	3,1,0,2,0,4,2,0,0,0,1	DEFAULT	NULL	STATIC
+Degradations / Cascading Self Glitching	fx_self_glitching_cascade	0,0,45,45,0.75,3,0,0,0,0,0,1,0,0,256,1,0,0,0,50,50,3,3,1,55,55	DEFAULT	NULL	STATIC
+Degradations / Chromatic Aberrations	fx_chromatic_aberrations	255,0,0,0,0,50,50,2,2,0,255,0,0	DEFAULT	NULL	STATIC
+Degradations / CRT Sub-Pixels	fx_gcd_crt	1.8,1.8,0,0	DEFAULT	NULL	STATIC
+Degradations / DCT FSU	fx_dct_fsu	0,0,0,0,50,50,50,50,0,0,100,100,0,1	DEFAULT	NULL	STATIC
+Degradations / Deteriorated Areas	samj_Zones_Grises	3,0,3,4,1	DEFAULT	NULL	STATIC
+Degradations / Dirty	fx_dirty	30,1,0,0,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Ellipses Inpaint	samj_Ellipses_Inpaint	0,0,0,8,8,2,0,10	DEFAULT	NULL	STATIC
+Degradations / Fake JFIF (JPEG) Encoder	fx_jfif_fake	50,444,0,1.25,5,0.25,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Faux-QAM Glitch	fx_qam_glitch	2,1,0,0,20,5,0,0,0,2,0.6,20,0.05,0,50,50,0,0,1,127.5,0,1,1	DEFAULT	NULL	STATIC
+Degradations / Flip & Rotate Blocs	fx_flip_blocs	4,4,3,1,0,0,50,50	DEFAULT	NULL	STATIC
+Degradations / JFIF [JPEG] Self-Bomb	fx_jfif_bomb	0,0,0,0,1,75,1,20,0,1,50,16,16,0.5,1,75,1,1	DEFAULT	NULL	STATIC
+Degradations / JFIF Effects	fx_jfif	50,0.25,0,0,0,16,16,0.5,1,75,1,3,1,0,0,0,0,50,50,0,1,5,5,3,0.25,0.5	DEFAULT	NULL	STATIC
+Degradations / JFIF Effects Extended	fx_jfif_xt	50,8,8	DEFAULT	NULL	STATIC
+Degradations / JPEG Artefacts	fx_jpeg_artefacts	50,0,50,50	DEFAULT	NULL	STATIC
+Degradations / JPEG Encoder	fx_jpeg_preview	80,0,0,0,0,0,0,21,8,8,16,16,16,16,0	DEFAULT	NULL	STATIC
+Degradations / Lomo	fx_lomo	20,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Mess with Bits	fx_mess_with_bits	1,50,50,15,1,1,0,15,100,0,0	DEFAULT	NULL	STATIC
+Degradations / Multi-Mosaic	fx_jr_multi_mosaic_preview	"0. Recompute",0,0,0,1,0,0.5,0,100,1,0,0,0,3,0,0,0,1,15,16,0.5,1,15,3,5,15,2,6,5,20,1,2,45,50,0,128,128,128	DEFAULT	NULL	STATIC
+Degradations / Noise [Additive]	fx_noise	10,0,0,1,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Noise [Perlin]	fx_noise_perlin	0,0,0,1,0,2,0,50,50,100,8,0,0,4,0,0,2	DEFAULT	NULL	STATIC
+Degradations / Noise [Spread]	fx_spread	4,4,0,0,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Old-Movie Stripes	fx_stripes_y	10,0,0,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Oldschool 8bits	fx_8bits	25,800,16,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Path Et Solidify	samj_Degradations_Path_Solidify	0,0,1,75,0,20,0,0,0,0,2,10,1,0	DEFAULT	NULL	STATIC
+Degradations / Pixel Sort	fx_pixelsort	1,0,0,1,0,100,0,0,0	DEFAULT	NULL	STATIC
+Degradations / Pseudo-ECB (Electronic Code Book Algorithm)	pseudo_ecb	0,5,90,0,41,1,15,256,75,16,100,0,1,41,1,41,1,1,0,1,41,1,1,0,0,0,50,50,20,1,1,5,0,0	DEFAULT	NULL	STATIC
+Degradations / Rain & Snow	fx_rain	65,10,50,0.1,1,1,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Random Plasma	samj_Random_Plasma	0,80	DEFAULT	NULL	STATIC
+Degradations / Random Shade Stripes	fx_shade_stripes	30,1,0.8,1.3,0,0,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Rebuild From Similar Blocs	fx_rebuild_from_similar_blocs	5,10,0.75,1	DEFAULT	NULL	STATIC
+Degradations / Row Shifter	fx_row_shift	0,0,0.5,0,0.5,3,0	DEFAULT	NULL	STATIC
+Degradations / Sawtoother [CMY(-K)]	sawtoother_cmy_k	1,1,1,0,1,0,0,1,1,0,0,0,1,0,0,1,1,0,0,2,0,0,1,1,0,1,0,0	DEFAULT	NULL	STATIC
+Degradations / Sawtoother [HSX]	sawtoother_hsx	1,1,1,0,0,1,0,0,1,1,0,0,0,2,0,0,1,1,0,1,0,0	DEFAULT	NULL	STATIC
+Degradations / Sawtoother [Lab8]	sawtoother_lab8	1,1,1,0,1,0,0,1,1,0,0,0,2,0,0,1,1,0,1,0,0	DEFAULT	NULL	STATIC
+Degradations / Sawtoother [LCH8]	sawtoother_lch8	1,1,1,0,1,0,0,1,1,0,0,0,2,0,0,1,1,0,1,0,0	DEFAULT	NULL	STATIC
+Degradations / Sawtoother [RGB]	sawtoother_rgb	1,1,1,0,1,0,0,1,1,0,0,0,2,0,0,1,1,0,1,0,0	DEFAULT	NULL	STATIC
+Degradations / Sawtoother [sRGB]	sawtoother_srgb	1,1,1,0,1,0,0,1,1,0,0,0,2,0,0,1,1,0,1,0,0	DEFAULT	NULL	STATIC
+Degradations / Sawtoother [XYZ8]	sawtoother_xyz8	1,1,1,0,1,0,0,1,1,0,0,0,2,0,0,1,1,0,1,0,0	DEFAULT	NULL	STATIC
+Degradations / Sawtoother [YCbCr-(-GLIC-JPEG)]	sawtoother_ycbcr	0,0,1,1,0,1,0,0,1,1,0,1,0,2,0,0,0,1,1,0,1,0	DEFAULT	NULL	STATIC
+Degradations / Sawtoother [YIQ8]	sawtoother_yiq8	1,1,1,0,1,0,0,1,1,0,0,0,2,0,0,1,1,0,1,0,0	DEFAULT	NULL	STATIC
+Degradations / Sawtoother [YUV8]	sawtoother_yuv8	1,1,1,0,1,0,0,1,1,0,0,0,2,0,0,1,1,0,1,0,0	DEFAULT	NULL	STATIC
+Degradations / Scanlines	fx_scanlines	60,2,0,0,0,0,0,0,50,50	DEFAULT	NULL	STATIC
+Degradations / Self Glitching	fx_self_glitching	0,50,50,0,0,0,50,50,3,0,0	DEFAULT	NULL	STATIC
+Degradations / Shredder	fx_shredder	0,0.5,0,0,1,0,1,0,100,0.5,0,100	DEFAULT	NULL	STATIC
+Degradations / Smooth EQ	fx_jr_smooth_eq	8,2,0,5,2,2,0,6,2,2,0,2,7,2,2,0,3,2,0,0,0,1,0,1,0,3,2,1.5,0,4,2	DEFAULT	NULL	STATIC
+Degradations / Streak	fx_streak	255,0,0,255,0,0,3	DEFAULT	NULL	STATIC
+Degradations / Superstreak	fx_superstreak	10,10,3,0.50,0.50,10,30	DEFAULT	NULL	STATIC
+Degradations / UltraWarp 3	fx_ultrawarp3_preview	"0. Recompute",0,360,0,1,3,0,0,"0. Recompute",15,50,-1,0,25,0,25,0,0,0,360,0,0,1,0,0,1,0,16,0,1,1,5,15,1,1,0,360,1,1	DEFAULT	NULL	STATIC
+Degradations / Visible Watermark	fx_watermark_visible	"\\251 G'MIC",0.4,50,25,0.5,1	DEFAULT	NULL	STATIC
+Degradations / Warp by Intensity	fx_warp_by_intensity	0.04,50,50,0.04,128,128,0,1,3,0,0	DEFAULT	NULL	STATIC
+Deprecated / Morphological Filter (Deprecated)	fx_morpho	0,5,0,0,0,0,0	DEFAULT	NULL	STATIC
+Details / 8-Bit Plane Splitter	fx_bitplane8	0,1,0,0	DEFAULT	NULL	STATIC
+Details / Antialias Wavelet	samj_Antialias_Wavelet	40,0,127,255,1,60,1,1,1	DEFAULT	NULL	STATIC
+Details / Bilinear Enhancement	fx_jr_bilinear	1,3,10,10,1,0,0,50,50	DEFAULT	NULL	STATIC
+Details / Constrained Sharpen	iain_constrained_sharpen	.75,2,1,5,0,11,1	DEFAULT	NULL	STATIC
+Details / DCP Dehaze	jeje_dehaze	5,1,.2,1,0,0,0,0,0	DEFAULT	NULL	STATIC
+Details / Details	afre_details	2	DEFAULT	NULL	STATIC
+Details / Details Equalizer	fx_equalize_details	5,0,0,0,2,0,0,0,2,0,11,0.5,0,0,32,0,50,50,0,0,2,0,0,0,2	DEFAULT	NULL	STATIC
+Details / Dynamic Range Increase	fx_tk_dri	0,0,0,1,0.5,1,1,0	DEFAULT	NULL	STATIC
+Details / Equalize Local Histograms	fx_equalize_local_histograms	75,2,4,100,8,1,16,0,50,50	DEFAULT	NULL	STATIC
+Details / Freaky Details	fx_freaky_details	2,10,1,11,0,50,50	DEFAULT	NULL	STATIC
+Details / High Pass	fx_highpass	5,2,0,0,0	DEFAULT	NULL	STATIC
+Details / Local Contrast Enhancement	fx_LCE	80,0.5,1,1,0,0	DEFAULT	NULL	STATIC
+Details / Local Normalization	fx_normalize_local	2,6,5,20,1,11,0,50,50	DEFAULT	NULL	STATIC
+Details / Local Processing	fx_local_processing	0,75,10,50,20,0,7,0,50,50	DEFAULT	NULL	STATIC
+Details / Local Variance Normalization	jeje_normalize_local_variance	50,5,5,1,0,0	DEFAULT	NULL	STATIC
+Details / Magic Details	fx_magic_details	6,3,15,-0.5,2,27,0,50,50	DEFAULT	NULL	STATIC
+Details / Make Up	make_up	15,4,0,0,0	DEFAULT	NULL	STATIC
+Details / Mask Creator	fx_tk_mask	0,0,0,0,255,0,1,0,0,1	DEFAULT	NULL	STATIC
+Details / Mighty Details	fx_mighty_details	25,1,25,1,11,0,50,50	DEFAULT	NULL	STATIC
+Details / Portrait Retouching	fx_tk_portrait	0,0,1,2,25,2,250,180,150,255,0,100,0,1,1.5,10,1,0,0,1,1,0,1,0,5,20,3,20,10,0	DEFAULT	NULL	STATIC
+Details / Pyramid Processing	iain_pyramid_processing	4,50,.5,0,0	DEFAULT	NULL	STATIC
+Details / Sharpen [Deblur]	fx_deblur	2,50,50,10,20,0.1,1,11,0,24,0	DEFAULT	NULL	STATIC
+Details / Sharpen [Gold-Meinel]	fx_unsharp_goldmeinel	1,50,50,5,1,1,1,11,0,24,0	DEFAULT	NULL	STATIC
+Details / Sharpen [Hessian]	jeje_hessian_sharpen	3,1,1,0,0	DEFAULT	NULL	STATIC
+Details / Sharpen [Inverse Diffusion]	fx_sharpen_inversediff	50,2,11,0,50,50	DEFAULT	NULL	STATIC
+Details / Sharpen [Multiscale]	fx_sharpen_multiscale	15,20,11,0,50,50	DEFAULT	NULL	STATIC
+Details / Sharpen [Octave Sharpening]	fx_unsharp_octave	4,5,3,0,0,1,24,0,50,50	DEFAULT	NULL	STATIC
+Details / Sharpen [Richardson-Lucy]	fx_unsharp_richardsonlucy	1,10,1,1,0,50,50	DEFAULT	NULL	STATIC
+Details / Sharpen [Shock Filters]	fx_sharpen_shock	150,0.1,0.8,1.1,1,0,0,50,50	DEFAULT	NULL	STATIC
+Details / Sharpen [Texture]	fx_sharpen_texture	1,4,16,0,50,50	DEFAULT	NULL	STATIC
+Details / Sharpen [Unsharp Mask]	fx_unsharp	1,0,0,50,50,1.25,10,2,0,1,1,1,0	DEFAULT	NULL	STATIC
+Details / Sharpen [Wavelet]	samj_Wavelet_Sharpen_Test_en	0,0	DEFAULT	NULL	STATIC
+Details / Sharpen [Whiten]	jeje_whiten_frequency	50,0,0	DEFAULT	NULL	STATIC
+Details / Split Details [Alpha]	fx_split_details_alpha	6,10,1,5,0	DEFAULT	NULL	STATIC
+Details / Split Details [Gaussian]	fx_split_details_gaussian	6,10,1,0	DEFAULT	NULL	STATIC
+Details / Split Details [Wavelets]	fx_split_details_wavelets	6,0,0	DEFAULT	NULL	STATIC
+Details / Spotify	jeje_spotify	1,1,1,1,11,0	DEFAULT	NULL	STATIC
+Details / Texture	afre_texture	0,0,0	DEFAULT	NULL	STATIC
+Details / Texture Enhance	iain_texture_enhance_p	2,2,30,0,11,0,0	DEFAULT	NULL	STATIC
+Details / Tone Enhance	gcd_tone_enhance	0,0,4,0,0,1,0,1,128,0,1,0.5,0	DEFAULT	NULL	STATIC
+Details / Tone Mapping	fx_map_tones	0.5,0.7,0.1,30,0,0,50,50	DEFAULT	NULL	STATIC
+Details / Tone Mapping [Fast]	fx_map_tones_fast	3,0.5,11,0,50,50	DEFAULT	NULL	STATIC
+Details / Wavelet Sharpen Test	samj_Wavelet_Sharpen_Test	1	DEFAULT	NULL	STATIC
+Details / YAG Effect	fx_yag_soften	0,0,0	DEFAULT	NULL	STATIC
+Frames / At06B 2017 Frame_Painting	samj_At06A_2017_frame_painting	10,10,1,0.5,123456,35,1,1,1,0,100,0.4,6,127,127,127,2,400,50	DEFAULT	NULL	STATIC
+Frames / Droste	fx_droste	20,20,0,0,0,1,0,1,0,0,80,20,80,80,20,80,1	DEFAULT	NULL	STATIC
+Frames / Frame [Blur]	fx_frame_blur	30,0,5,255,255,255,2,2,1,0,0.5,30,0.5,0,0,5,0,0,128,128,128	DEFAULT	NULL	STATIC
+Frames / Frame [Cube]	frame_cube	3,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Frames / Frame [Fuzzy]	fx_frame_fuzzy	5,5,10,1,255,255,255,255	DEFAULT	NULL	STATIC
+Frames / Frame [Mirror]	fx_frame_mirror	10,10,50,50,0,0,0,0,0.75	DEFAULT	NULL	STATIC
+Frames / Frame [Painting]	fx_frame_painting	10,10,1,0.5,123456,0,0.4,6,225,200,120,2,400,50	DEFAULT	NULL	STATIC
+Frames / Frame [Pattern]	fx_frame_pattern	10,1,1,1	DEFAULT	NULL	STATIC
+Frames / Frame [Regular]	fx_frame	0,1,255,255,255,255,100,0,100,10,10,0,0,0,255	DEFAULT	NULL	STATIC
+Frames / Frame [Round]	fx_frame_round	6,0.1,3,20,0.1,0,255,255,255,255,0	DEFAULT	NULL	STATIC
+Frames / Frame [Smooth]	fx_frame_smooth	10,10,0.25	DEFAULT	NULL	STATIC
+Frames / Old Photograph	fx_old_photo	200,50,85	DEFAULT	NULL	STATIC
+Frames / Polaroid	fx_polaroid	10,95,20,0,0,3,0,20,50,70	DEFAULT	NULL	STATIC
+Frames / Tunnel	fx_tunnel	4,80,50,50,0.2,0	DEFAULT	NULL	STATIC
+Frames / Vignette	fx_vignette	70,70,95,0,0,0,255	DEFAULT	NULL	STATIC
+Frequencies / Bandpass	fx_bandpass	0,100,0,2,0,50,50	DEFAULT	NULL	STATIC
+Frequencies / Fourier Analysis	fx_display_fft		DEFAULT	NULL	STATIC
+Frequencies / Fourier Transform	fx_fourier	1,1	DEFAULT	NULL	STATIC
+Frequencies / Fourier Watermark	fx_watermark_fourier	"(c) G'MIC",53	DEFAULT	NULL	STATIC
+Garagecoder / Anti Alias	gcd_anti_alias	60,0.3,50,0	DEFAULT	NULL	STATIC
+Garagecoder / Auto Balance	gcd_auto_balance	30,0,0,1,0	DEFAULT	NULL	STATIC
+Garagecoder / Blend [Feather]	gcd_blend_feather	100,0.5,2,0,0	DEFAULT	NULL	STATIC
+Garagecoder / Compression Blur	gcd_comp_blur	2,3,1,100,1,0,0	DEFAULT	NULL	STATIC
+Garagecoder / CRMT Tiles	fx_gcd_crmt_tile	"t_w=[w] t_h=[round(1/2*sqrt(3)*)]",[3*,1,0	DEFAULT	NULL	STATIC
+Garagecoder / Cumulative Math	fx_gcd_cumul_math	0,1,1,0,0	DEFAULT	NULL	STATIC
+Garagecoder / Deblur Texture	fx_gcd_blur_deblur_texture	4,1,0.5,0,2,0,0,50,50	DEFAULT	NULL	STATIC
+Garagecoder / Depth Blur	gcd_depth_blur	0,15,0.25,2,4,0,1	DEFAULT	NULL	STATIC
+Garagecoder / Emboss	gcd_emboss	128,0	DEFAULT	NULL	STATIC
+Garagecoder / Geometric Color Balance	gcd_geometric_balance	0	DEFAULT	NULL	STATIC
+Garagecoder / Image InfoMap	gcd_infomap	0	DEFAULT	NULL	STATIC
+Garagecoder / Inverse Bezier Warp	gcd_ebwarp	0.5,1	DEFAULT	NULL	STATIC
+Garagecoder / JPEG Smooth	gcd_jpeg_smooth	1,1,0,0	DEFAULT	NULL	STATIC
+Garagecoder / Layer Manipulation	gcd_layers	100,0,0,1,0,1,0,0,0,0,0,1	DEFAULT	NULL	STATIC
+Garagecoder / LMS Adjustment	gcd_balance_lms	1,1,1,0,0,0	DEFAULT	NULL	STATIC
+Garagecoder / Local F-Mean	gcd_fx_local_fmean	15,0,0,5,0	DEFAULT	NULL	STATIC
+Garagecoder / Multi Thresholds	tran_multi_threshold	50,101,101,101,174,165,131,247,228,160,100,150,200,9,0,1,175,42,27	DEFAULT	NULL	STATIC
+Garagecoder / Normalize Brightness	gcd_normalize_brightness	0,10,0,3,0,0	DEFAULT	NULL	STATIC
+Garagecoder / PQCT Example	gcd_pqct		DEFAULT	NULL	STATIC
+Garagecoder / Quick Tonemap	fx_gcd_quicktone	1,4,20,0,3,1	DEFAULT	NULL	STATIC
+Garagecoder / Recolor	gcd_recol	-14,14	DEFAULT	NULL	STATIC
+Garagecoder / Sharpen [Gradient]	gcd_sharpen_gradient	0.5,2,0,0	DEFAULT	NULL	STATIC
+Garagecoder / Sharpen [Tones]	gcd_sharpen_tones	1,128,0,0	DEFAULT	NULL	STATIC
+Garagecoder / Smart Rotate	gcd_srotate	0,50,50,1,1,6,0.6,0	DEFAULT	NULL	STATIC
+Garagecoder / Smooth [Geometric-Median]	fx_gcd_geometric_median	3,12,0,0,50,50	DEFAULT	NULL	STATIC
+Garagecoder / Split Objects	gcd_splitobj	50,3,3,0,0,0,40,0,0	DEFAULT	NULL	STATIC
+Garagecoder / Stereo Video	gcd_stereo_vid	,1,5,1,,,0,0.5,1.2,0.25,2,4	DEFAULT	NULL	STATIC
+Garagecoder / Temperature Balance	gcd_temp_balance	0,0,1,0	DEFAULT	NULL	STATIC
+Garagecoder / Unquantize [JPEG Smooth]	gcd_unquantize	6,1,1,5,15	DEFAULT	NULL	STATIC
+Garagecoder / Upscale [Edge]	fx_gcd_upscale_edge	1,1,1,1	DEFAULT	NULL	STATIC
+Garagecoder / Upscale [Noise]	gcd_upscale_noise	16,2	DEFAULT	NULL	STATIC
+Garagecoder / Warp Map	gcd_warpmap	5,0,0,0,0	DEFAULT	NULL	STATIC
+Garagecoder / Wiremap	gcd_wiremap	100,100,0.5,0.5,0	DEFAULT	NULL	STATIC
+Garagecoder / Xbr2x	gcd_xbr2x		DEFAULT	NULL	STATIC
+Gentlemanbeggar / 60's Cinema	fx_gb_cfx	10,0,0,0,0,0	DEFAULT	NULL	STATIC
+Gentlemanbeggar / About	_none_		DEFAULT	NULL	STATIC
+Gentlemanbeggar / Lens Blur	fx_gb_lb	10,7,0	DEFAULT	NULL	STATIC
+Gentlemanbeggar / Ping Pong	fx_gb_pp		DEFAULT	NULL	STATIC
+Gmic Tutorials / Blur by Color	gtutor_blur_img	3,0.5	DEFAULT	NULL	STATIC
+Gmic Tutorials / Hedcut (Experimental)	hedcut	0.5,0.5,0.5,0.0,0.5,0,1,0	DEFAULT	NULL	STATIC
+Iain Fergusson / 2D_scopes	iain_2d_scopes	1,0,0,2,2,6,512,2048,1,0,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Anisotropic_tutorial	iain_smooth_tutorial	1000,0.5,1,0.6,1.1,0,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Auto WB by hue variance	iain_auto_wb	5,5,95,95,1,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Automixer	automixer	0,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Brown Spot Clean	iain_brown_spot_clean	1,2	DEFAULT	NULL	STATIC
+Iain Fergusson / CA Correction	iain_CA_correction	0,0,2,0,3	DEFAULT	NULL	STATIC
+Iain Fergusson / Detect Moire	iain_detect_moire	50,5,9,30	DEFAULT	NULL	STATIC
+Iain Fergusson / Easy Skin Retouch	iain_easy_skin_retouch	7,.5,0,2,.7,1,1,.7,.6,.5,.5	DEFAULT	NULL	STATIC
+Iain Fergusson / Exfuse	exfuse	1,0.6,0,0.5,1,5	DEFAULT	NULL	STATIC
+Iain Fergusson / Exfusion	exfusion	20	DEFAULT	NULL	STATIC
+Iain Fergusson / Exfusion3	exfusion3	0.3,0.3,0.2,0.3,-1,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Exfusion5	exfusion5	0,.2,0.2,1,0,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Fast Formula	iain_fast_formula	"apply_gamma 2.2"	DEFAULT	NULL	STATIC
+Iain Fergusson / Fast Median Stack	iain_fast_median_stack		DEFAULT	NULL	STATIC
+Iain Fergusson / FFT Tile	fft_tile	500,128,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Fill Holes	fill_holes	11,21,5,0,0,1	DEFAULT	NULL	STATIC
+Iain Fergusson / Grey_Descreen	iain_descreen2	3,-10000,10	DEFAULT	NULL	STATIC
+Iain Fergusson / Halftone Shapes	iain_halftone_shapes	100,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Heart Tone	iain_hearttone	100,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Iain 2x	iain_2x		DEFAULT	NULL	STATIC
+Iain Fergusson / Iain Demosaic	iain_demosiac	0	DEFAULT	NULL	STATIC
+Iain Fergusson / Iain Denoise 2019 beta3	iain_denoise_2019_beta3	1,0,3,0,.5,4,0,0,0,0,0.5,1,0,5,3	DEFAULT	NULL	STATIC
+Iain Fergusson / Iain Remove Pattern	iain_remove_pattern	3,3,3,0,4,128,1,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Iain Star Burst	iain_star_burst	254,50,5,45,2,0,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Iain Unindex	iain_unindex	30,20,1,50,50	DEFAULT	NULL	STATIC
+Iain Fergusson / Iain Weightmap	iain_weightmap	1,40	DEFAULT	NULL	STATIC
+Iain Fergusson / Iain's Noise Reduction old	iain_iains_nr	3,0,1.35,0,0,3,1,0,0,0,1,0,0	DEFAULT	NULL	STATIC
+Iain Fergusson / IID Demosaic	iain_iid_demosaic	1,1,1,0,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Luminance_NR2	luminance_nr_two	10,1200,64,0,0,0,0,0,0,0,0,1,0,0,0,1,.8,.7,.6,.5,.4,.3	DEFAULT	NULL	STATIC
+Iain Fergusson / Minimum Chroma Demosaic	iain_minimum_chroma_demosaic	0,2,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Moire Removal	iain_moire_removal	5,5,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Moire Removal Not Parallel	iain_moire_removal_NP	5,5,0	DEFAULT	NULL	STATIC
+Iain Fergusson / MS NL-Means C Noise2	ms_nlmeans_c_noise2_p	3,4,2,7,0,0,0,0,1,0,0,0,0,0,10,2	DEFAULT	NULL	STATIC
+Iain Fergusson / MS Patch Chroma	ms_patch_c	5,1.3,0.375,.5,0.125,0,1,1,5,4,3,2,1,1	DEFAULT	NULL	STATIC
+Iain Fergusson / MS Patch NR	MS_Patch_NR	1.3,0,0,0,3,5	DEFAULT	NULL	STATIC
+Iain Fergusson / MS_Patch_NR3	MS_Patch_NR3	1.3,0,0,0,0,0,0,3,5,1,0,0	DEFAULT	NULL	STATIC
+Iain Fergusson / Multi Scale Patch Smoothing	ms_patch_smooth	10,4,3,2,1,1,1.3,0,5,3,5,0,1,1,7,5	DEFAULT	NULL	STATIC
+Iain Fergusson / Multi Scale Smoothing	ms_smooth	0,0,0,0,0,0,0,2,0,2	DEFAULT	NULL	STATIC
+Iain Fergusson / Noise Reduction 5	nr5	1.6,0,1,1,100,0,-100,0,1.3,0,5,1,1,.75,3,0,.75,.5	DEFAULT	NULL	STATIC
+Iain Fergusson / PNG Processing	iain_png_processing	4,1,5,0,0,1,1,0,0,0,3,3,0,.75,2	DEFAULT	NULL	STATIC
+Iain Fergusson / Save Noise Print	iain_savenoiseprint	0,1,1.4	DEFAULT	NULL	STATIC
+Iain Fergusson / Simple Local Contrast	simplelocalcontrast_p	16,1,1,0,2,0,1,1,1,1,1,1	DEFAULT	NULL	STATIC
+Iain Fergusson / Skin Mask	iain_fx_skin_mask	55,200,0,0,0,1	DEFAULT	NULL	STATIC
+Iain Fergusson / Smart Demosaic	iain_smartdemos	0,1.5,2	DEFAULT	NULL	STATIC
+Iain Fergusson / Split Detials [Orientation]	iain_split_orientation	75,50,45,10,5,5,0,0,1	DEFAULT	NULL	STATIC
+Iain Fergusson / Star Tone	star_tone	100	DEFAULT	NULL	STATIC
+Iain Fergusson / Subtract Cast	iain_sub_cast	5,20,250	DEFAULT	NULL	STATIC
+Iain Fergusson / Turbulent Halftone	iain_turbulent_halftone	15,20,0,1,512,0.75,0,0,0	DEFAULT	NULL	STATIC
+Icons / Flip	mc_flip	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Icons / Information	mc_information	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Icons / Mail	mc_mail	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Icons / Phone	mc_phone	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Icons / Shopping Cart	mc_shopping_cart	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+JéJé / 3D Rendering	jeje_render3d	,64,128,96,255,0,8,6,0.1,240,0,30,1,32,32,64,255	DEFAULT	NULL	STATIC
+JéJé / Deconvolve	jeje_deconvolve	20,0,0	DEFAULT	NULL	STATIC
+JéJé / Zernike	jeje_zernike_preview	50,0,0,0,0,0,0,0,0,0,0,50,0,0,0,50,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Jayprich / About	_none_		DEFAULT	NULL	STATIC
+Jayprich / Jpr Colour Illusion	jpr_colourillusion	2,25	DEFAULT	NULL	STATIC
+Jayprich / Jpr Coltexindex	jpr_coltexindex	5,0.5,0.95,0.5,1,2,0.7,55,55,45,45,1,1,0,0.05	DEFAULT	NULL	STATIC
+Jayprich / Jpr Decimate	jpr_decimate	0.375,2	DEFAULT	NULL	STATIC
+Jayprich / Jpr Gradient Smooth	jpr_gradient_smooth	0,1.5	DEFAULT	NULL	STATIC
+Jayprich / Jpr Line Edges	jpr_line_edges	2,2,4,1	DEFAULT	NULL	STATIC
+Jayprich / Jpr Orientedthinning	jpr_orientedthinning	5,15,1,0,0	DEFAULT	NULL	STATIC
+Jayprich / Jpr Phasecongruence	jpr_phasecongruence	45,1,50,1	DEFAULT	NULL	STATIC
+Jayprich / Jpr Remove Blocks1	jpr_remove_blocks1	4,3,70	DEFAULT	NULL	STATIC
+Jayprich / Jpr Shapes Gradient	jpr_shapes_gradient	2,0.25,0.001,100	DEFAULT	NULL	STATIC
+Jayprich / Jpr Specularbumps	jpr_specularbumps	270,1,13,0,80,0.1,0.1,0	DEFAULT	NULL	STATIC
+Jayprich / Jpr Warpfromthreshold	jpr_warpfromthreshold	170,2,10,2	DEFAULT	NULL	STATIC
+Joan Rake / Mesh Blend	fx_mesh_blend	0,3,0,0,0,0	DEFAULT	NULL	STATIC
+KaRo's Tests / About	_none_		DEFAULT	NULL	STATIC
+KaRo's Tests / CImg NL-Means	fx_karo_cimg_nlmeans	0.0,50,50,0.0,0.0,1,-1,-1,3,2,0	DEFAULT	NULL	STATIC
+KaRo's Tests / CImg Skeleton	fx_karo_cimg_skel	1,50,50,50,0,0,-0.3,0,0,1,0	DEFAULT	NULL	STATIC
+KaRo's Tests / mM Differences	fx_karo_mm_diff	5,7,2,1,0,1,0,50,50	DEFAULT	NULL	STATIC
+KaRo's Tests / OC Differences	fx_karo_oc_diff	5,1,0,1,0,50,50	DEFAULT	NULL	STATIC
+KaRo's Tests / Pink Operator	fx_karo_pink	0,0,0,5,0,0,50,50	DEFAULT	NULL	STATIC
+KaRo's Tests / Pink Operator Binary	fx_karo_pink_bin	1,50,3,0,5,4,0,0,50,50	DEFAULT	NULL	STATIC
+KaRo's Tests / Pink Test Operator Bianca	fx_karo_pink_bianca	5,60,5,1,0,0,0,50,50	DEFAULT	NULL	STATIC
+Layers / Align Layers	fx_align_layers	0,0.7,0,0	DEFAULT	NULL	STATIC
+Layers / Blend [Average All]	fx_blend_average_all	0	DEFAULT	NULL	STATIC
+Layers / Blend [Edges]	fx_blend_edges	1,0.8,0	DEFAULT	NULL	STATIC
+Layers / Blend [Fade]	fx_blend_fade	1,0,"cos(4*pi*x/w) * sin(4*pi*y/h)",0,0,5,0,0,0,0,0	DEFAULT	NULL	STATIC
+Layers / Blend [Median]	fx_blend_median	0	DEFAULT	NULL	STATIC
+Layers / Blend [Seamless]	fx_blend_seamless	0,0,25,0,0	DEFAULT	NULL	STATIC
+Layers / Blend [Standard]	fx_blend	6,0,100,1,"1/2 - 1/4*cos(pi*a) - 1/4*cos(pi*b)"	DEFAULT	NULL	STATIC
+Layers / Colors to Layers	fx_split_colors	50,16,1,0	DEFAULT	NULL	STATIC
+Layers / Fade Layers	fx_fade_layers	10	DEFAULT	NULL	STATIC
+Layers / Layers to Tiles	append_tiles	0,0	DEFAULT	NULL	STATIC
+Layers / Morph Layers	fx_morph_layers	10,0.2,0.1,0	DEFAULT	NULL	STATIC
+Layers / Multiscale Operator	fx_apply_multiscale	4,0.5,0.5,0,,0,0,25,100,0,3,0.5,0.5,0,0	DEFAULT	NULL	STATIC
+Layers / Pack	fx_pack	2,1,1,0,16,1,0,	DEFAULT	NULL	STATIC
+Layers / Stroke	fx_stroke	3,255,255,255,255,0,0,0,0,50,0,0,0,0,1,0,0,2,1,100,0,0,255,255,255,255	DEFAULT	NULL	STATIC
+Layers / Tiles to Layers	split_tiles	3,3,0	DEFAULT	NULL	STATIC
+Layers / Tones to Layers	fx_tones2layers	3,85,170,0.5,0	DEFAULT	NULL	STATIC
+Lights & Shadows / Burn	fx_burn	0.5,30,1,0,0,0,50,50	DEFAULT	NULL	STATIC
+Lights & Shadows / Contrast Swiss Mask	fx_contrast_swm	2,0,1	DEFAULT	NULL	STATIC
+Lights & Shadows / Dodge and Burn	fx_dodgeburn	15,0,10,0,1.5,25,10,40,1.5,25,10,0	DEFAULT	NULL	STATIC
+Lights & Shadows / Drop Shadow	fx_drop_shadow	3,3,1.8,0,0,0	DEFAULT	NULL	STATIC
+Lights & Shadows / Drop Shadow 3D	fx_drop_shadow3d	0,0,0,0,0,1,1,2,0.5,0,0,0,200	DEFAULT	NULL	STATIC
+Lights & Shadows / Equalize Shadow	fx_equalize_shadow	1,0,50,50	DEFAULT	NULL	STATIC
+Lights & Shadows / Illuminate 2D Shape	fx_illuminate_shape2d	0,0,0,3,1,1,4,10,75,30,40,0,40,80,0.2,1,0,0,2,-2,2,0,255,0,0,255,"Open Interactive Preview",0,1,1,4	DEFAULT	NULL	STATIC
+Lights & Shadows / Light Glow	fx_lightglow	30,0.5,8,0.8,0,0,50,50	DEFAULT	NULL	STATIC
+Lights & Shadows / Light Leaks	fx_light_leaks	0,50,50,0,1,1,0,0.85,2,1,0	DEFAULT	NULL	STATIC
+Lights & Shadows / Light Patch	fx_light_patch	5,0.7,2.5,0	DEFAULT	NULL	STATIC
+Lights & Shadows / Light Rays	fx_lightrays	80,50,50,1,0.5,0	DEFAULT	NULL	STATIC
+Lights & Shadows / Ombre Portee	samj_Ombre_Portee	0,127,127,127,255,2,2,255,255,255,255,0,0.1,0,128,0,0,0,0,255	DEFAULT	NULL	STATIC
+Lights & Shadows / Ombre Portee B	samj_Ombre_Portee_B	16,2,2,2,2,255,255,255,255,128,0,1,16,1,0,0,127,127,127,255	DEFAULT	NULL	STATIC
+Lights & Shadows / Ombre Portee C	samj_Ombre_Portee_C	32,0,96,96,96,255,2,2,2,2,255,255,255,255,8,16,192,0,1,16,1,0	DEFAULT	NULL	STATIC
+Lights & Shadows / Ombre Portee D	samj_Ombre_Portee_D	16,4,1,2,2,2,255,255,255,255,64,64,2,1,16,5,1,-32	DEFAULT	NULL	STATIC
+Lights & Shadows / Pop Shadows	fx_pop_shadows	0.75,5,1,0,50,50	DEFAULT	NULL	STATIC
+Lights & Shadows / Relief Light	fx_light_relief	0.3,0,0,0.2,0.2,0,1,50,50,5,0.5	DEFAULT	NULL	STATIC
+Lights & Shadows / Shadow Patch	fx_shadow_patch	0.7,0	DEFAULT	NULL	STATIC
+Lights & Shadows / Slice Luminosity	fx_slice_luminosity	1,64,128,0,0,0,128,192,0,0,0,1,192,255,0,0,2,1,0,64,0,0,1	DEFAULT	NULL	STATIC
+Lylejk / Blend [Shape Average]	fx_blend_shapeaverage	1,0,0	DEFAULT	NULL	STATIC
+Lylejk / Lylejk Luma Invert	Lylejk_Luma_Invert	1,0	DEFAULT	NULL	STATIC
+Lylejk / Lylejk Quantize Wicker	Lylejk_Quantize_Wicker	16,0,0,0,255,1,10,10,153,0,2,50,10,20,0.1,1,0,50,0,16,10,5,1,1	DEFAULT	NULL	STATIC
+Lylejk / Lylejk Ribbon	Lylejk_Ribbon	150,1,2,16,3.44,0,3,0.79,0.72,4.97,1.70,0.42,150,0.42,0.85,0.6,7.83,0.68,19,2.64,0,1,0.85,2,0,0.32,43.1,100,0,2,1.15,5,1,0.6,0,7.83,0.68,19,2.64,0	DEFAULT	NULL	STATIC
+Lylejk / Lylejk Ripple	ripple	10,20,2,0,0	DEFAULT	NULL	STATIC
+Lylejk / Lylejk Test TRW	lylejk_test_TRW	50,50,50,1,1,1.8,10,153,50,150,0.42,0.85,0.6,7.83,0.68,19,2.64,0,1,1,1,0,0.5,10.5,100,0,0,0.5,10.5,100,16,0,1.15,5,1,0.68,0.5,10.5,100,0,0,10,1,10,1,0,0,5,1,1,0,0,0,255	DEFAULT	NULL	STATIC
+Lylejk / Lylejk Wicker	Lylejk_Wicker	10,19,2.64,0,1,1,0,0.5,10.5,100,0,10,0,0.5,10.5,100,0,1.15,5,1,0.68,0.5,153,10.5,100,0,0,1,10,1,0,0,150,0.42,0.85,0.6,7.83,0.68	DEFAULT	NULL	STATIC
+Lylejk / Lylejk Woven	Lylejk_Woven	19.6,0,12,10,5,1,1,0,0,0,255,32.4,19.6,32.4,1,0,0,19.6,32.4,1,0,0,1,150,0.61,0.85,0.6,7.83,0.68,19,2.64,0,1,0,1,0,0.29,37.2,100,0,0,2,0,16,0,0,19.6,32.4,1,0	DEFAULT	NULL	STATIC
+Lylejk / Lylejk's Stencil	fx_lylejk_stencil	5,10,3,0	DEFAULT	NULL	STATIC
+Lylejk / Lylejk_Wicker_2	Lylejk_Wicker_2	50,5,1,1,0,0,0,255,150,0.54,0.85,50,0.6,7.83,0.68,19,2.64,0,1,3,0,0.29,1,28.7,100,0,0,1,10,20,0.1,1,10,50,12,2,40,0.7,0.3,0.6,1.1,0.8,30,2,50,0,1,3,1,0,16,1,0,1,1,12,10	DEFAULT	NULL	STATIC
+Lylejk / Point Star Outline	garagecoder_lylejk_samj_points_outlines	0,0.05,10,0.12,0,0,2,0	DEFAULT	NULL	STATIC
+McCap / Hue Overlay Masks	fx_hue_overlay_masks	0,5	DEFAULT	NULL	STATIC
+Misc / Barbed Wire	mc_barbed_wire	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Misc / Crosshair	mc_crosshair	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Misc / Cupid	fx_cupid	75,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Misc / Gear	fx_gear	75,1,12,15,0,40,0,255,255,255,255	DEFAULT	NULL	STATIC
+Misc / Heart	fx_heart	75,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Misc / Paint Splat	mc_paint_splat	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Misc / Sierpinski Triangle	fx_sierpinski	6,1,50,0,0,100,100,100,255,255,255	DEFAULT	NULL	STATIC
+Naggobot / Abstract Flood	fx_AbstractFlood	1,0,300,10,90,0.7,0,0,10,0,7,2,0,10,5,3,255,255,255,255	DEFAULT	NULL	STATIC
+Naggobot / Black & White Film	fx_bwfilmsimulate	0,0,0,0,0,0,0,2,0,0,0,0.299,16,4,0,0,0.587,0,0.114,0,1,1	DEFAULT	NULL	STATIC
+Naggobot / Blockism	fx_blockism	3,1.6,0.5,50,0.5,64,0,1,0	DEFAULT	NULL	STATIC
+Naggobot / Composition Analysis	fx_CompositionAnalysis	0	DEFAULT	NULL	STATIC
+Naggobot / Dodge Sketch	fx_dodgesketch	3,10,7,2,0,0	DEFAULT	NULL	STATIC
+Naggobot / Exposure Fusion Weight Map	fx_ExposureWeightMap	0.3,0.3,0.2,0.3,1,0	DEFAULT	NULL	STATIC
+Naggobot / GMic Structure Tensors	fx_StructureTensors	0.1,0	DEFAULT	NULL	STATIC
+Naggobot / Import 16bits Image	fx_import_image_16	,100,0,1,2.2,0,1,0,0,0,0	DEFAULT	NULL	STATIC
+Naggobot / Luminance to Alpha	fx_split_luminance	1,1,1,0,0	DEFAULT	NULL	STATIC
+Naggobot / Make Old Squiggly	fx_OldSquiggly	2,245,45,0.5,12,0.8,0,0.5,3,0.2,0.4,50	DEFAULT	NULL	STATIC
+Naggobot / Mapped Smoothing	fx_MappedSmooth	0,0,0,300,1,0	DEFAULT	NULL	STATIC
+Naggobot / Night HDR Image Black Noise Correction	fx_fix_HDR_black	20,25,50,200,0,0	DEFAULT	NULL	STATIC
+Naggobot / Noise Painting	fx_noisepainting	0,0,0,5,2.5,1.5,50,1,0	DEFAULT	NULL	STATIC
+Naggobot / Smooth Sketch	fx_SmoothSketch	1,10,2,0.6,0.55,1,0,6,0.8,0.3,0.3,0,1000,0,50	DEFAULT	NULL	STATIC
+Naggobot / Vector Field Rotation Demo	fx_DemoVecRot	0	DEFAULT	NULL	STATIC
+Naggobot / Warp Test	fx_WarpTest	0,0,0,1,0	DEFAULT	NULL	STATIC
+Nature / Australia	mc_australia	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Nature / Barnsley Fern	fx_barnsley_fern	0,100,30,40,10,178,0,255,1	DEFAULT	NULL	STATIC
+Nature / Gum Leaf	mc_gum_leaf	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Nature / Japanese Maple Leaf	mc_maple_leaf	50,0,255,255,255,255,1	DEFAULT	NULL	STATIC
+Nature / Snowflake	fx_snowflake	5,1,255,255,255	DEFAULT	NULL	STATIC
+Okyl168 / Jobs Colors	fx_jobs_colors	0,0,0	DEFAULT	NULL	STATIC
+Others / Dragon Curve	fx_dragoncurve	20,0,1,255,255,255	DEFAULT	NULL	STATIC
+Patterns / Bayer Filter	rgb2bayer	0,1	DEFAULT	NULL	STATIC
+Patterns / Box Fitting	fx_boxfitting	3,0,0.1,0	DEFAULT	NULL	STATIC
+Patterns / Camouflage	fx_camouflage	9,179,189,117,255,246,158,12,100,30,46,33,75,90,65	DEFAULT	NULL	STATIC
+Patterns / Canvas	fx_canvas	70,45,400,1,70,135,400,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Canvas Texture	texturize_canvas	20,3,0.6	DEFAULT	NULL	STATIC
+Patterns / Clouds	jeje_clouds	50,.5	DEFAULT	NULL	STATIC
+Patterns / Contours Gros Pixels	samj_Contours_Gros_Pixels	1,15,0,0,0,1,8,0,20,20,16,1.1,0,0	DEFAULT	NULL	STATIC
+Patterns / Cracks	fx_cracks	30,1,255,255,255,128,0,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Crystal	fx_crystal	50,0.2,20,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Crystal Background	fx_crystal_background	10,25,0,100,1	DEFAULT	NULL	STATIC
+Patterns / Degrades HSL TSL	samj_Degrades_HSL_TSL	4,0,0,0,360,100,100,0,0,0,800,718,75,100,0,100,0,0,0,0,240,240,40,255,120,40,240,255	DEFAULT	NULL	STATIC
+Patterns / Denim Texture	Denim_samj	5,2,0,40,40,25,50,0,43,108,126,255	DEFAULT	NULL	STATIC
+Patterns / EPPE Transform	samj_EPPE_Transform	50,0,255,255,255,255,3,0,0.1,50,0,10,10,32,0.1,10,18	DEFAULT	NULL	STATIC
+Patterns / Fibers	jeje_fibers	10,50,10,0	DEFAULT	NULL	STATIC
+Patterns / Formes Couleurs Variees Dans Image	samj_Formes_Couleurs_Variees_Dans_Image	0,1,1,1,0,0,127,255,0,0,0,0,0,1,0,0,0,192,128,64,255	DEFAULT	NULL	STATIC
+Patterns / Freqy Pattern	jeje_freqy_pattern	50,33,50,0	DEFAULT	NULL	STATIC
+Patterns / Halftone	fx_halftone	0,0,50,50,0,0,0,5,8,8,5,0.1	DEFAULT	NULL	STATIC
+Patterns / Hearts	fx_hearts	2,0,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Lava	fx_lava	8,5,3,0,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Lignes H Ou V Colorees	samj_Lignes_H_ou_V_Colorees	159,190,195,140,81,88,207,175,190,220,202,196,170,186,192,130,149,139,112,96,96,237,168,138,220,199,205,234,217,219,255,256,256,55,67,140,1,0,0,54,40,39	DEFAULT	NULL	STATIC
+Patterns / Marble	fx_marble	.5,100,1,0,0,.4,.6,.6,1.1,0	DEFAULT	NULL	STATIC
+Patterns / Marbre Marble	samj_Marbre	1,0,3,1,1,8,5,0.2,0,0,0,140,120,220	DEFAULT	NULL	STATIC
+Patterns / Maze	fx_maze	24,1,0,1,0	DEFAULT	NULL	STATIC
+Patterns / Mineral Mosaic	fx_mineral_mosaic	1,2,1,100,0	DEFAULT	NULL	STATIC
+Patterns / Mosaic	fx_mosaic	50,0,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Motif Plasma	samj_Motif_Plasma	2,20,20,30,1,75,0	DEFAULT	NULL	STATIC
+Patterns / Motifs 7200	samj_Motifs_7200	2,255,0,221,255,0,0,0,0,20,20,30,1,75,0,0	DEFAULT	NULL	STATIC
+Patterns / Motifs 7200 Variante A	samj_Motifs_7200_VarianteA	2,255,0,221,255,0,0,0,0,20,20,30,1,75,0,0	DEFAULT	NULL	STATIC
+Patterns / Motifs 7200 VarianteB	samj_Motifs_7200_VarianteB	4,0.5,1.5,0.1,1,10,10,1,1,4,48,0,4,1,1,0,3,45,180,30,0.75,0.02	DEFAULT	NULL	STATIC
+Patterns / Motifs 7200 VarianteC	samj_Motifs_7200_VarianteC	4,0,3,0,0,0,240,40,160,255,240,240,40,255,32,0,64,32,1,5,255,0,221	DEFAULT	NULL	STATIC
+Patterns / Motifs Aleatoires Symetriques Degrades	samj_Motifs_Aleatoires_Symetriques_Degrades	0,400,4,1,1,1	DEFAULT	NULL	STATIC
+Patterns / Motifs Degrades CIE	samj_Degrades_XYZ_CIE	6,0,0,0,100,64,64,0,0,1,800,0,100,-128,128,-128,128,0,11,0,0,240,240,40,255,120,40,240,255	DEFAULT	NULL	STATIC
+Patterns / Op Art	fx_shapes	1,1,0,16,10,2,5,90,0,0,1	DEFAULT	NULL	STATIC
+Patterns / Pack Sprites	fx_pack_sprites	5,25,3,1,7,0,512,512	DEFAULT	NULL	STATIC
+Patterns / Paper Texture	fx_paper	0,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Periodic Dots	jeje_periodic_dots	6,4,0,1,0	DEFAULT	NULL	STATIC
+Patterns / Perpendicular Lines	samj_Lignes_Perpendiculaires	255,255,255,255,0,0,1,10,1,2,1234,5678	DEFAULT	NULL	STATIC
+Patterns / Plaid	fx_plaid_texture	50,2,0,90,1,300	DEFAULT	NULL	STATIC
+Patterns / Points Aleatoires 001	samj_Points_Aleatoires_001	10,255,255,0,255,3,0,1	DEFAULT	NULL	STATIC
+Patterns / Polka Dots	fx_polka_dots	80,20,50,50,0,0.5,0.1,1,255,0,0,255	DEFAULT	NULL	STATIC
+Patterns / Pseudo Vitrail	samj_Pseudo_Vitrail	0,0,0,40,0,0,2,0,0,0,255	DEFAULT	NULL	STATIC
+Patterns / Quickly create colorful patterns	samj_Motifs_Rapides	2345,1,0,255,170,0,128,0,0,19,1234,30,0,10,1234,0,0	DEFAULT	NULL	STATIC
+Patterns / Quickly Create Colorful Patterns B	samj_Motifs_Rapides_B	1,1234,16,0,8	DEFAULT	NULL	STATIC
+Patterns / Random Color Ellipses	fx_color_ellipses	400,8,0.1	DEFAULT	NULL	STATIC
+Patterns / Random Pattern	fx_random_pattern	1024,2,4038,"Randomize Seed",0,0,0,0,0	DEFAULT	NULL	STATIC
+Patterns / Random Pattern Courtepointe	samj_Courtepointe	20,0,1,0,1,0	DEFAULT	NULL	STATIC
+Patterns / Rays	jeje_rays	50,0,50,10,0,0.5,255,0,0,255,255,0	DEFAULT	NULL	STATIC
+Patterns / Rays Of Colors	samj_Rays_Of_Colors	300,12,40,16,38,1,0,0,0	DEFAULT	NULL	STATIC
+Patterns / Resynthetize Texture [FFT]	syntexturize	1024,1024,0,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Resynthetize Texture [Patch-Based]	syntexturize_matchpatch	512,512,0,7,5,1,0,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Rorschach	fx_rorschach	3,1,2	DEFAULT	NULL	STATIC
+Patterns / Satin	fx_satin	20,0,0,0,-50,0,0,1,0,0,0,0,255,255,255,255,255	DEFAULT	NULL	STATIC
+Patterns / Seamless Deco	fx_mad_rorscharchp	3,0,50,1,300,0,0,0,0	DEFAULT	NULL	STATIC
+Patterns / Seamless Turbulence	fx_seamless_turbulence	15,20,0,1,3,0	DEFAULT	NULL	STATIC
+Patterns / Shock Waves	fx_shockwaves	10,10,20,0,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Soft Random Shades	samj_Soft_Random_Shades	140,120,220,255,0,20,0	DEFAULT	NULL	STATIC
+Patterns / Sponge	fx_sponge	13,0,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Stained Glass	fx_stained_glass	20,50,50,0.1,1,1,1,0,0,0,0	DEFAULT	NULL	STATIC
+Patterns / Stars	fx_stars	10,0,32,5,0.38,0,255,255,100,200	DEFAULT	NULL	STATIC
+Patterns / Stencil	fx_stencil	3,0,8,0,2,0,0,50,50	DEFAULT	NULL	STATIC
+Patterns / Steps V2	samj_Steps_V2	10,10,10,4,1,10,2,60,0,1.1	DEFAULT	NULL	STATIC
+Patterns / Strip	jeje_strip	45,50,0,1,0	DEFAULT	NULL	STATIC
+Patterns / Tetris	fx_tetris	10	DEFAULT	NULL	STATIC
+Patterns / Tissu Fond Flou	samj_Tissu_Fond_Flou	0,0,0,0,0,0,100,100,0,1,0,1,0	DEFAULT	NULL	STATIC
+Patterns / Truchet	fx_truchet	32,5,1,1,0	DEFAULT	NULL	STATIC
+Patterns / Turing	jeje_turing_pattern	1,2000,.1,.899,-.91,2,.1,.25	DEFAULT	NULL	STATIC
+Patterns / Variation Stained Glass	samj_Variation_Stained_Glass	0,20,2,8,0,3,40,100,0,1.1	DEFAULT	NULL	STATIC
+Patterns / Voronoi	fx_voronoi	160,2,255,255,255,40,1,1,0.5,50,3,1,0,0,0,100	DEFAULT	NULL	STATIC
+Patterns / Weave	weave	6,65,0,0.5,0,0,0,0,0	DEFAULT	NULL	STATIC
+Patterns / Whirls	fx_whirls	7,2,0.2,1.8,11,0,50,50	DEFAULT	NULL	STATIC
+PhotoComix / B&W Steampunk Pencil	fx_steampen	0.95,0.75,0.48,0,14,2,2,0.9,0,1,0,0.5	DEFAULT	NULL	STATIC
+PhotoComix / Boost Screen	fx_compose_boostscreen	0.7,0,0.7	DEFAULT	NULL	STATIC
+PhotoComix / Color Doping	fx_compose_colordoping	1,0	DEFAULT	NULL	STATIC
+PhotoComix / Color Sketch	fx_colorsketchbw	300,0,1,0,50,1,0.1,20,1,0,20,2	DEFAULT	NULL	STATIC
+PhotoComix / Color Stamp	fx_colorstamp	1,50,1,20,2,0	DEFAULT	NULL	STATIC
+PhotoComix / Comix Colors	fx_compose_comix_color	1,0,1	DEFAULT	NULL	STATIC
+PhotoComix / Dark Edges	fx_compose_darkedges	1,0.5,0,0.7	DEFAULT	NULL	STATIC
+PhotoComix / Dark Screen	fx_compose_darkscreen	0.7,0,0.7	DEFAULT	NULL	STATIC
+PhotoComix / Graphic Boost-Old	fx_graphic_boost	1.25,2,0,1,0,1,1,0.5,0.45,1,0,2,0,0.15,14,0,1,0.5,0.45	DEFAULT	NULL	STATIC
+PhotoComix / Graphic Colors	fx_compose_graphicolor	0.6,0,0.8	DEFAULT	NULL	STATIC
+PhotoComix / Graphic Novel-Old	fx_novelfx	0,1,0.5,0.78,1.92,0,0,0,1,1,0.5,2,0.8,1.28,0,6,5,20,0,0.62,14,0	DEFAULT	NULL	STATIC
+PhotoComix / GraphiX Colors	fx_compose_graphixcolor	1,0	DEFAULT	NULL	STATIC
+PhotoComix / Heavy Screen	fx_compose_heavyscreen	0.6,0,0.7	DEFAULT	NULL	STATIC
+PhotoComix / Metallic Grain	fx_metalgrain	0.5,0,0	DEFAULT	NULL	STATIC
+PhotoComix / Metallic Stencils	fx_metallicstencils	0,0	DEFAULT	NULL	STATIC
+PhotoComix / Phoenix Steam-Pencil	fx_phoenix	0.95,1,0,14,2,2,0.9,0,0,0,1	DEFAULT	NULL	STATIC
+PhotoComix / PhotoComiX Smoothing	fx_smooth_anisotropic	60,1,1,0,1,0.16,0.63,0.6,2.35,0.8,30,2,0	DEFAULT	NULL	STATIC
+PhotoComix / Psychedelic Glasswork Tiler	fx_psyglass	0,1,1,0,0,2,0,0,0,20,0.1,1,1,0,1,1,0	DEFAULT	NULL	STATIC
+PhotoComix / Scale Down Neat	fx_scaledown3	0,3,0,1,1,1,1600,1600,0,2.3,1	DEFAULT	NULL	STATIC
+PhotoComix / Symmetry Master	fx_viral	8,0,0,0,0,0	DEFAULT	NULL	STATIC
+PhotoComix / Vivid Colors	fx_compose_vivid_color	1,0,1	DEFAULT	NULL	STATIC
+PhotoComix / Vivid Edges	fx_compose_vividedges	1,0.5,0,0.7	DEFAULT	NULL	STATIC
+PhotoComix / Vivid Screen	fx_compose_vividscreen	0.6,0,0.7	DEFAULT	NULL	STATIC
+PhotoComix / Wild Cartoonizer	fx_m_l_unsharp2	12,1.28,0,2.18,0.3,1.5,1,0.5,0,0.5,0.8	DEFAULT	NULL	STATIC
+Rendering / 3D Blocks	fx_blocks3d	32,0,-50,-100,0.5,0.7,1,1,0,0,0,128,0,4,1.5,30,60,45,50,50	DEFAULT	NULL	STATIC
+Rendering / 3D Colored Object	fx_coloredobject3d	1,41,21,45,0,0,-100,0.5,0.7,4,1,128,128,128,255,0.5,0.5,0.5,57	DEFAULT	NULL	STATIC
+Rendering / 3D Elevation	fx_elevation3d	100,0,0,-100,0.5,0.7,2,1,1,1024,1024,0.8,25,0,21,45	DEFAULT	NULL	STATIC
+Rendering / 3D Extrusion	fx_extrude3d	10,45,0,0,-100,0.5,0.7,4,1,512,0.6,1024,1024,0.5,57,41,21	DEFAULT	NULL	STATIC
+Rendering / 3D Image Object	fx_imageobject3d	1,0,-100,0.5,0.7,4,1,1024,1024,0.5,57,41,21,45,0	DEFAULT	NULL	STATIC
+Rendering / 3D Lathing	fx_lathing3d	76,45,0,0,-100,0.5,0.7,4,1,2,361,1024,1024,0.5,0,0,0	DEFAULT	NULL	STATIC
+Rendering / 3D Random Objects	fx_random3d	0,0.7,3,1,50,3,100,45,0,0,-100,0.5	DEFAULT	NULL	STATIC
+Rendering / Adjacent Annular Steiner Chains	samj_Adjacent_Annular_Steiner_Chains	50,255,0,221,127,72,0,255,127,0,145,255,127,50,0,255,144,127,72,255,0,127,0,255,217,0,127,255,0,0,127,5,0,0,0,2,0,0,0,255,0,0,0,6,56,20,50,0	DEFAULT	NULL	STATIC
+Rendering / Adjacent Rectangles	samj_Rectangles_Adjacents	10,0,0,0,255,1,255,255,0,127,0,0,255,127,10,0,0,0,0,0,0,0,80,0.5,0.5,1.8,0,0,0,0,80,0,50,6,0,0	DEFAULT	NULL	STATIC
+Rendering / Annular Steiner Chains	samj_Annular_Steiner_Chains	50,1,255,255,0,127,64,192,128,127,0,255,0,127,50,0,0,255,127,0,0,0,50,0,0,0,0,0.5,0.5,1.8,0,0,0,6,0,0,0,0,0,255	DEFAULT	NULL	STATIC
+Rendering / Ball	fx_ball	128,0.8,1,1.5,255,0,255	DEFAULT	NULL	STATIC
+Rendering / Chains Solidify	samj_Chains_Solidify	50,72,0,255,255,0,145,255,255,50,0,255,144,255,72,255,0,255,255,217,0,255,0,255,0,0,255,5,255,127,0,255,6,0,0,0,255,100,56,20,50,0,255,0,221,255	DEFAULT	NULL	STATIC
+Rendering / Christmas Balls	samj_Noel_2016	50,-15,2.5,2,0.8,1,1.5,0,0,0,50,0.25,10,0.8,100,150,7,0,240,45,15,255	DEFAULT	NULL	STATIC
+Rendering / Chryzodes	samj_Chryzodes	100,79,3,1,240,128,64,255,0,0,0,0,0,0,255,0,0,0,0,0,0,0,0,0,50,50,45	DEFAULT	NULL	STATIC
+Rendering / Circle Art	fx_circle_art	1,0.5,1,1,1,1,15,0.5,8,1,1,15,0,0	DEFAULT	NULL	STATIC
+Rendering / Contour Line Laser	samj_Contour_Line_Laser_LED	0,1,0	DEFAULT	NULL	STATIC
+Rendering / Crazy Texture	fx_crazy_texture	0,0,1,1,0,1.5,0,1,1,0,1,75,1,30,0,15,6,3,0,15	DEFAULT	NULL	STATIC
+Rendering / Dessiner Un Polygone - Draw a Polygon	samj_dessiner_un_polygone	5,0,0,0,0,1,0,0,255,0,50,0,255,0,0,0,127,127,127,0,0,0,0,50,0,255,255,255,0,0,0,0,0,1,255,0,0,0,1,40,50,1,255,255,0	DEFAULT	NULL	STATIC
+Rendering / Egg Oeuf Granville	samj_Egg_Oeuf_Granville	50,1,255,255,0,127,0,0,0,50,0,0,0,0,0.5,0.5,1.8,0,0,0,0,0,20,30,10,0,0,0,0,255	DEFAULT	NULL	STATIC
+Rendering / Egg Oeuf Hugelschaffer	samj_Egg_Oeuf_Hugelschaffer	50,1,255,255,0,127,0,0,0,50,0,0,0,0,0.5,0.5,1.8,0,0,0,50,0,6,48,0,0,0,0,0,255	DEFAULT	NULL	STATIC
+Rendering / Egg Oeuf Rosillo	samj_Egg_Oeuf_Rosillo	50,1,255,255,0,127,0,0,0,0,50,0,0,0,0.5,0.5,1.8,0,0,0,0,40,200,300,0,0,0,0,255	DEFAULT	NULL	STATIC
+Rendering / Engrenages Gears Laser	samj_Engrenages_Laser_LED	80,250,0,0,0,0,20,12,14,17,1,1,2,19	DEFAULT	NULL	STATIC
+Rendering / Equation Plot [Parametric]	fx_equation_parametric	sin(t)*(exp(cos(t))-2*cos(4*t)-sin(t/12)^5),128,0,0,1,1,1,cos(t)*(exp(cos(t))-2*cos(4*t)-sin(t/12)^5),0,100,4096,1,0,64,0,0	DEFAULT	NULL	STATIC
+Rendering / Equation Plot [Y=f(X)]	fx_equation_plot	X*c+10*cos(X+c+u),-10,10,100,3,2,0	DEFAULT	NULL	STATIC
+Rendering / Etoile De Pompei Triangles Sierpinski	samj_Etoile_De_Pompei_Triangles_Sierpinski	50,5,255,0,0,127,255,0,255,127,0,0,255,127,50,0,255,255,127,255,255,0,127,30,0,63,255,64,0,0,0,0,0,100,0,0,0.5,0.5,1.8,0,0,0,0,0,0,0,255,0	DEFAULT	NULL	STATIC
+Rendering / Etoiles Remplies Triangles Sierpinski	samj_Etoiles_Remplies_Triangles_Sierpinski	6,1,4,255,0,0,127,255,192,64,127,50,0,0,255,127,0,255,255,127,50,255,255,0,127,0,0,0,0,0,50,0,0,0.5,0.5,1.8,0,0,0,0,40,30,0,0,0,0,0,255	DEFAULT	NULL	STATIC
+Rendering / Etoiles Stars Laser	samj_Etoiles_Laser_LED	1400,5,2,0,0,0,0	DEFAULT	NULL	STATIC
+Rendering / Flocon Snowflake Laser	samj_Flocon_Laser_LED	1400,6,5,0	DEFAULT	NULL	STATIC
+Rendering / Fractal Tree	samj_Fractal_Tree	50,20,0,4,1,0,0.25,10,0.8,0,100,-90,11,10,20,255,0,0,255	DEFAULT	NULL	STATIC
+Rendering / Gradient [Corners]	fx_corner_gradient	255,255,255,128,0,0,255,255,1,255,0,0,255,0,255,0,255	DEFAULT	NULL	STATIC
+Rendering / Gradient [Custom Shape]	fx_custom_gradient	0,100,2,0,1,0,,1,0,0,0,0,255,0,255,0,0,255,255,255,0,255,0,255,255,255,255,0,255,255,255,0,255,0,255,1,0,0,255,255,128,128,128,255,4,255,0,255,255,0,0,0,0,1,0,128,100	DEFAULT	NULL	STATIC
+Rendering / Gradient [from Line]	fx_line_gradient	0,0,,100,100,100,0,0,0,1	DEFAULT	NULL	STATIC
+Rendering / Gradient [Linear]	fx_linear_gradient	0,0,0,255,45,0,100,0,255,255,255,255,0	DEFAULT	NULL	STATIC
+Rendering / Gradient [Radial]	fx_radial_gradient	0,0,0,255,0,100,50,50,0,255,255,255,255,0	DEFAULT	NULL	STATIC
+Rendering / Gradient [Random]	fx_random_gradient	32,0,0,128,128,128,1	DEFAULT	NULL	STATIC
+Rendering / Gradient CIE Lab [Linear]	samj_Linear_Gradient_CIE_Lab	0,0,240,40,160,255,240,240,40,255	DEFAULT	NULL	STATIC
+Rendering / Gradient CIE Lab [Shape]	samj_Shape_Linear_Gradient_CIE_Lab	10,240,240,40,255,0,0,0,0,255,10,0,90,90,2,0,240,40,160,255	DEFAULT	NULL	STATIC
+Rendering / Hair Locks	gtutor_hairlock	0.5,0.5,0.5,0,0.5,0.5,255,255,0,255,0.5,45	DEFAULT	NULL	STATIC
+Rendering / Harmonograph	Harmonograph_samj	50,0,400,150,200,200,100,4,6,2,2,50,15,270,75,60,0.04,0.04,0.05,0.06,0,0,192,128,64,255,0,1,1,0,0,1000	DEFAULT	NULL	STATIC
+Rendering / Hawaiian Earring	samj_Hawaiian_Earring	50,1,255,255,0,127,0,0,255,127,50,0,0,0,0,0,0,0,0.5,0.5,1.8,40,0,0,0,0,6,0,0,0,0,0,255	DEFAULT	NULL	STATIC
+Rendering / Hypotrochoid	fx_hypotrochoid	37,1,100,74,80,0.5,255,255,255,255	DEFAULT	NULL	STATIC
+Rendering / Lightning	fx_lightning	20,0,50,5,0,6,0.2,25,60,95,90,100,30,40,-0.25,-0.1,-0.20,256,3,1.5,0.75,255,255,255,255	DEFAULT	NULL	STATIC
+Rendering / Lines of Varying Thickness	samj_Lignes_Epaisseur_Variable	0,0,0,1,0,0,0,0,0,32,0,0.5,0.5,1.8,0,0,3,0,0,0,255,255,255,255,255	DEFAULT	NULL	STATIC
+Rendering / Lissajous	fx_lissajous	4096,0,0,0,0,0,255,255,255,255,0.9,0.9,3,8,7,0,0,0	DEFAULT	NULL	STATIC
+Rendering / Mandelbrot - Julia Sets	fx_mandelbrot	-2,8,255,50,50,0.25,"Zoom In",Center,"Zoom Out",0,-2,2,2,0,1024,0.317,0.03,16	DEFAULT	NULL	STATIC
+Rendering / Neon Lightning	fx_neon_lightning	50,50,130,80,50,0.25,0,0,50,50,100,50,0.7,3	DEFAULT	NULL	STATIC
+Rendering / Newton Fractal	fx_newton_fractal	-2,200,2,1,16,8,255,2,100,150,20,-2,400,3,2,carg(-z),"(i0 + i1)/2",10*(i2^0.4),0,0,0,0,2,0,0,0,2,0,50,50,0.5,0,"Zoom In",2,Center,"Zoom Out","Reset View",1,2,2,"rot(35)*z^^3 - z^^2 + 1","3*z^^2 - 2*z","6*z - 2",1	DEFAULT	NULL	STATIC
+Rendering / Orbites	samj_Orbites	100,45,2,240,128,64,255,0,0,0,0,0,0,0,255,0,0,0,0,50,50,20,79	DEFAULT	NULL	STATIC
+Rendering / Palette De Degrades	samj_Palette_De_Degrades	159,190,195,140,81,88,207,175,190,220,202,196,170,186,192,130,149,139,112,96,96,237,168,138,220,199,205,234,217,219,0,0,256,55,67,140,2,54,40,39	DEFAULT	NULL	STATIC
+Rendering / Pappus Chain	samj_Cercles_Tangents_Dans_Cercle	50,1,127,127,127,127,255,0,0,127,0,255,0,127,50,0,0,255,127,255,0,255,127,50,255,255,0,127,0,255,255,127,192,128,64,127,40,64,192,128,127,128,64,192,127,0,192,64,128,127,0,0,0,0,0,0,0,0,255,0,0,0.5,0.5,1.8,0,0,0,0	DEFAULT	NULL	STATIC
+Rendering / Pintograph	Pintograph_samj	50,0,400,150,200,200,100,4.00,4.05,4.16,4.32,50,75,150,75,60,0,0,0,1,1,192,128,64,255,0,0,1000	DEFAULT	NULL	STATIC
+Rendering / Plasma	fx_plasma	0.5,0,8,0,0,128,128,128	DEFAULT	NULL	STATIC
+Rendering / Poisson D'Avril	samj_Poisson_D_Avril	50,1,250,60,10,255,255,255,255,255,0,50,0,0,0,0,0,0,0.5,0.5,1.8,0,40,0,0,0,2,0,0,0,0,255	DEFAULT	NULL	STATIC
+Rendering / Pythagoras Tree	samj_Arbre_Pythagore	50,A,1,0,0,0.25,10,0.8,0,95,11,12,255,0,0,255,20	DEFAULT	NULL	STATIC
+Rendering / Quick Copyright	fx_quick_copyright	"\\251 G'MIC",1,27,255,255,255,128,1,3,5	DEFAULT	NULL	STATIC
+Rendering / Rainbow	fx_rainbow	80,80,175,175,3,80	DEFAULT	NULL	STATIC
+Rendering / Rectexture	fx_rectexture	Recompute,10,3,1,5,2,0	DEFAULT	NULL	STATIC
+Rendering / Rosace Triangles Sierpinski	samj_Rosace_Triangles_Sierpinski	6,0,0,0,255,0,0,0,0,3,0,0,255,127,6,255,255,0,127,128,64,192,127,50,64,128,192,127,0,255,255,127,0,50,0,0,0,0,0,0,0,0.5,0.5,1.8,50,0,0,0,0,-15,25,5,30	DEFAULT	NULL	STATIC
+Rendering / Rotating Circles	samj_Cercles_Qui_Tournent	800,7,17,1,0.5,0.33,7,17,1,10,0,0,0,255,255,255,255,255,0,0,0,0,0,0,0,0.5,0.5,1.8,0,0,1,0.5,0.33	DEFAULT	NULL	STATIC
+Rendering / Rows Columns	samj_Lignes_Colonnes	16,16,0,0,0,0,64	DEFAULT	NULL	STATIC
+Rendering / Shade Bobs	fx_shadebobs	50,8,5,200,1,-1,2,1,0.8,0	DEFAULT	NULL	STATIC
+Rendering / Simple Geometric Shapes	samj_Formes_Geometriques_Simples	50,0,0,255,255,5,40,40,4,0,50,0,1,127,127,127,127,255,255,0,255	DEFAULT	NULL	STATIC
+Rendering / Sine Curve	fx_sine_curve	1,1,0,800,800,1,90,0,0,90,0,-1,0,1,1,1,1,1,1,0,0,0,75,0,0,0,0,0,0,1,8,50,50,1,50,50,68,68,75,50,75,50,3,2,1,40,255,255,255,2,1,0.5,0.5,0.5,1	DEFAULT	NULL	STATIC
+Rendering / Snowflake 2	samj_Flocon_De_Neige	50,1,0,3,255,255,255,0.7,0,0,50,0,0,0,0,0,0,0.5,0.5,1.8,0,6,0,0,0,50,40,0,3,192,192,192	DEFAULT	NULL	STATIC
+Rendering / Spirographe	Spirographe_samj	50,0,0,3,0,1,0,0,0,255,0,0,255,50,0,255,255,0,255,0,0,0,200,1,1,50,150,192,128,64,255	DEFAULT	NULL	STATIC
+Rendering / Splines Test	samj_Splines_Test	50,2,2,2,2,2,2,2,255,255,0,255,50,0,255,255,255,1,0,0,30,30,90,30,1,10,2	DEFAULT	NULL	STATIC
+Rendering / Straight Lines	samj_Des_Lignes_002	100,1,50,50,0,0,0,0,1,0,0,192,128,64,255,0,0	DEFAULT	NULL	STATIC
+Rendering / Superformula	fx_superformula	4096,0,3,128,255,128,255,0.9,0.9,8,1,5,8,0,0	DEFAULT	NULL	STATIC
+Rendering / Superposition Triangles Sierpinski	samj_Superposition_Triangles_Sierpinski	6,1,4,0,0,255,127,255,255,0,127,6,128,64,192,127,64,128,192,127,50,0,255,255,127,0,0,0,0,0,50,0,0,0,0.5,0.5,1.8,0,0,0,0,50,1,20,30,0,0,0,255	DEFAULT	NULL	STATIC
+Rendering / Symmetric 2D Shape	fx_symmetric_shape2d	5,56,42,52,52,52,52,52,52,52,52,50,50,1,255,0,255,100,50,50,50,30,50,30,50,25	DEFAULT	NULL	STATIC
+Rendering / Test Visu 3D	samj_Test_Visu_3D	1,0,0,0,1024,1024,0.5,0,0,0,45,C:\\\\GimpEval-2.9.5-Win\\\\images_test\\\\GMIC\\\\cube.off,0,0,-100,0.5,0.7,2,1,400,1,225,255,255,255,0.5,1,1,0,0,0,1	DEFAULT	NULL	STATIC
+Rendering / Traits Strokes	Traits_Strokes_samj	50,240,60,120,255,0,0,0,20,0,0,50,0,1,1,35,0,100,0,30,0,360	DEFAULT	NULL	STATIC
+Rendering / Tree	fx_tree	11,-40,40,10,75,0,70,20,40,25,0,255,10000,100,70,140,60,255,100,0.4,0.4,0,0,15,150,0,2.15,0.8	DEFAULT	NULL	STATIC
+Rendering / Triangles Shades Adjacents	Triangles_Shades_Adjacents	0,255,0,221,72,0,255,0,145,255,0,255,144,50,72,255,0,255,217,0,255,0,0,50,5,0,0,128,128,128,1,0,3,60,1,0,-1,0,255,255,255	DEFAULT	NULL	STATIC
+Rendering / Turbulence	fx_turbulence	128,6,4,0,0	DEFAULT	NULL	STATIC
+Rendering / Twisted Rays	Twisted_Rays	800,0,255,255,255,0,255,0,255,1,255,255,0,255,255,0,0,255,255,0,255,255,0.2,255,255,255,255,0,0,0,0,255,2,0,2,2,0,0,5,0,0,5,21,0,0,0,0,255,255	DEFAULT	NULL	STATIC
+Repair / Banding Denoise	banding_denoise	5,5,5,10,0	DEFAULT	NULL	STATIC
+Repair / Bayer Reconstruction	bayer2rgb	6,6,4	DEFAULT	NULL	STATIC
+Repair / Clean Text	afre_cleantext	8,1,80,95	DEFAULT	NULL	STATIC
+Repair / CorLine	samj_CorLine	0,10,0.5,0,0,50,1,0	DEFAULT	NULL	STATIC
+Repair / CorLine B	samj_CorLine_B	0,50,1,0,1,10,0,0,0,0.5,0,0	DEFAULT	NULL	STATIC
+Repair / Deinterlace	deinterlace	0,0,50,50	DEFAULT	NULL	STATIC
+Repair / Deinterlace2x	gcd_deinterlace2x	40,0,0,2,0,1	DEFAULT	NULL	STATIC
+Repair / Denoise Smooth	afre_denoisesmooth	3,10	DEFAULT	NULL	STATIC
+Repair / Denoise Smooth Alt	afre_denoisesmooth_alt	3,10	DEFAULT	NULL	STATIC
+Repair / Descreen	fx_pahlsson_descreen	0	DEFAULT	NULL	STATIC
+Repair / Despeckle	gcd_despeckle	20,10	DEFAULT	NULL	STATIC
+Repair / Iain Noise Reduction 2019	iain_nr_2019	1,0,3,0,.5,4,0,0,0,0,0.5,1,0,5,3	DEFAULT	NULL	STATIC
+Repair / Iain's Fast Denoise	iain_fast_denoise_p	0,0,1,0,0,0,1	DEFAULT	NULL	STATIC
+Repair / Inpaint [Holes]	fx_inpaint_holes	4,20,1	DEFAULT	NULL	STATIC
+Repair / Inpaint [Morphological]	fx_inpaint_morpho	255,0,0,255,0	DEFAULT	NULL	STATIC
+Repair / Inpaint [Multi-Scale]	fx_inpaint_matchpatch	0,0,0,9,10,5,1,255,0,0,255	DEFAULT	NULL	STATIC
+Repair / Inpaint [Patch-Based]	fx_inpaint_patch	7,0,100%,16,0.1,1.2,0,0.05,10,1,255,0,0,255	DEFAULT	NULL	STATIC
+Repair / Inpaint [Transport-Diffusion]	fx_inpaint_pde	75,1,20,255,0,0,255,0	DEFAULT	NULL	STATIC
+Repair / Local Similarity Mask	local_similarity_mask	50,50,50,128,4,10	DEFAULT	NULL	STATIC
+Repair / Pixel Denoise	iain_pixel_denoise_p	2,1,11,0,1	DEFAULT	NULL	STATIC
+Repair / Recursive Median	iain_recursive_median_p	3,1,0,0,1	DEFAULT	NULL	STATIC
+Repair / Red-Eye Attenuation	red_eye	75,3.5,0.1	DEFAULT	NULL	STATIC
+Repair / Remove Hot Pixels	fx_remove_hotpixels	3,10,0,50,50	DEFAULT	NULL	STATIC
+Repair / Repair Scanned Document	jeje_scandoc	3,1,90,5,0	DEFAULT	NULL	STATIC
+Repair / Smooth [Anisotropic]	fx_smooth_anisotropic	60,1,1,0,0,50,50,0.7,0.3,0.6,1.1,0.8,30,2,0	DEFAULT	NULL	STATIC
+Repair / Smooth [Antialias]	fx_smooth_antialias	5,10,0.8,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [Bilateral]	fx_smooth_bilateral	10,7,2,0,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [Block PCA]	jeje_denoise_patch_dict	1,8,1.1,1.1,0,0	DEFAULT	NULL	STATIC
+Repair / Smooth [Diffusion]	fx_smooth_diffusion	0.7,0,50,50,0.3,0.6,1.1,15,8,0,0,24	DEFAULT	NULL	STATIC
+Repair / Smooth [Guided]	fx_smooth_guided	0,5,30,1,0,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [IUWT]	jeje_denoise_iuwt	3,4,2,0	DEFAULT	NULL	STATIC
+Repair / Smooth [Mean-Curvature]	fx_smooth_meancurvature	30,4,0,0,0,24,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [Median]	fx_smooth_median	3,255,0,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [NL-Means]	fx_smooth_nlmeans	4,4,10,3,0,0,24,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [Patch-Based]	fx_smooth_patch	10,24,0,50,50,10,3,5,0,1,1,0,0	DEFAULT	NULL	STATIC
+Repair / Smooth [Patch-PCA]	fx_smooth_patchpca	4,7,11,7,0,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [Perona-Malik]	fx_smooth_peronamalik	20,5,5,0,0,0,24,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [Selective Gaussian]	fx_smooth_selective	5,0.5,5,1,0,0,24,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [Skin]	fx_smooth_skin	2,0.2,3,1,0.05,5,0,50,50,0.5,1,1,1,50,50,5,2	DEFAULT	NULL	STATIC
+Repair / Smooth [Thin Brush]	fx_smooth_anisotropic	60,1,1,0,0,24,0.9,0.64,3.1,1.10,0.8,30,2,0	DEFAULT	NULL	STATIC
+Repair / Smooth [Total Variation]	fx_smooth_tv	30,10,0,0,0,24,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [Wavelets]	fx_smooth_haar	1,10,10,0,0,24,0,50,50	DEFAULT	NULL	STATIC
+Repair / Smooth [Wiener]	jeje_local_wiener	2,11,0,0	DEFAULT	NULL	STATIC
+Repair / Solidify	fx_solidify_td	75,1,20,0,1,0,50,50	DEFAULT	NULL	STATIC
+Repair / Unpurple	unpurple	1,0,0,0.33,5,0,0,0,50,50	DEFAULT	NULL	STATIC
+Repair / Unstrip	jeje_unstrip	1,20,4,1,0,0	DEFAULT	NULL	STATIC
+Repair / Upscale [DCCI2x]	fx_scale_dcci2x	1.15,5,0	DEFAULT	NULL	STATIC
+Repair / Upscale [Diffusion]	fx_upscale_smart	200%,200%,2,0.4,50	DEFAULT	NULL	STATIC
+Repair / Upscale [Scale2x]	fx_scalenx	0,0	DEFAULT	NULL	STATIC
+Reptorian / Attractor	fx_rep_trsa	0,1,1,1,"Randomize Parameters",0,1,1,1,0,7,1,1,1,1,1,1,1	DEFAULT	NULL	STATIC
+Reptorian / Autofill Coloring Book	gui_rep_acb	180,0,1,0,250000,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Axis Streak	gui_axis_streak	0,0,0,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Binary Alternating Quaddro Texture [Basic]	rep_binary_quaddro_basic_gui	0,256,255,1,361,361,0,8,8,128,2,0,0,0	DEFAULT	NULL	STATIC
+Reptorian / Binary Alternating Quaddro Texture [MultiChannel]	rep_binary_quaddro_mc_gui	0,3,0,1,2,3,4,0,8,8,128,0,2,0,0,0,1,0,8,8,128,2,0,0,0,0,1,0,8,8,128,2,0,0,0,0,1,0,8,8,128,2,0,0,1,0,1,0,8,8,128,2,0,0,0,2,1,0,1,2	DEFAULT	NULL	STATIC
+Reptorian / Bit Plane Shuffler	fx_rep_jr_bps	0,0,5,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Blur [Splinter]	fx_rep_blur_splinter	20,50,50,3,0,0,0,0,3,0,0	DEFAULT	NULL	STATIC
+Reptorian / Bricks	gui_rep_shape_brick	150,0,170,0,0,255,85,0,0,255,121,77,2,255,150,0,41,100,0,5,5,0,0,0,0,0	DEFAULT	NULL	STATIC
+Reptorian / Channel Overblur-Overline-Blur-Sharpen	fx_OOBS	0,1,21,100,0,1,1,21,100,0,1,0,1,21,100,0,1,1,21,100,0,1,1,1,21,100,0,1,1,1,0,0,1	DEFAULT	NULL	STATIC
+Reptorian / Chirikov-Taylor	fx_rep_cstdmap	500,0,0,2,0,20,0,5000,1,0,0,0,1,1,0	DEFAULT	NULL	STATIC
+Reptorian / Color Existence Distribution [RGB-8]	rep_color_existence_distribution_rgb8	1	DEFAULT	NULL	STATIC
+Reptorian / Color Modulo Texture	gui_rep_colmt	0,0,0,0,0,0,0,0,3,0,255,0,0,0,0,0,0,3,0,255,0,0,0,0,0,0,3,0,255,0,0,0,0,0,0,3,0,255,0,0,0,0,0,1,1,5,0,50,50,0,3,0,255	DEFAULT	NULL	STATIC
+Reptorian / Construction Material Texture	_cons_turb	0,0,0,20,3,0,1,0,1,1,1,1,100,20,100,15,100,2,0,188,0,0,0.19,0.52,128,128,0,1,2,0,0,0,88,0,3,2,4,2,0,1,1,1,0,8,100,0,0,100,0,50,50,2.5,2,128,128,128	DEFAULT	NULL	STATIC
+Reptorian / Diffusion Limited Aggregation	fx_rep_dla	2,100000,0,1,0,1,0	DEFAULT	NULL	STATIC
+Reptorian / Dynamic Contrast	rep_dynamic_contrast	0,128,255,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Edge Fade	fx_rep_edgefade	10,10,0,2,0,4,2,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Emboss-Relief	fx_emboss_relief	0,0,50,50,0,100,500,0,0,1,1,100	DEFAULT	NULL	STATIC
+Reptorian / Fibonacci Texture	gui_rep_fibo	1,1,0,0,2500,0,0,10,1,0,0,1,50,50,0	DEFAULT	NULL	STATIC
+Reptorian / Fragment Blur	gui_rep_frblur	0,10,5,0,0,1,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Gaussian Blur By Color Space	fx_rep_blur_cs	3,0,0,1,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Glass Vignette	gui_rep_gv	0,100,100,0,50,50,0,3,5,1,0,0,50,50,100,0,50,50,0,0,100	DEFAULT	NULL	STATIC
+Reptorian / Goofy Resampling	goof_res	8,0,0,0	DEFAULT	NULL	STATIC
+Reptorian / Graduated Filter	fx_rep_graduated_filter	50,100,50,0,0,0,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Graphical Tiling Glitch (Interactive)	fx_rep_x_graphical_tiling	0,5,1,0,0,0,0,0,1,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Grouped Pixel Axis-Based Shift	fx_rep_sptbwgp	0,0,0,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Grouped Pixels Shift By Rectangular Polar Transformation	gui_rep_sptbwgp_recpoltrans	-100,100,50,50,50,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Henon Phase Diagram	fx_rep_henon_phase_diagram	2.569,0,0,0,0,1,2,0,20,0,500,0,1000,-.5,.5,8,1,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / HSX Posterize-Index	fx_rep_p_i	10,10,10,50,0,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Kaleidoscope [Reptorian-Polar]	gui_rep_polkal	2,0,1,.5,2,1,0,50,50,0,0,1,2	DEFAULT	NULL	STATIC
+Reptorian / Logarithmic Distortion	rep_logpindis_gui	1,0,0,0,0,0,0,0,2,1024,0,50,50,50,50,50,50,1,1,1,1	DEFAULT	NULL	STATIC
+Reptorian / Majority	gui_rep_majority	11,0,5,0,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Majority [Threshold]	gui_rep_majority_threshold	11,0,5,50,1,0,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Modulos Operation	fx_rep_modo	0,0,0,3,100,0,0,0,3,100,0,0,0,0,3,100,0,0,0,3,100,0,0,0,0,3,100,0,0,1,0,0,0,0,0,1,0,50,50,0,0,0,3,100	DEFAULT	NULL	STATIC
+Reptorian / Nebulous	fx_rep_nebulous	0,0,1,0,0,0,0,2,0,1,3,4,10,10,0,0,0,1,0	DEFAULT	NULL	STATIC
+Reptorian / Newton Fractal [MadJik Style]	rep_mj_newf	16,50,50,45,0,0,0,0,0,128,9,0,75,5,10	DEFAULT	NULL	STATIC
+Reptorian / Non-Convolution Edge Extraction	fx_ncee	0,0,50,50,0,1,100,2,0,0,1,100	DEFAULT	NULL	STATIC
+Reptorian / Non-Isometric RPG Tiler (Interactive)	fx_rep_rpgtiler_noniso	0,0,0,0,0,0,45,0,0,1,0,0,0,,placed_tile.png,,32,2,16,16,0,0	DEFAULT	NULL	STATIC
+Reptorian / Object Size Filtering	gui_rep_objvf	0,1,127,127,127,0,0,10,1,99,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Reptorian / Ordered Dithering	fx_rep_loupasc_ordered_dither	4,3,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Panel Image	rep_fx_shift	50,50,2,2,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Perspective Streak	gui_rep_perspective_streak	50,50,50,50,0,100,0,0,0,1,0	DEFAULT	NULL	STATIC
+Reptorian / Picture Mosaic	fx_rep_photomosaic	0,0,1,,mosaic.png,,0,15,0,50,0,0,0	DEFAULT	NULL	STATIC
+Reptorian / Pixel Push	fx_rep_pxpush	50,50,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Point Warp	gui_rep_pw	100,100,0,50,50,0,3,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Popcorn Fractal	fx_rep_pfrac	50,1,0,1,2,0,1,2,0,1,2,1,0,1,0,0,.05,3,1,0,50,50,0	DEFAULT	NULL	STATIC
+Reptorian / Premade Palette	palgen	10,1,0,50,50,1,1,1,1,0,0,0,0	DEFAULT	NULL	STATIC
+Reptorian / Prime Surface	gui_rep_prime_surface	0,0	DEFAULT	NULL	STATIC
+Reptorian / Pseudorandom Noise	fx_rep_mj_prn	8,0,0,0,2,0,1,0,1,50,50,1	DEFAULT	NULL	STATIC
+Reptorian / Rectangle-Square Fill	fx_rep_rand_sqrrecfill	0,1,0,0,0,0,15,2,1,1,0,1,1	DEFAULT	NULL	STATIC
+Reptorian / Reverse Digits	fx_rep_rvi	0,0,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Reverse Engineer Color Curve	gui_rep_recc	10,1,,gradient.png,"Export Gradient",1	DEFAULT	NULL	STATIC
+Reptorian / Reverse Engineer Gradient Map	gui_rep_regm	10,1,0,,gradient.png,"Export Gradient",1	DEFAULT	NULL	STATIC
+Reptorian / RGB-Gray Linear Interpolation	fx_rep_lerp_rgb_gray	0,1,1,0,50,50,0,100,100,100,100,100,100,1	DEFAULT	NULL	STATIC
+Reptorian / Rotate by Torus Map	fx_rep_rbtt	100,1,0,0,1,2,0,50,50,50,-180,3,3,7,50,1,50,50	DEFAULT	NULL	STATIC
+Reptorian / Sinusoidal Water Distortion	rep_sinowaterdist_gui	0,0,.5,2,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Spiral Distortion	gui_rep_sd	1,50,50,1,50,50,100,100,3,4,0,1,50,50,0,0,0,0,50,50,0	DEFAULT	NULL	STATIC
+Reptorian / Squareroot - Logarithmic Distortion	rep_sqrlogpindis_gui	1,0,0,0,0,0,0,0,2,1024,0,50,50,50,50,50,50,1,1,1,1	DEFAULT	NULL	STATIC
+Reptorian / Stitch	rep_stitch_gui	5,-45,90,0,60,-60,15,-15,30,-30,5,3,-5,0,50,50,10,4,1,1,0,2,45	DEFAULT	NULL	STATIC
+Reptorian / Strange Bulger	rep_strbul	0,0,2,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Strange Bulger Kaleidoscope	rep_strbulkal_gui	0,0,2,1024,0,50,50,0,1,50,50,50,50,0,0	DEFAULT	NULL	STATIC
+Reptorian / Thorn Fractal - Secant Sea	gui_rep_tfrac	0,1,1,0,0,0,a/sin(b),b/cos(a),sin(a)/cos(b),b/cos(a),a/sin(b),0,b/cos(a+b),a,b,a,b,0,1,a/(cfb*cos(b)),b/(cfa*sin(a)),cos(vx)/tan(vx),10000,sin(vy)/tan(vy),1,0,3,0,255,3,0,0,1,1	DEFAULT	NULL	STATIC
+Reptorian / Tiled Form	gui_rep_form_pixel	0,50,0,5,0,2,1,0,10,0,0,3,100,8,25,0,50,5,5,3,38,0,0,50,50,30,30,100,0,0,.5	DEFAULT	NULL	STATIC
+Reptorian / Tiled Zoom	fx_rep_tz	10,10,2,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / TR's Intense Filtration	gui_rep_trif	45,100,0,0,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / TR's Pixel Sharpener	gui_rep_trps	0,0,0,0,0,11,0,50,50	DEFAULT	NULL	STATIC
+Reptorian / Transfer Colors [Reduced Colors]	tcrc	0,50,0,0,2,2,0,2,2,1,16,10,16,2,1,2,1,0,50,50,0,0,16,50,0,2,50	DEFAULT	NULL	STATIC
+Reptorian / Trigonometry Mapping	fx_rep_tg3	0,0,0,1,0,1,1,1,1,0,1,0,0,1,1,1,1,0,1,0,1,1,1,1,1,0,50,50,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Reptorian / Vibrato	fx_vibrato	0,.85,.85,1,1,1,0,0,.7,0,0,1,100,1,1,1,1,1,.85,.85,1,1,1,1,0,0,.7,0,0,100,1,1,1,1,1,1,.85,.85,1,1,1,0,0,.7,1,0,0,100,1,1,1,1,1,.85,.85,1,1,1,1,0,0,.7,0,0,100,1,1,1,0,1,1,.85,.85,1,1,1,0,1,0,.7,1,0,100,1,1,0,1	DEFAULT	NULL	STATIC
+Reptorian / Z-Time	rep_z_render	0,255,0,0	DEFAULT	NULL	STATIC
+RL / Plasma Transition	plasma_transition	0.5,5,1,42	DEFAULT	NULL	STATIC
+RL / RandomWaves	randomwaves	84,80.,1.2,42	DEFAULT	NULL	STATIC
+Ronounours / Auto-Adjust Orientation	fx_adjust_orientation	5	DEFAULT	NULL	STATIC
+Ronounours / Blur [Quad]	fx_blur_quad	0,60,25,95,90,5,90,5,0,0,0,1,100,40,25	DEFAULT	NULL	STATIC
+Ronounours / Curves	fx_apply_curve	0,-1,128,255,1,0,0,0,0,-1,128,-1,128,-1,128,-1,128	DEFAULT	NULL	STATIC
+Ronounours / Faded Mirror	fx_faded_mirror	0,10,10	DEFAULT	NULL	STATIC
+Ronounours / GAAP Test	gaap_test	0,0,0,0	DEFAULT	NULL	STATIC
+Ronounours / Graduated Color Accent	fx_gca	255,255,255,1,0,0,0	DEFAULT	NULL	STATIC
+Ronounours / Grain [Old]	fx_grain	40,0.5,0.6,0.2,0.5,0,5,0,2,0.8,0.5,0.5,1,0	DEFAULT	NULL	STATIC
+Ronounours / Krita Helper	fx_krita		DEFAULT	NULL	STATIC
+Ronounours / Layer Info	gui_layer_info	1	DEFAULT	NULL	STATIC
+Ronounours / Perspective Scale	fx_perspective_scale	2,75,0,0,0	DEFAULT	NULL	STATIC
+Ronounours / Shaded Segmentation	dt_segment_shaded	1,0.7,1	DEFAULT	NULL	STATIC
+Ronounours / Stylize (beta)	fx_stylize_beta	0,3,3,0,0.7,1,0,1,0,5,5,5,7,1,30,10,2,1.85,0,0,1,0.5,2,3,0.5,0.1	DEFAULT	NULL	STATIC
+Samj / About	_none_		DEFAULT	NULL	STATIC
+Sequences / 3D Elevation [Animated]	fx_animate_elevation3d	10,0.8,35,0,0,45,0,0,-100,0.5,0.7,1,0.8,35,0,360,45,0,0,-100,0.5,0.7,0,,100,1,1024,1024,2	DEFAULT	NULL	STATIC
+Sequences / 3D Extrusion [Animated]	fx_animate_extrude3d	10,4,0.8,35,0,0,45,0,0,-100,0.5,1,0.7,0.8,35,360,0,45,0,0,-100,0.5,0,0.7,,10,512,0.6,1024,1024	DEFAULT	NULL	STATIC
+Sequences / 3D Image Object [Animated]	fx_animate_imageobject3d	10,57,41,21,45,0,0,-100,0.5,0.7,0.5,1,57,401,21,45,0,0,-100,0.5,0.7,0,,1,1024,1024,4,0.5	DEFAULT	NULL	STATIC
+Sequences / 3D Text Pointcloud	fx_text_pointcloud3d	64,2,2,1,19,G'MIC,Rocks!,1,200,220,255,255,255,255,255	DEFAULT	NULL	STATIC
+Sequences / 3D Tiles	fx_transition3d	10,8,8,1,1,0,800,1	DEFAULT	NULL	STATIC
+Sequences / B&W Pencil [Animated]	fx_animate_pencilbw	10,1,0,,2.3,100,0.3,60	DEFAULT	NULL	STATIC
+Sequences / B&W Stencil [Animated]	fx_animate_stencilbw	10,1,0,,10,10,10,20	DEFAULT	NULL	STATIC
+Sequences / Cartoon [Animated]	fx_animate_cartoon	10,1.5,3,200,10,0.1,1.5,1,0,,4,0.5,200,10,0.1	DEFAULT	NULL	STATIC
+Sequences / Edges [Animated]	fx_animate_edges	10,1,0,,0,0,10,0,30	DEFAULT	NULL	STATIC
+Sequences / Edges on Fire	fx_fire_edges	0.7,0.25,0.5,25,20,20,0,0,50,50	DEFAULT	NULL	STATIC
+Sequences / Lava Lamp	fx_lavalampbw	3,30,1,20,2,0.01,0	DEFAULT	NULL	STATIC
+Sequences / Lissajous [Animated]	fx_animate_lissajous	10,7,0,0,0,0,0,0,0,0,255,255,255,255,1,4096,0.9,0.9,3,8,7,0,0,0,0,0,0,0,0,0,255,255,255,255,,4096,0.9,0.9,3,8	DEFAULT	NULL	STATIC
+Sequences / Moir&eacute; Animation	fx_moire	1,0,2,1,1,2,1,5	DEFAULT	NULL	STATIC
+Sequences / Object Animation	fx_tk_animateobject	0,0,0,0,1,0,0,1,0,0,0.5,0.5,400,2,0,0	DEFAULT	NULL	STATIC
+Sequences / Rodilius [Animated]	fx_animate_rodilius	10,0,10,10,300,5,180,1,0,,1,10,10,300,5	DEFAULT	NULL	STATIC
+Sequences / Soft Glow [Animated]	fx_animate_glow	10,1,0,,0,3	DEFAULT	NULL	STATIC
+Sequences / Spatial Transition	fx_spatial_transition	10,0,7,cos(x*y/(16+32*A)),0,1,0.5,0	DEFAULT	NULL	STATIC
+Souphead / Disco	disco	10,15,20,250	DEFAULT	NULL	STATIC
+Souphead / Kitaoka Spin Illusion	KittyRings	30,8,0,1,113,0,113,0,255,0	DEFAULT	NULL	STATIC
+Souphead / Moon2panorama	moon2panorama	0,0,0,360,0,0,1,0,0	DEFAULT	NULL	STATIC
+Souphead / My Filter	fx_souphead_filter	0	DEFAULT	NULL	STATIC
+Souphead / Spiral RGB	spiral_RGB	1,3,5,0	DEFAULT	NULL	STATIC
+Stereoscopic 3D / 3D Conversion	fx_tk_make3D	0,0,0,0,0,1.2,25,1,0,1,0,20,0,0,2,200,0,20,0,0,0,0,0	DEFAULT	NULL	STATIC
+Stereoscopic 3D / 3D Video Conversion	fx_tk_video3D	0,0,0,0,0,0,,1.2,25,1,0,10,1,1,1280,1,0,0,0,,frame_,0,-10,1,0,0,1,0,0,1,5,0,0,20,0,1,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Stereoscopic 3D / Automatic Depth Estimation	fx_tk_autodepth		DEFAULT	NULL	STATIC
+Stereoscopic 3D / De-Anaglyph	fx_tk_deana	20,2	DEFAULT	NULL	STATIC
+Stereoscopic 3D / Depth Map Construction	fx_tk_depthmap	0,0,20,0,0,0,0,0,0,0	DEFAULT	NULL	STATIC
+Stereoscopic 3D / Depth Map Reconstruction	fx_tk_depth_obtain	0,0.1,100,0	DEFAULT	NULL	STATIC
+Stereoscopic 3D / Lenticular Print	fx_tk_lenticular	30,0,5,0,1,0	DEFAULT	NULL	STATIC
+Stereoscopic 3D / Single Image Stereogram	fx_tk_stereogram	50,0,255,0,0,0,255,0.5,0,0.5,10,0,40,255,255,0,255,0,0	DEFAULT	NULL	STATIC
+Stereoscopic 3D / Stereo Image	gcd_stereo_img	0,0.5,1.2,1,0.25,2,4,1,0	DEFAULT	NULL	STATIC
+Stereoscopic 3D / Stereoscopic Image Alignment	fx_tk_stereoimage	0,0,1,0,1,0	DEFAULT	NULL	STATIC
+Stereoscopic 3D / Undo Anaglyph	gcd_unstereo	5,0.1,1,1,1,1,0	DEFAULT	NULL	STATIC
+Telperion / Mc_Flou	mc_flou	30,1,0,6,1,1,1,0,255,1,1	DEFAULT	NULL	STATIC
+Telperion / Mc_Pendraw	mc_pendraw	8,0,0,0.8,450,21,0.5,1,0,0,255	DEFAULT	NULL	STATIC
+Tom Keil / About	_none_		DEFAULT	NULL	STATIC
+Tom Keil / Beauty Retouch	fx_tk_retouch	30,0,3,1,20,1.5,1,2.5,0,0	DEFAULT	NULL	STATIC
+Tom Keil / DOF Manipulation	fx_tk_dof	50,200,40,2,0,0,0,0,0.01,0,1,50,0,0,30,60,5,15,2,0,0	DEFAULT	NULL	STATIC
+Tom Keil / Infrared Simulation	fx_tk_infrared	0.75,1,0,50,0,0.5,-100,0.75,0,1,0,0,1	DEFAULT	NULL	STATIC
+Various / BoxFiter Map	samj_BoxFiter_Map	2,0,0,0.2,3,3,0,0,0,2,127,16	DEFAULT	NULL	STATIC
+Various / BoxFiter Test	samj_BoxFiter_Test	2,3,3,1,2	DEFAULT	NULL	STATIC
+Various / CeKoaSa 001	samj_CeKoaSa_001	0,15,3,1,3	DEFAULT	NULL	STATIC
+Various / CeKoaSa 002	samj_CeKoaSa_002	0,15,3,1,3,1	DEFAULT	NULL	STATIC
+Various / CeKoaSa 003	samj_CeKoaSa_003	0,5,1,1,3	DEFAULT	NULL	STATIC
+Various / CeKoaSa 004	samj_CeKoaSa_004	30,0,0,0.8,0	DEFAULT	NULL	STATIC
+Various / CeKoaSa 005	samj_CeKoaSa_005	16,16,0,0,0.2,1,1,0,1	DEFAULT	NULL	STATIC
+Various / CeKoaSa 007	samj_CeKoaSa_007	8,8,10,8,8	DEFAULT	NULL	STATIC
+Various / CeKoaSa 008	samj_CeKoaSa_008	64,0,1,64,1,2,10,0.8,255,255,255,255,64,0,4,1,2,16,1,20,0.1	DEFAULT	NULL	STATIC
+Various / CeKoaSa 009	samj_CeKoaSa_009	1,0,1,25,1,50,1,1.0,1.2,1,1,5,1,1,1,1,0,0,0,0,0,7,0.5,0,0,0,0,0,100,100,-1,0,0,100,100,-1,0,0,100,100,-1,0,0,100,100,-1,0,0,100,100,0.63,0.6,2.35,0.8,30,2	DEFAULT	NULL	STATIC
+Various / CeKoaSa 010	samj_CeKoaSa_010	30,10,0.1,2,10	DEFAULT	NULL	STATIC
+Various / CeKoaSa 011	samj_CeKoaSa_011	0.2,240,240,40,255,0,50,205,0,0,5,0,0,0,0,240,40,160,255	DEFAULT	NULL	STATIC
+Various / Custom Code [Global]	fx_custom_code	1,0,0,0,2,0,50,50	DEFAULT	NULL	STATIC
+Various / Custom Code [Local]	fx_custom_code	1,0,0,0,2,0,50,50	DEFAULT	NULL	STATIC
+Various / Do Nothing	Je_passe_l_hiver_en_Floride		DEFAULT	NULL	STATIC
+Various / Export RGB-565 File	fx_output_565	out565.rgb,0	DEFAULT	NULL	STATIC
+Various / Games & Demos	fx_gmic_demos	2048	DEFAULT	NULL	STATIC
+Various / Histogram Analysis	_none_	256,0	DEFAULT	NULL	STATIC
+Various / Import Data	fx_import_image	,1	DEFAULT	NULL	STATIC
+Various / Import RGB-565 File	fx_input_565	,800,600,0	DEFAULT	NULL	STATIC
+Various / Intarsia	fx_intarsia	,intarsia.html,512,12,1,0,1,100	DEFAULT	NULL	STATIC
+Various / Polygonize	polygonize_GUI	300,10,10,10,10,0	DEFAULT	NULL	STATIC
+Various / Recolorize 20130115	gimp_recolorize_20130115_modifie	30,0,0,255,0,0,1	DEFAULT	NULL	STATIC
+Various / Relief A	samj_Relief_A	3,1.2,1,1,1,1,1,1,0,0,0,1,0,0,0,100,0,1,16,1,50,1,1.0	DEFAULT	NULL	STATIC
+Various / Sample Image	fx_image_sample	0,0,0	DEFAULT	NULL	STATIC
+Various / Solve Maze	fx_solve_maze	5,5,0,95,95,0.1,3,255,0,0	DEFAULT	NULL	STATIC
+Various / Test A	samj_test_A	64,192,500	DEFAULT	NULL	STATIC
+Various / Test B	samj_test_B	100	DEFAULT	NULL	STATIC
+Various / Test C	samj_test_C	100	DEFAULT	NULL	STATIC
+Various / Test Courbes	samj_test_x_color_curves	1,0	DEFAULT	NULL	STATIC
+Various / Test D	samj_test_D	40,0,25,255,10,30,5,0,8,0,4	DEFAULT	NULL	STATIC
+Various / Test Dither Color	samj_test_Dither_Color	2,0,230,230,150,0,0	DEFAULT	NULL	STATIC
+Various / Test E	samj_test_E	0,0,1,0.7,0.3,0.6,1.1,0,200,125,50	DEFAULT	NULL	STATIC
+Various / Test F	samj_test_F	40,50,1	DEFAULT	NULL	STATIC
+Various / Test G	samj_test_G	0,0,0,30	DEFAULT	NULL	STATIC
+Various / Test Solidify	samj_Test_Solidify	10,10,1,0.02,8,1,75,0,20	DEFAULT	NULL	STATIC
+Various / Tests Fill	samj_Tests_Fill	0,0,120,40,240,0,50,30,2,-0.8,0.4,1,1,0,0	DEFAULT	NULL	STATIC
+Various / Texture 002	samj_gimp_texture_zero_zero_deux	0,10,4,10,0.5,1,1,1,0.3	DEFAULT	NULL	STATIC
+Various / Texture 003	samj_Texture_Aquarelle_1	10,10,4,3,251,237,206,1	DEFAULT	NULL	STATIC
+Various / Toile Araignee	samj_Toile_D_Araignee	0,10,4	DEFAULT	NULL	STATIC
+Various / Tout Interactif	samj_test_tout_interactif		DEFAULT	NULL	STATIC
+Zonderr / Demo Mathmap RA	demo_ra	1,1	DEFAULT	NULL	STATIC
+Zonderr / Demo Mathmap XY	demo_xy	1,1	DEFAULT	NULL	STATIC
+Zonderr / Fourier Picture Watermark	fx_fourier_picture_watermark	0.2	DEFAULT	NULL	STATIC
+Zonderr / Mathmap Flag	mathmap_flag	0.05,5,1,5	DEFAULT	NULL	STATIC
+Zonderr / Rel2ellv3	mathmap_rel2ellv3		DEFAULT	NULL	STATIC
+Zonderr / Spiral	mathmap_spiral	5,0	DEFAULT	NULL	STATIC
