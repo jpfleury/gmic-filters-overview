@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>G'MIC Filters Overview for the Image {{{SOURCE_IMAGE_NAME}}}</title>
 	<link rel="stylesheet" href="style/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
@@ -26,13 +27,13 @@
 			<h3>Image Toolbar</h3>
 		
 			<ul>
-				<li><span class="anchor fa-solid fa-anchor" title="Link to this image"></span>: copy a direct link (anchor) to this image</li>
-				<li><span class="new-tab fa-solid fa-arrow-up-right-from-square" title="Open image in new tab"></span>: open the image in a new browser tab</li>
-				<li><span class="reorder fa-solid fa-arrows-up-down-left-right" title="Reorder image via drag and drop"></span>: drag and drop to reorder the image</li>
-				<li><span class="large fa-solid fa-expand" title="Toggle default/large view"></span>: expand image to full page width | <span class="display-style fa-solid fa-compress" title="Toggle default/large view"></span>: revert to default size</li>
-				<li><span class="info fa-solid fa-circle-chevron-down" title="Toggle image info"></span>: show info | <span class="info fa-solid fa-circle-chevron-up" title="Toggle image info"></span>: hide info</li>
-				<li><span class="compare fa-solid fa-eye" title="Toggle source image comparison"></span>: compare with the source image | <span class="compare fa-solid fa-eye-slash" title="Toggle source image comparison"></span>: disable comparison</li>
-				<li><span class="select fa-regular fa-square" title="Toggle selection"></span>: add image to selection | <span class="select fa-regular fa-square-check" title="Toggle selection"></span>: remove image from selection</li>
+				<li class="anchor-container"><span class="anchor fa-solid fa-anchor" title="Link to this image"></span>: copy a direct link (anchor) to this image</li>
+				<li class="new-tab-container"><span class="new-tab fa-solid fa-arrow-up-right-from-square" title="Open image in new tab"></span>: open the image in a new browser tab</li>
+				<li class="reorder-container"><span class="reorder fa-solid fa-arrows-up-down-left-right" title="Reorder image via drag and drop"></span>: drag and drop to reorder the image</li>
+				<li class="display-style-container"><span class="large fa-solid fa-expand" title="Toggle default/large view"></span>: expand image to full page width | <span class="display-style fa-solid fa-compress" title="Toggle default/large view"></span>: revert to default size</li>
+				<li class="info-container"><span class="info fa-solid fa-circle-chevron-down" title="Toggle image info"></span>: show info | <span class="info fa-solid fa-circle-chevron-up" title="Toggle image info"></span>: hide info</li>
+				<li class="compare-container"><span class="compare fa-solid fa-eye" title="Toggle source image comparison"></span>: compare with the source image | <span class="compare fa-solid fa-eye-slash" title="Toggle source image comparison"></span>: disable comparison</li>
+				<li class="select-container"><span class="select fa-regular fa-square" title="Toggle selection"></span>: add image to selection | <span class="select fa-regular fa-square-check" title="Toggle selection"></span>: remove image from selection</li>
 			</ul>
 		
 			<p>A grayed-out icon indicates that the feature is disabled. For example, <span class="compare fa-solid fa-eye disabled" title="Toggle source image comparison (disabled)"></span> means source image comparison is unavailable.</p>
@@ -45,11 +46,11 @@
 		
 			<h3>Additional Features</h3>
 		
-			<p>You can drag one image onto another to overlay them and visually compare their effects with transparency.</p>
+			<p class="drag-drop-image">You can drag one image onto another to overlay them and visually compare their effects with transparency.</p>
 		
 			<p>By default, filters from all categories are shown. Clicking a category button toggles the visibility of filters in that category.</p>
 		
-			<p>The fixed menu on the right side (icon <span class="fa-solid fa-bars" title="Menu"></span>) provides additional functions.</p>
+			<p class="fixed-menu">The fixed menu on the right side (icon <span class="fa-solid fa-bars" title="Menu"></span>) provides additional functions.</p>
 		</div>
 		
 		<h2 id="all-filters-title">All Filters <span class="toggle fa-regular fa-square-minus" title="Toggle display of all filters"></span></h2>

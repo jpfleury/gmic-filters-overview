@@ -237,9 +237,7 @@ span.disabled {
 	color: inherit;
 }
 
-/*****************
- * jQuery UI
- *****************/
+/* jQuery UI */
 
 .ui-dialog {
 	border-radius: 2px;
@@ -261,4 +259,23 @@ span.disabled {
 	min-height: 0 !important;
 	background: #fcfcfc;
 	font-size: 1em;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 1024px) {
+	#menu,
+	#about .reorder-container,
+	#about .display-style-container,
+	#about .drag-drop-image,
+	#about .fixed-menu,
+	ul.images > li .reorder-container .reorder,
+	ul.images > li .display-style-container {
+		display: none;
+	}
+	
+	ul.images > li {
+		width: 100%;
+		margin-right: 0;
+	}
 }

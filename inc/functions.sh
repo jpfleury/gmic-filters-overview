@@ -236,15 +236,15 @@ generate_image_html() {
 					<p class="filter-name">$filter_name$filter_name_suppl</p>
 					
 					<ul class="menu-image">
-						<li><a href="#$id"><span class="anchor fa-solid fa-anchor" title="Link to this image"></span></a></li>
-						<li><a href="$data_src" target="_blank"><span class="new-tab fa-solid fa-arrow-up-right-from-square" title="Open in a new tab"></span></a></li>
+						<li class="anchor-container"><a href="#$id"><span class="anchor fa-fw fa-solid fa-anchor" title="Link to this image"></span></a></li>
+						<li class="new-tab-container"><a href="$data_src" target="_blank"><span class="new-tab fa-fw fa-solid fa-arrow-up-right-from-square" title="Open in a new tab"></span></a></li>
 						
-						<li class="sep"><span class="reorder fa-solid fa-arrows-up-down-left-right" title="Reorder the image using drag and drop"></span></li>
+						<li class="sep reorder-container"><span class="reorder fa-fw fa-solid fa-arrows-up-down-left-right" title="Reorder the image using drag and drop"></span></li>
 						
-						<li><span class="display-style fa-solid fa-expand" title="Toggle default/large display"></span></li>
-						<li><span class="info fa-solid fa-circle-chevron-down" title="Toggle info display"></span></li>
-						<li><span class="compare fa-solid fa-eye $disabled_compare" title="Toggle source image comparison$disabled_compare_title"></span></li>
-						<li><span class="select fa-regular fa-square $disabled_select" title="Toggle selection$disabled_select_title"></span></li>
+						<li class="display-style-container"><span class="display-style fa-fw fa-solid fa-expand" title="Toggle default/large display"></span></li>
+						<li class="info-container"><span class="info fa-fw fa-solid fa-circle-chevron-down" title="Toggle info display"></span></li>
+						<li class="compare-container"><span class="compare fa-fw fa-solid fa-eye $disabled_compare" title="Toggle source image comparison$disabled_compare_title"></span></li>
+						<li class="select-container"><span class="select fa-fw fa-regular fa-square $disabled_select" title="Toggle selection$disabled_select_title"></span></li>
 					</ul>
 					
 					<p class="more-info hide">$information</p>
