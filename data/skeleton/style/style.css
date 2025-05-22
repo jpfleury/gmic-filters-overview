@@ -278,4 +278,8 @@ span.disabled {
 		width: 100%;
 		margin-right: 0;
 	}
+	
+	p.image img {
+		height: auto !important;
+	}
 }
