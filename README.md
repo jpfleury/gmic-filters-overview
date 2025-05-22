@@ -4,7 +4,7 @@
 
 [G'MIC](https://gmic.eu) is a free and open-source image processing framework that comes with hundreds of filters. With so many options available, it can be hard to know where to start.
 
-This is where [gmic-filters-overview](https://github.com/jpfleury/gmic-filters-overview) becomes useful. It lets you preview all non-interactive G'MIC filters at once on a single image. Just run the script and enjoy all filters applied automatically to your image. Then, view the results in a convenient HTML file offering a few JavaScript functions like source image comparison.
+This is where [gmic-filters-overview](https://github.com/jpfleury/gmic-filters-overview) becomes useful. It lets you preview all non-interactive G'MIC filters at once on a single image. Just run the script and enjoy all filters applied automatically to your image. Then, view the results in a convenient HTML file with features like source image comparison and the ability to select and group your favorite filters for easier side-by-side comparison.
 
 ![Demo of gmic-filters-overview](data/demo.gif)
 
