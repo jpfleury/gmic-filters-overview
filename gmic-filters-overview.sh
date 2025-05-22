@@ -236,6 +236,7 @@ user_data_folder="$USER_FOLDER/data"
 
 filters_file="$data_folder/filters.tsv"
 user_filters_file="$user_data_folder/filters.tsv"
+custom_filters_file="$user_data_folder/custom-filters.tsv"
 
 user_gmic_update_file_json="$user_data_folder/update${gmic_version}.json"
 
@@ -298,7 +299,9 @@ if [[ $update_gmic_filters == true ]]; then
 	' "$user_gmic_update_file_json" >> "$user_filters_file"
 fi
 
-if [[ -f $user_filters_file ]]; then
+if [[ -f $custom_filters_file ]]; then
+	filters_file=$custom_filters_file
+elif [[ -f $user_filters_file ]]; then
 	filters_file=$user_filters_file
 fi
 
@@ -372,7 +375,10 @@ if [[ $delete_existing_files == true ]]; then
 	done
 fi
 
-if ! cp -r "$data_skeleton_folder/." "$user_html_working_folder"; then
+if ! (
+	cd "$data_skeleton_folder" || exit 1
+	tar --exclude='.gitkeep' -cf - . | tar -xf - -C "$user_html_working_folder"
+); then
 	echo_err "Can't create files inside the HTML working folder: $user_html_working_folder"
 	
 	exit 1
